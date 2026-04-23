@@ -1,0 +1,116 @@
+import Link from "next/link"
+import Image from "next/image"
+import { ArrowUpRight, Check } from "lucide-react"
+
+const PILLARS = [
+  {
+    title: "Sunshine School",
+    subtitle: "For differently-abled children · since 2010",
+    body: "Started with just 6 students, today we nurture 80+ children aged 3 to 17 through personalised learning, therapy and extracurriculars.",
+    href: "/about",
+  },
+  {
+    title: "Sheltered Workshop",
+    subtitle: "For differently-abled adults · since 2018",
+    body: "A vocational space where 18+ trainees aged 18 to 30 build community living, work skills and independence with dignity.",
+    href: "/facilities#workshop",
+  },
+]
+
+export function AboutPreview() {
+  return (
+    <section className="bg-brand-cream">
+      <div className="container-x py-20 md:py-28">
+        <div className="grid gap-14 lg:grid-cols-[1.05fr_1fr] lg:gap-20">
+          <div className="relative">
+            <div className="relative aspect-[5/6] overflow-hidden rounded-3xl border border-border">
+              <Image
+                src="/images/classroom.jpg"
+                alt="A warm Sunshine School classroom"
+                fill
+                sizes="(min-width: 1024px) 48vw, 100vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="absolute -right-4 bottom-6 hidden w-56 rounded-2xl border border-border bg-background p-5 shadow-xl shadow-black/5 md:block">
+              <div className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
+                Our Promise
+              </div>
+              <p className="mt-2 font-display text-xl leading-tight text-brand-ink">
+                &ldquo;We see every child&apos;s potential — and help it grow.&rdquo;
+              </p>
+            </div>
+
+            <div className="absolute -left-4 -top-4 hidden h-24 w-24 items-center justify-center rounded-full bg-brand-yellow text-center font-display text-brand-ink md:flex">
+              <span className="leading-tight">
+                80+
+                <br />
+                <span className="text-[10px] uppercase tracking-[0.2em] not-italic">
+                  students
+                </span>
+              </span>
+            </div>
+          </div>
+
+          <div>
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-brand-red">
+              <span className="h-1.5 w-1.5 rounded-full bg-brand-red" />
+              Get to know us
+            </div>
+            <h2 className="mt-5 font-display text-4xl leading-[1.02] text-brand-ink text-balance md:text-5xl lg:text-6xl">
+              A non-profit home for differently-abled children & adults.
+            </h2>
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
+              The Sunshine Educational Trust and Society is a non-profit
+              organisation that aims at providing quality education and
+              rehabilitation through two flagship initiatives.
+            </p>
+
+            <div className="mt-10 space-y-5">
+              {PILLARS.map((p) => (
+                <Link
+                  key={p.title}
+                  href={p.href}
+                  className="group flex items-start gap-4 rounded-2xl border border-border bg-background p-5 transition-all hover:-translate-y-0.5 hover:border-brand-ink/20 hover:shadow-md"
+                >
+                  <div className="mt-1 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-yellow text-brand-ink">
+                    <Check className="h-4 w-4" />
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between gap-2">
+                      <h3 className="font-display text-xl text-brand-ink">
+                        {p.title}
+                      </h3>
+                      <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-brand-red" />
+                    </div>
+                    <div className="mt-0.5 text-[11px] uppercase tracking-[0.18em] text-brand-red/80">
+                      {p.subtitle}
+                    </div>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                      {p.body}
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            <div className="mt-8 flex items-center gap-3">
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-1.5 rounded-full bg-brand-ink px-5 py-3 text-sm font-medium text-white hover:bg-brand-ink/90"
+              >
+                Read our full story <ArrowUpRight className="h-4 w-4" />
+              </Link>
+              <Link
+                href="/principals-message"
+                className="text-sm font-medium text-brand-ink hover:text-brand-red"
+              >
+                Principal&apos;s message →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
