@@ -34,6 +34,7 @@ const NAV_ITEMS: NavItem[] = [
     ],
   },
   { label: "Admissions", href: "/admissions" },
+  { label: "Management", href: "/management" },
   {
     label: "Community",
     href: "/events",
