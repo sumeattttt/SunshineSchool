@@ -49,7 +49,7 @@ export default function AdmissionsPage() {
       <PageHeader
         eyebrow="Admissions · 2026–27"
         title="Admissions are open. Let&rsquo;s start your child&rsquo;s journey."
-        description="Sunshine welcomes children aged 3 to 17 years across our early intervention, academic and pre-vocational programmes, and trainees aged 18+ into our sheltered workshop."
+        description="Sunshine welcomes children aged 3 to 19 years across our early intervention, academic and pre-vocational programmes, and trainees aged 18+ into our sheltered workshop."
         crumbs={[{ label: "Home", href: "/" }, { label: "Admissions" }]}
       />
 
@@ -113,7 +113,7 @@ export default function AdmissionsPage() {
                   Prefer to talk first?
                 </div>
                 <div className="mt-2 font-display text-xl text-brand-ink">
-                  +91 022 2087 0982
+                  022 20870982 / 022 27827342
                 </div>
                 <div className="mt-0.5 text-sm text-muted-foreground">
                   Monday – Saturday · 9:00 am to 4:00 pm
@@ -138,7 +138,7 @@ export default function AdmissionsPage() {
         title="See Sunshine with your own eyes."
         description="Book a 45-minute visit — meet our educators, see our classrooms and workshop, and ask us anything."
         primary={{ label: "Book a campus visit", href: "/contact" }}
-        secondary={{ label: "Call us", href: "tel:+912220870982" }}
+        secondary={{ label: "Call us", href: "tel:02220870982" }}
       />
     </>
   )

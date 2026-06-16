@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Facebook, Linkedin, Youtube, Mail, Phone, MapPin, ArrowUpRight } from "lucide-react"
+import { Facebook, Instagram, Youtube, Mail, Phone, MapPin, ArrowUpRight } from "lucide-react"
 import { Logo } from "./logo"
 
 const LINKS = {
@@ -62,7 +62,7 @@ export function SiteFooter() {
           <div>
             <Logo mono className="text-white" />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/60">
-              A unit of the Sunshine Educational Trust and Society — a
+              An initiative of the Sunshine Education Society — a
               non-profit organisation serving children and adults with autism
               and other developmental disabilities.
             </p>
@@ -70,13 +70,13 @@ export function SiteFooter() {
               {[
                 {
                   icon: Facebook,
-                  href: "https://www.facebook.com/sunshinefordifferentlyabled/",
+                  href: "https://www.facebook.com/sunshinefordifferentlyabled/?ti=as",
                   label: "Facebook",
                 },
                 {
-                  icon: Linkedin,
-                  href: "https://www.linkedin.com/in/paramita-mazumder-862a7b28/",
-                  label: "LinkedIn",
+                  icon: Instagram,
+                  href: "https://www.instagram.com/s.w_sunshine18",
+                  label: "Instagram",
                 },
                 {
                   icon: Youtube,
@@ -172,7 +172,7 @@ export function SiteFooter() {
 
         <div className="mt-16 flex flex-col items-start justify-between gap-3 border-t border-white/10 pt-6 text-xs text-white/50 sm:flex-row sm:items-center">
           <p>
-            © {new Date().getFullYear()} Sunshine Educational Trust and Society. All rights reserved.
+            © {new Date().getFullYear()} Sunshine Education Society. All rights reserved.
           </p>
           <div className="flex gap-5">
             <Link href="/about" className="hover:text-white">Privacy</Link>

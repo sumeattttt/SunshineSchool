@@ -15,23 +15,23 @@ const CONTACT_DETAILS = [
     icon: MapPin,
     title: "Visit Us",
     lines: [
-      "Plot No. 21, Sector 9A",
-      "Vashi, Navi Mumbai",
-      "Maharashtra 400703, India",
+      "C/O Navi Mumbai Primary School",
+      "Sec-2, Opp. Vashi Police Station",
+      "Vashi, Navi Mumbai - 400703",
     ],
-    action: { label: "Get Directions", href: "https://maps.google.com/?q=Sunshine+School+Vashi" },
+    action: { label: "Get Directions", href: "https://maps.google.com/?q=Navi+Mumbai+Primary+School+Sector+2+Vashi" },
   },
   {
     icon: Phone,
     title: "Call Us",
-    lines: ["+91 22 2766 1234", "+91 98765 43210"],
-    action: { label: "Call Now", href: "tel:+912227661234" },
+    lines: ["022 27827342", "022 20870982"],
+    action: { label: "Call Now", href: "tel:02227827342" },
   },
   {
     icon: Mail,
     title: "Email Us",
-    lines: ["info@sunshineschool.org.in", "admissions@sunshineschool.org.in"],
-    action: { label: "Send Email", href: "mailto:info@sunshineschool.org.in" },
+    lines: ["sunshine.vashi@gmail.com"],
+    action: { label: "Send Email", href: "mailto:sunshine.vashi@gmail.com" },
   },
   {
     icon: Clock,
@@ -119,14 +119,16 @@ export default function ContactPage() {
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
-                  href="tel:+912227661234"
+                  href="tel:02227827342"
                   className="inline-flex items-center gap-1.5 rounded-full bg-brand-yellow px-4 py-2 text-sm font-medium text-brand-ink hover:bg-brand-yellow/90"
                 >
                   <Phone className="h-3.5 w-3.5" /> Call Admissions
                 </a>
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919930530543"
                   className="inline-flex items-center gap-1.5 rounded-full border border-brand-cream/30 px-4 py-2 text-sm font-medium text-brand-cream hover:bg-brand-cream/10"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   WhatsApp
                 </a>

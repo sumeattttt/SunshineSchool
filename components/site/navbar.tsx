@@ -20,7 +20,7 @@ const NAV_ITEMS: NavItem[] = [
     href: "/about",
     children: [
       { label: "About the School", href: "/about", description: "Our story, vision & mission" },
-      { label: "Principal's Message", href: "/principals-message", description: "A note from Mrs. Paramita Mazumdar" },
+      { label: "Principal's Message", href: "/principals-message", description: "A note from Mrs. Paramita Mazumder" },
       { label: "Faculty & Staff", href: "/faculty", description: "Meet our team of 21+ educators" },
     ],
   },

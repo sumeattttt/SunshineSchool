@@ -6,7 +6,7 @@ const CARDS = [
     eyebrow: "Admissions",
     title: "Apply for 2026–27",
     description:
-      "Online assessment and admission forms for children aged 3–17 years.",
+      "Online assessment and admission forms for children aged 3–19 years.",
     href: "/admissions",
     icon: ClipboardList,
     accent: "bg-brand-yellow text-brand-ink",

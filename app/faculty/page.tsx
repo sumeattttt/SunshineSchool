@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 
 const LEADERSHIP = [
   {
-    name: "Mrs. Paramita Mazumdar",
-    role: "Principal",
+    name: "Mrs. Paramita Mazumder",
+    role: "Principal & Secretary, Sunshine Education Society",
     bio: "Leads Sunshine School with over two decades of experience in special education and inclusive learning.",
     image: "/images/principal.jpg",
   },

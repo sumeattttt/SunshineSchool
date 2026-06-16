@@ -6,7 +6,7 @@ import { Quote } from "lucide-react"
 export const metadata = {
   title: "Principal's Message",
   description:
-    "A personal note from Mrs. Paramita Mazumdar, Principal and co-founder of Sunshine School.",
+    "A personal note from Mrs. Paramita Mazumder, Principal & Secretary, Sunshine Education Society.",
 }
 
 export default function PrincipalsMessagePage() {
@@ -15,7 +15,7 @@ export default function PrincipalsMessagePage() {
       <PageHeader
         eyebrow="A note from our principal"
         title="The school I always wished existed — for my son, and for yours."
-        description="A personal message from Mrs. Paramita Mazumdar, Principal & Co-founder of Sunshine School."
+        description="A personal message from Mrs. Paramita Mazumder, Principal & Secretary, Sunshine Education Society."
         crumbs={[
           { label: "Home", href: "/" },
           { label: "About", href: "/about" },
@@ -37,10 +37,10 @@ export default function PrincipalsMessagePage() {
             </div>
             <div className="mt-6 rounded-2xl border border-border bg-card p-5">
               <div className="font-display text-xl text-brand-ink">
-                Mrs. Paramita Mazumdar
+                Mrs. Paramita Mazumder
               </div>
               <div className="mt-1 text-[11px] uppercase tracking-[0.2em] text-brand-red">
-                Principal & Co-founder
+                Principal & Secretary, Sunshine Education Society
               </div>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 A qualified special educator and counsellor, and a mother — who
@@ -62,42 +62,17 @@ export default function PrincipalsMessagePage() {
 
             <div className="mt-10 space-y-6 text-base leading-relaxed text-muted-foreground md:text-lg">
               <p>
-                Dear parents, students and friends of Sunshine,
+                At Sunshine School, we believe that every child is unique and has the ability to learn, grow, and shine when provided with the right opportunities and support. Our journey began with a vision to create a safe, caring, and enriching environment where differently-abled children could receive education, therapy, and life skills training tailored to their individual needs.
               </p>
               <p>
-                When my son was diagnosed with autism, I quickly realised there
-                were very few places in our city where he could be understood
-                for exactly who he was. I spent years looking for a school that
-                would meet him where he stood — not where a textbook said he
-                should be. Sunshine School was born from that search.
+                We are committed to nurturing confidence, independence, and dignity in every child. Through the dedication of our educators, therapists, staff members, and the continuous partnership of parents, we strive to empower our students to become active and valued members of society.
               </p>
               <p>
-                We started in 2010 with just six students and a stubborn belief
-                that every child — regardless of diagnosis — deserves a place
-                to be seen, heard and helped to grow. Today, more than 80
-                students come through our doors each day, and we&apos;ve opened
-                a Sheltered Workshop for young adults so our journey with them
-                doesn&apos;t end at 17.
+                Every small achievement of our children inspires us to continue our mission of creating a more inclusive and compassionate world.
               </p>
-              <p>
-                Our work isn&apos;t magic. It&apos;s patience, structure and
-                deep, deep love. We combine{" "}
-                <span className="text-brand-ink">early intervention</span>,{" "}
-                <span className="text-brand-ink">functional academics</span>,{" "}
-                <span className="text-brand-ink">vocational training</span> and{" "}
-                <span className="text-brand-ink">therapies</span> — all
-                delivered in a small, family-style environment where every
-                adult in the building knows every child&apos;s name.
-              </p>
-              <p>
-                If you are a parent considering Sunshine for your child, I
-                invite you to come visit us. Sit in our classrooms. Meet our
-                teachers. Watch the quiet, everyday miracles that happen here.
-                You&apos;ll see what I see — that <span className="text-brand-ink">there is no ceiling on what our children can achieve</span> when they are given the right support.
-              </p>
-              <p>With warmth,</p>
+              <p>Warm regards,</p>
               <p className="font-display text-2xl italic text-brand-ink">
-                Paramita Mazumdar
+                Mrs. Paramita Mazumder
               </p>
             </div>
           </article>

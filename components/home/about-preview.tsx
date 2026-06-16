@@ -6,7 +6,7 @@ const PILLARS = [
   {
     title: "Sunshine School",
     subtitle: "For differently-abled children · since 2010",
-    body: "Started with just 6 students, today we nurture 80+ children aged 3 to 17 through personalised learning, therapy and extracurriculars.",
+    body: "Started with just 6 students, today we nurture 80+ children aged 3 to 19 through personalised learning, therapy and extracurriculars.",
     href: "/about",
   },
   {
@@ -61,7 +61,7 @@ export function AboutPreview() {
               A non-profit home for differently-abled children & adults.
             </h2>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              The Sunshine Educational Trust and Society is a non-profit
+              Sunshine Education Society is a non-profit
               organisation that aims at providing quality education and
               rehabilitation through two flagship initiatives.
             </p>

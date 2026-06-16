@@ -142,7 +142,7 @@ export default function DonatePage() {
               <dl className="mt-4 space-y-2 text-sm">
                 <div className="flex justify-between gap-4">
                   <dt className="text-brand-cream/60">Account Name</dt>
-                  <dd className="text-right">Sunshine School Society</dd>
+                  <dd className="text-right">Sunshine Education Society</dd>
                 </div>
                 <div className="flex justify-between gap-4">
                   <dt className="text-brand-cream/60">Bank</dt>

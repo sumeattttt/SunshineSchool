@@ -8,7 +8,7 @@ import { ArrowUpRight, Heart, Shield, Sparkles, Target, Users, Zap } from "lucid
 export const metadata = {
   title: "About the School",
   description:
-    "Since 2010, Sunshine School has been a non-profit home for children and adults with autism and other developmental disabilities — founded and led by Mrs Paramita Mazumdar.",
+    "Since 2010, Sunshine School has been a non-profit home for children and adults with autism and other developmental disabilities — led by Mrs. Paramita Mazumder.",
 }
 
 const VALUES = [
@@ -52,12 +52,12 @@ const VISIONARIES = [
   },
   {
     name: "Ms. Sagarika Das",
-    role: "Treasurer, Sunshine Educational Society",
+    role: "Treasurer, Sunshine Education Society",
     bio: "President of Sagarika Music Pvt. Ltd. A young, energetic entrepreneur involved with children's welfare organisations.",
   },
   {
-    name: "Mrs. Paramita Mazumdar",
-    role: "Principal & Co-founder",
+    name: "Mrs. Paramita Mazumder",
+    role: "Principal & Secretary, Sunshine Education Society",
     bio: "Qualified special educator and counsellor; parent of an autistic young adult. Principal of Sunshine School since its inception.",
   },
 ]
@@ -68,7 +68,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="About Sunshine"
         title="A school built out of love, for children who learn differently."
-        description="The Sunshine Educational Trust and Society is a non-profit organisation that provides quality education and rehabilitation through two flagship initiatives — Sunshine School and the Sunshine Sheltered Workshop."
+        description="Sunshine School for Differently-Abled Children, an initiative of Sunshine Education Society, is a non-profit organization dedicated to providing quality education, rehabilitation, and holistic development opportunities for children with special needs."
         crumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
       />
 
@@ -93,20 +93,10 @@ export default function AboutPage() {
                 Sunshine School — for differently-abled children
               </h2>
               <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-                Mrs. Paramita Mazumdar — principal since our inception — has a
-                son with autism (now 20 years old), and this was one of the
-                driving factors for her to take the initiative of starting
-                Sunshine School. It was founded so that differently-abled
-                children, who are unable to fit into mainstream schools, could
-                be provided with appropriate curricular and extra-curricular
-                training.
+                Sunshine School for Differently-Abled Children, an initiative of Sunshine Education Society, is a non-profit organization dedicated to providing quality education, rehabilitation, and holistic development opportunities for children with special needs. Mrs. Paramita Mazumder — Principal & Secretary — has a son with autism, which was the driving factor for starting this initiative.
               </p>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                Started on a small scale with just{" "}
-                <span className="text-brand-ink">6 students</span> (including
-                Paramita&apos;s son), today the school has bloomed to cater to{" "}
-                <span className="text-brand-ink">80+ students</span> ranging
-                from age 3 to 17 years.
+                Established with the aim of creating an inclusive and nurturing environment, the school supports children with Autism Spectrum Disorder and other developmental disabilities through individualized education, therapies, skill development, and vocational training. The school focuses on Early Intervention, Academic and Functional Academics, Pre-Vocational and Vocational Training, along with extracurricular activities.
               </p>
             </div>
           </article>
@@ -156,9 +146,9 @@ export default function AboutPage() {
                 Vision
               </div>
               <h3 className="mt-5 font-display text-4xl leading-[1.05] text-white md:text-5xl">
-                All differently-abled children and adults meet their{" "}
+                “All Differently Abled Children and Adults meet their{" "}
                 <span className="italic text-brand-yellow">
-                  maximum potential.
+                  maximum potential.”
                 </span>
               </h3>
             </div>
@@ -168,10 +158,7 @@ export default function AboutPage() {
                 Mission
               </div>
               <h3 className="mt-5 font-display text-3xl leading-[1.15] text-white md:text-4xl">
-                We promote social integration and independence among
-                differently-abled children and adults by providing personalised
-                quality education in a nurturing environment — and guidance to
-                their families.
+                To promote social integration and independence among differently-abled children and adults by providing personalized quality education in a nurturing environment and by guiding and supporting their families.
               </h3>
             </div>
           </div>
