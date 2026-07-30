@@ -172,7 +172,15 @@ export function SiteFooter() {
 
         <div className="mt-16 flex flex-col items-start justify-between gap-3 border-t border-white/10 pt-6 text-xs text-white/50 sm:flex-row sm:items-center">
           <p>
-            © {new Date().getFullYear()} Sunshine Education Society. All rights reserved.
+            © {new Date().getFullYear()} Sunshine Education Society. All rights reserved. • Developed by{" "}
+            <a
+              href="https://www.instagram.com/ssum.eatt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-white hover:underline"
+            >
+              Sumeet Yadav
+            </a>
           </p>
           <div className="flex gap-5">
             <Link href="/about" className="hover:text-white">Privacy</Link>

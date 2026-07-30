@@ -134,6 +134,69 @@ export default function AboutPage() {
             </div>
           </article>
         </div>
+
+        {/* 3-Image Grid */}
+        <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div>
+            <div className="group relative aspect-[4/3] overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
+              <Image
+                src="/images/award01.jpeg"
+                alt="Awards"
+                fill
+                sizes="(min-width: 768px) 33vw, 100vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div className="mt-5">
+              <div className="text-[11px] uppercase tracking-[0.2em] text-brand-red">
+                Nipman Foundation – Microsoft Equal Opportunity Awards 2019
+              </div>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                Honoured with the Microsoft Equal Opportunity Award 2019 by the Nipman Foundation in recognition of outstanding efforts toward promoting inclusion, accessibility, and equal opportunities for persons with disabilities.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div className="group relative aspect-[4/3] overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
+              <Image
+                src="/images/award02.jpeg"
+                alt="Awards"
+                fill
+                sizes="(min-width: 768px) 33vw, 100vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div className="mt-5">
+              <div className="text-[11px] uppercase tracking-[0.2em] text-brand-red">
+                Bank of Baroda – SaluteHerShakti Award
+              </div>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                Recognized with the SaluteHerShakti Award by Bank of Baroda for inspiring leadership and dedicated work in empowering women and creating a positive social impact through inclusive initiatives.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div className="group relative aspect-[4/3] overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
+              <Image
+                src="/images/award03.jpeg"
+                alt="Awards"
+                fill
+                sizes="(min-width: 768px) 33vw, 100vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div className="mt-5">
+              <div className="text-[11px] uppercase tracking-[0.2em] text-brand-red">
+                Navi Mumbai Municipal Corporation (NMMC) – Disability Sector Recognition
+              </div>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                Mrs. Paramita Mazumder was felicitated by the Navi Mumbai Municipal Corporation (NMMC) for her significant contribution to the disability sector, acknowledging her commitment to advocacy, inclusion, and community development.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Vision & Mission */}
