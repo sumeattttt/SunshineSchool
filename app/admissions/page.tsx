@@ -7,7 +7,7 @@ import { CalendarCheck, FileText, MessageSquare, PhoneCall, Users } from "lucide
 export const metadata = {
   title: "Admissions",
   description:
-    "Admissions are open at Sunshine School. Complete the admission form for your child — an online assessment will be conducted before admission is confirmed.",
+    "Admissions are open at Sunshine School. Offline Assessment and Admission Forms for Ages 4 and Above.",
 }
 
 const STEPS = [
@@ -26,8 +26,8 @@ const STEPS = [
   {
     step: "03",
     icon: CalendarCheck,
-    title: "Online assessment",
-    body: "An online assessment is conducted to understand your child's strengths and needs.",
+    title: "Offline assessment",
+    body: "An offline assessment is conducted to understand your child's strengths and needs.",
   },
   {
     step: "04",
@@ -105,7 +105,7 @@ export default function AdmissionsPage() {
               <p className="mt-5 text-base leading-relaxed text-muted-foreground">
                 All information you share with us is confidential and used only
                 by our principal and education team to plan your child&apos;s
-                onboarding. An online assessment will be conducted before
+                onboarding. An offline assessment will be conducted before
                 admission is confirmed.
               </p>
               <div className="mt-8 rounded-2xl border border-border bg-background p-5">

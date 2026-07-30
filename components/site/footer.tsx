@@ -36,7 +36,7 @@ export function SiteFooter() {
           </div>
           <div className="flex flex-col justify-end gap-4">
             <p className="max-w-md text-base leading-relaxed text-white/70">
-              Since 2010, Sunshine School has been a home for differently-abled
+              Since 2006, Sunshine School has been a home for differently-abled
               children and adults — with personalised learning, therapy and
               vocational training delivered with love.
             </p>

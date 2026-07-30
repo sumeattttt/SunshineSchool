@@ -6,7 +6,7 @@ const EVENTS = [
     date: "Rolling",
     tag: "Admissions",
     title: "Admissions open for academic year 2026–27",
-    body: "Online assessment and personal interviews being conducted for early intervention, academic and vocational programmes.",
+    body: "Offline Assessment and Admission Forms for Ages 4 and Above.",
     href: "/admissions",
     highlight: true,
   },

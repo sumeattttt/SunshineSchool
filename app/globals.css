@@ -12,41 +12,43 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.18 0.015 40);
 
-  /* Brand: warm red */
-  --primary: oklch(0.58 0.18 27);             /* sunshine warm red */
+  /* Brand: primary blue */
+  --primary: oklch(0.52 0.22 250);            /* sunshine royal blue */
   --primary-foreground: oklch(0.99 0.005 95);
 
-  /* Accent: sunshine yellow */
-  --accent: oklch(0.9 0.17 95);               /* vivid sunshine yellow */
-  --accent-foreground: oklch(0.2 0.02 50);
+  /* Accent: sunshine vibrant blue */
+  --accent: oklch(0.52 0.22 250);             /* vivid sunshine blue */
+  --accent-foreground: oklch(0.99 0.005 95);
 
-  /* Secondary: warm cream */
-  --secondary: oklch(0.97 0.015 85);
-  --secondary-foreground: oklch(0.22 0.02 40);
+  /* Secondary: soft blue tint */
+  --secondary: oklch(0.96 0.03 245);
+  --secondary-foreground: oklch(0.2 0.05 250);
 
-  --muted: oklch(0.96 0.01 85);
-  --muted-foreground: oklch(0.5 0.015 45);
+  --muted: oklch(0.96 0.015 245);
+  --muted-foreground: oklch(0.5 0.03 250);
 
   --destructive: oklch(0.58 0.22 27);
   --destructive-foreground: oklch(0.99 0 0);
 
-  --border: oklch(0.9 0.01 80);
-  --input: oklch(0.92 0.01 80);
-  --ring: oklch(0.58 0.18 27);
+  --border: oklch(0.9 0.02 245);
+  --input: oklch(0.92 0.02 245);
+  --ring: oklch(0.52 0.22 250);
 
   /* Brand tokens */
-  --brand-red: oklch(0.58 0.18 27);
-  --brand-red-dark: oklch(0.45 0.18 27);
-  --brand-yellow: oklch(0.9 0.17 95);
-  --brand-yellow-soft: oklch(0.97 0.08 95);
-  --brand-cream: oklch(0.985 0.02 85);
-  --brand-ink: oklch(0.18 0.015 40);
+  --brand-red: oklch(0.52 0.22 250);          /* primary brand blue */
+  --brand-red-dark: oklch(0.42 0.22 250);     /* dark brand blue */
+  --brand-blue: oklch(0.52 0.22 250);
+  --brand-blue-soft: oklch(0.95 0.04 245);
+  --brand-yellow: oklch(0.52 0.22 250);
+  --brand-yellow-soft: oklch(0.95 0.04 245);
+  --brand-cream: oklch(0.975 0.02 245);
+  --brand-ink: oklch(0.15 0.04 255);
 
-  --chart-1: oklch(0.58 0.18 27);
-  --chart-2: oklch(0.9 0.17 95);
-  --chart-3: oklch(0.55 0.08 60);
-  --chart-4: oklch(0.35 0.02 40);
-  --chart-5: oklch(0.75 0.12 65);
+  --chart-1: oklch(0.52 0.22 250);
+  --chart-2: oklch(0.6 0.18 230);
+  --chart-3: oklch(0.55 0.08 240);
+  --chart-4: oklch(0.35 0.02 250);
+  --chart-5: oklch(0.75 0.12 245);
 
   --radius: 0.75rem;
 
@@ -178,7 +180,7 @@
     to { transform: translateX(-50%); }
   }
   .underline-squiggle {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 8'><path d='M0 4 Q 15 0 30 4 T 60 4 T 90 4 T 120 4' stroke='%23F5B400' stroke-width='3' fill='none' stroke-linecap='round'/></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 8'><path d='M0 4 Q 15 0 30 4 T 60 4 T 90 4 T 120 4' stroke='%232563EB' stroke-width='3' fill='none' stroke-linecap='round'/></svg>");
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: 100% 0.4em;

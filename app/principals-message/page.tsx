@@ -56,7 +56,7 @@ export default function PrincipalsMessagePage() {
               strokeWidth={1.5}
             />
             <p className="mt-6 font-display text-3xl leading-[1.2] text-brand-ink md:text-4xl">
-              &ldquo;Every child has a world inside them. Our job is simply to
+              &ldquo;Every individual has a world inside them. Our job is simply to
               help it come out — gently, patiently, and on their own terms.&rdquo;
             </p>
 

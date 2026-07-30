@@ -3,12 +3,12 @@ import Image from "next/image"
 import { ArrowUpRight } from "lucide-react"
 
 const IMAGES = [
-  { src: "/images/art-class.jpg", alt: "Children painting in art class" },
-  { src: "/images/music.jpg", alt: "Music and dance class" },
-  { src: "/images/sports.jpg", alt: "Sports day at Sunshine" },
-  { src: "/images/event.jpg", alt: "Annual day performance" },
-  { src: "/images/bakery.jpg", alt: "Vocational bakery training" },
-  { src: "/images/reading.jpg", alt: "Reading with teacher" },
+  { src: "/images/annual.jpg", alt: "Annual Day" },
+  { src: "/images/christmas.jpg", alt: "Christmas Gifts" },
+  { src: "/images/medical.jpg", alt: "Medical Checkup" },
+  { src: "/images/awarenessrun.jpg", alt: "Autism Awareness Run" },
+  { src: "/images/workshop.jpg", alt: "Sheltered workshop" },
+  { src: "/images/cooking.jpg", alt: "Cooking Competition" },
 ]
 
 export function GalleryPreview() {
@@ -36,9 +36,8 @@ export function GalleryPreview() {
         {IMAGES.map((img, i) => (
           <div
             key={img.src}
-            className={`group relative overflow-hidden rounded-2xl border border-border bg-card ${
-              i === 0 ? "col-span-2 row-span-2 aspect-square" : "aspect-square"
-            }`}
+            className={`group relative overflow-hidden rounded-2xl border border-border bg-card ${i === 0 ? "col-span-2 row-span-2 aspect-square" : "aspect-square"
+              }`}
           >
             <Image
               src={img.src}

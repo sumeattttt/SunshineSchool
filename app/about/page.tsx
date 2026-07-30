@@ -8,7 +8,7 @@ import { ArrowUpRight, Heart, Shield, Sparkles, Target, Users, Zap } from "lucid
 export const metadata = {
   title: "About the School",
   description:
-    "Since 2010, Sunshine School has been a non-profit home for children and adults with autism and other developmental disabilities — led by Mrs. Paramita Mazumder.",
+    "Since 2006, Sunshine School has been a non-profit organization for children and adults with autism and other developmental disabilities — led by Mrs. Paramita Mazumder.",
 }
 
 const VALUES = [
@@ -78,7 +78,7 @@ export default function AboutPage() {
           <article className="relative">
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border">
               <Image
-                src="/images/classroom.jpg"
+                src="/images/staff.jpg"
                 alt="Sunshine School classroom"
                 fill
                 sizes="(min-width: 1024px) 48vw, 100vw"
@@ -87,7 +87,7 @@ export default function AboutPage() {
             </div>
             <div className="mt-8">
               <div className="text-[11px] uppercase tracking-[0.2em] text-brand-red">
-                Since 2010
+                Since 2006
               </div>
               <h2 className="mt-3 font-display text-3xl text-brand-ink md:text-4xl">
                 Sunshine School — for differently-abled children

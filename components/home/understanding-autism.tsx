@@ -63,7 +63,7 @@ export function UnderstandingAutism() {
           <div className="relative order-1 lg:order-2">
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border">
               <Image
-                src="/images/parents.jpg"
+                src="/images/autism.jpeg"
                 alt="A parent and child at Sunshine"
                 fill
                 sizes="(min-width: 1024px) 45vw, 100vw"

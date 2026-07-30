@@ -23,20 +23,17 @@ export function Hero() {
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background/80 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-brand-red backdrop-blur">
               <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brand-red" />
-              A school for differently-abled children · Since 2010
+              An Organisation for differently-abled children · Since 2006
             </div>
 
             <h1 className="mt-6 font-display text-[2.75rem] leading-[1.02] tracking-tight text-brand-ink text-balance sm:text-6xl lg:text-[5.25rem]">
-              Where every child <br className="hidden md:block" />
-              <span className="italic">learns to </span>
+              Where every individual <br className="hidden md:block" />
+              <span className="italic">learns to be </span>
               <span className="underline-squiggle italic">shine.</span>
             </h1>
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              Sunshine School provides personalised, quality education,
-              therapy and vocational training for children and young adults
-              on the Autism Spectrum and with other developmental
-              disabilities — in a warm, nurturing home in Vashi, Navi Mumbai.
+              Sunshine education society provides personalised, quality education, therapy and vocational training for children and young adults on the Autism Spectrum and with other developmental disabilities — in a warm, Nurturing atmosphere in Vashi, Navi Mumbai
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-3">
@@ -84,7 +81,7 @@ export function Hero() {
                   ))}
                 </div>
                 <div className="mt-1 text-sm text-muted-foreground">
-                  <span className="font-medium text-brand-ink">80+ students</span>{" "}
+                  <span className="font-medium text-brand-ink">200+ students</span>{" "}
                   nurtured across early intervention, academics & vocational programmes.
                 </div>
               </div>
@@ -149,10 +146,10 @@ export function Hero() {
                   Established
                 </div>
                 <div className="mt-2 font-display text-3xl leading-none md:text-4xl">
-                  2010
+                  2006
                 </div>
                 <div className="mt-1 text-xs text-white/70">
-                  14+ years of personalised care in Navi Mumbai
+                  20+ years of personalised care in Navi Mumbai
                 </div>
               </div>
             </div>

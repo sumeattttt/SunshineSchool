@@ -6,25 +6,25 @@ const CARDS = [
     eyebrow: "Admissions",
     title: "Apply for 2026–27",
     description:
-      "Online assessment and admission forms for children aged 3–19 years.",
+      "Offline Assessment and Admission Forms for Ages 4 and Above.",
     href: "/admissions",
     icon: ClipboardList,
     accent: "bg-brand-yellow text-brand-ink",
   },
   {
     eyebrow: "Academics",
-    title: "Our Curriculum",
+    title: "Open Basic Education (OBE)",
     description:
-      "Pratham, NIOS & Individualised Education Programmes tailored to every child.",
+      "Secondary and Senior Secondary from NIOS and Individualised Education Programmes tailored to every student.",
     href: "/academics",
     icon: GraduationCap,
     accent: "bg-brand-red text-white",
   },
   {
-    eyebrow: "Facilities",
+    eyebrow: "Initiatives",
     title: "School & Workshop",
     description:
-      "Sensory-safe classrooms, therapy rooms and a sheltered vocational workshop.",
+      "Sensory Support Learning Space.",
     href: "/facilities",
     icon: Building2,
     accent: "bg-brand-ink text-white",

@@ -1,18 +1,17 @@
 import Link from "next/link"
-import Image from "next/image"
 import { ArrowUpRight, Check } from "lucide-react"
 
 const PILLARS = [
   {
     title: "Sunshine School",
-    subtitle: "For differently-abled children · since 2010",
-    body: "Started with just 6 students, today we nurture 80+ children aged 3 to 19 through personalised learning, therapy and extracurriculars.",
+    subtitle: "For differently-abled children · since 2006",
+    body: "Started with just 6 students, today we nurture 80+ children aged 3 to 18+ through personalised learning, therapy and extracurriculars.",
     href: "/about",
   },
   {
     title: "Sheltered Workshop",
     subtitle: "For differently-abled adults · since 2018",
-    body: "A vocational space where 18+ trainees aged 18 to 30 build community living, work skills and independence with dignity.",
+    body: "A vocational space where 18+ trainees aged 18+ build community living, work skills and independence with dignity.",
     href: "/facilities#workshop",
   },
 ]
@@ -23,27 +22,27 @@ export function AboutPreview() {
       <div className="container-x py-20 md:py-28">
         <div className="grid gap-14 lg:grid-cols-[1.05fr_1fr] lg:gap-20">
           <div className="relative">
-            <div className="relative aspect-[5/6] overflow-hidden rounded-3xl border border-border">
-              <Image
-                src="/images/classroom.jpg"
-                alt="A warm Sunshine School classroom"
-                fill
-                sizes="(min-width: 1024px) 48vw, 100vw"
-                className="object-cover"
+            <div className="relative aspect-[5/6] overflow-hidden rounded-3xl border border-border bg-black shadow-lg">
+              <iframe
+                src="https://www.youtube.com/embed/QGGO0D6gyhE"
+                title="Sunshine Education Society Video"
+                className="h-full w-full border-0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
               />
             </div>
-            <div className="absolute -right-4 bottom-6 hidden w-56 rounded-2xl border border-border bg-background p-5 shadow-xl shadow-black/5 md:block">
+            <div className="absolute -right-4 bottom-6 hidden w-56 rounded-2xl border border-border bg-background p-5 shadow-xl shadow-black/5 md:block z-10 pointer-events-none">
               <div className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
                 Our Promise
               </div>
               <p className="mt-2 font-display text-xl leading-tight text-brand-ink">
-                &ldquo;We see every child&apos;s potential — and help it grow.&rdquo;
+                &ldquo;We see every student&apos;s potential — and help it grow.&rdquo;
               </p>
             </div>
 
-            <div className="absolute -left-4 -top-4 hidden h-24 w-24 items-center justify-center rounded-full bg-brand-yellow text-center font-display text-brand-ink md:flex">
+            <div className="absolute -left-4 -top-4 hidden h-24 w-24 items-center justify-center rounded-full bg-brand-yellow text-center font-display text-brand-ink md:flex z-10 pointer-events-none">
               <span className="leading-tight">
-                80+
+                200+
                 <br />
                 <span className="text-[10px] uppercase tracking-[0.2em] not-italic">
                   students
@@ -58,7 +57,7 @@ export function AboutPreview() {
               Get to know us
             </div>
             <h2 className="mt-5 font-display text-4xl leading-[1.02] text-brand-ink text-balance md:text-5xl lg:text-6xl">
-              A non-profit home for differently-abled children & adults.
+              A non-profit organisation for differently-abled children & adults.
             </h2>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
               Sunshine Education Society is a non-profit

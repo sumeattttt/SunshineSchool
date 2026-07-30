@@ -25,11 +25,11 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL("https://sunshineschool.org.in"),
   title: {
-    default: "Sunshine School — A School for Differently-Abled Children",
+    default: "Sunshine School — An Organisation for Differently-Abled Children",
     template: "%s · Sunshine School",
   },
   description:
-    "Sunshine School in Vashi, Navi Mumbai provides personalised, quality education and rehabilitation for children and young adults on the Autism Spectrum and with other developmental disabilities. Since 2010.",
+    "Sunshine School in Vashi, Navi Mumbai provides personalised, quality education and rehabilitation for children and young adults on the Autism Spectrum and with other developmental disabilities. Since 2006.",
   keywords: [
     "Sunshine School",
     "Sunshine School Vashi",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   publisher: "Sunshine School",
   category: "Education",
   openGraph: {
-    title: "Sunshine School — A School for Differently-Abled Children",
+    title: "Sunshine School — An Organisation for Differently-Abled Children",
     description:
       "Personalised quality education, therapy and vocational training for children and young adults with autism and other developmental disabilities.",
     url: "https://sunshineschool.org.in",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sunshine School — A School for Differently-Abled Children",
+    title: "Sunshine School — An Organisation for Differently-Abled Children",
     description:
       "Personalised quality education, therapy and vocational training for children and young adults with autism and other developmental disabilities. Vashi, Navi Mumbai.",
   },

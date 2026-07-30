@@ -1,6 +1,6 @@
 const STATS = [
-  { value: "14+", label: "Years nurturing differently-abled children" },
-  { value: "80+", label: "Students across early intervention, academics & vocational" },
+  { value: "20+", label: "Years nurturing differently-abled children" },
+  { value: "200+", label: "Students across early intervention, academics & vocational" },
   { value: "21+", label: "Special educators, therapists & support staff" },
   { value: "18+", label: "Young adults training at our sheltered workshop" },
 ]

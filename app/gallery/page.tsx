@@ -11,15 +11,14 @@ export const metadata: Metadata = {
 
 const IMAGES = [
   { src: "/images/hero-students.jpg", alt: "Classroom moments", label: "Learning together" },
-  { src: "/images/art-class.jpg", alt: "Art class", label: "Colours & creativity" },
-  { src: "/images/music.jpg", alt: "Music and dance", label: "Music & movement" },
+  { src: "/images/cooking.jpg", alt: "Cooking Competition", label: "Cooking Competition" },
+  { src: "/images/awarenessrun.jpg", alt: "Autism Awareness Run", label: "Autism Awareness Run" },
   { src: "/images/therapy.jpg", alt: "Therapy session", label: "Therapy sessions" },
-  { src: "/images/sports.jpg", alt: "Sports day", label: "Sports day" },
+  { src: "/images/picnic.jpg", alt: "Picnic day", label: "Picnic Day" },
   { src: "/images/workshop.jpg", alt: "Sheltered workshop", label: "Sheltered workshop" },
-  { src: "/images/reading.jpg", alt: "Reading time", label: "Reading circle" },
-  { src: "/images/bakery.jpg", alt: "Bakery training", label: "Bakery training" },
-  { src: "/images/event.jpg", alt: "Annual day", label: "Annual day" },
-  { src: "/images/classroom.jpg", alt: "Classroom", label: "Our classrooms" },
+  { src: "/images/medical.jpg", alt: "Medical Checkup", label: "Medical Checkup" },
+  { src: "/images/annual.jpg", alt: "Annual day", label: "Annual day" },
+  { src: "/images/christmas.jpg", alt: "Christmas Gifts", label: "Christmas Gifts" },
   { src: "/images/parents.jpg", alt: "With parents", label: "Parent bonds" },
   { src: "/images/hero-students.jpg", alt: "School moments", label: "Everyday joy" },
 ]
@@ -62,8 +61,8 @@ export default function GalleryPage() {
                 (idx % 7 === 0
                   ? "col-span-2 row-span-2 aspect-square"
                   : idx % 5 === 0
-                  ? "aspect-[3/4]"
-                  : "aspect-square")
+                    ? "aspect-[3/4]"
+                    : "aspect-square")
               }
             >
               <Image
