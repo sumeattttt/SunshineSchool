@@ -99,7 +99,7 @@ export function SiteFooter() {
                 </a>
               ))}
               <a
-                href="https://wa.me/9198850477964"
+                href="https://wa.me/918850477964"
                 aria-label="WhatsApp"
                 target="_blank"
                 rel="noreferrer"

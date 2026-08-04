@@ -133,7 +133,7 @@ export default function ContactPage() {
                   <Phone className="h-3.5 w-3.5" /> Call Admissions
                 </a>
                 <a
-                  href="https://wa.me/9198850477964"
+                  href="https://wa.me/918850477964"
                   className="inline-flex items-center gap-1.5 rounded-full border border-brand-cream/30 px-4 py-2 text-sm font-medium text-brand-cream hover:bg-brand-cream/10"
                   target="_blank"
                   rel="noreferrer"

@@ -5,7 +5,7 @@ import { Facebook, Instagram, Youtube, Phone } from "lucide-react"
 const SOCIAL_ITEMS = [
   {
     label: "WhatsApp Us",
-    href: "https://wa.me/9198850477964",
+    href: "https://wa.me/918850477964",
     bg: "bg-[#25D366] hover:bg-[#20ba5a]",
     icon: (
       <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
@@ -33,7 +33,7 @@ const SOCIAL_ITEMS = [
   },
   {
     label: "Call Us",
-    href: "tel:+9198850477964",
+    href: "tel:+918850477964",
     bg: "bg-[#2563EB] hover:bg-[#1d4ed8]",
     icon: <Phone className="h-5 w-5 text-white" />,
   },
