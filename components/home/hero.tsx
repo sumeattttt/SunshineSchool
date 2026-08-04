@@ -27,7 +27,7 @@ export function Hero() {
             </div>
 
             <h1 className="mt-6 font-display text-[2.75rem] leading-[1.02] tracking-tight text-brand-ink text-balance sm:text-6xl lg:text-[5.25rem]">
-              Where everyone individual <br className="hidden md:block" />
+              Where every individual <br className="hidden md:block" />
               <span className="underline-squiggle italic">learns to shine.</span>
             </h1>
 

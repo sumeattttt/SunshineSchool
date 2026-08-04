@@ -68,7 +68,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="About Sunshine"
         title="A school built out of love, for children who learn differently."
-        description="Sunshine School for Differently-Abled Children, an initiative of Sunshine Education Society, is a non-profit organization dedicated to providing quality education, rehabilitation, and holistic development opportunities for children with special needs."
+        description="Sunshine School for Differently-Abled Children, an initiative of Sunshine Education Society, is a non-profit organization dedicated to provide quality education, rehabilitation, and holistic development opportunities for children with special needs."
         crumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
       />
 
@@ -93,7 +93,7 @@ export default function AboutPage() {
                 Sunshine School — for differently-abled children
               </h2>
               <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-                Sunshine School for Differently-Abled Children, an initiative of Sunshine Education Society, is a non-profit organization dedicated to providing quality education, rehabilitation, and holistic development opportunities for children with special needs. Mrs. Paramita Mazumder — Principal & Secretary — has a son with autism, which was the driving factor for starting this initiative.
+                Sunshine School for Differently-Abled Children, an initiative of Sunshine Education Society, is a non-profit organization dedicated to provide quality education, rehabilitation, and holistic development opportunities for children with special needs. Mrs. Paramita Mazumder — Principal & Secretary — has a son with autism, which was the driving factor for starting this initiative.
               </p>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                 Established with the aim of creating an inclusive and nurturing environment, the school supports children with Autism Spectrum Disorder and other developmental disabilities through individualized education, therapies, skill development, and vocational training. The school focuses on Early Intervention, Academic and Functional Academics, Pre-Vocational and Vocational Training, along with extracurricular activities.
