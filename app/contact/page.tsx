@@ -20,7 +20,7 @@ const CONTACT_DETAILS = [
       "Sec-2, Opp. Vashi Police Station",
       "Vashi, Navi Mumbai - 400703",
     ],
-    action: { label: "Get Directions", href: "https://maps.app.goo.gl/aPLDwRjSv25NnzpL7" },
+    action: { label: "Get Directions", href: "https://maps.app.goo.gl/mL3VxnjEywBiG8Zv8" },
   },
   {
     icon: MapPin,
@@ -113,17 +113,17 @@ export default function ContactPage() {
             <div className="overflow-hidden rounded-3xl border border-border">
               <iframe
                 title="Sunshine School location in Vashi, Navi Mumbai"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8359287515!2d73.001!3d19.071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA0JzE1LjYiTiA3M8KwMDAnMDMuNiJF!5e0!3m2!1sen!2sin!4v1"
-                className="h-[360px] w-full"
+                src="https://maps.google.com/maps?q=Sunshine+School+for+Differently-Abled+Children+Vashi+Navi+Mumbai&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                className="h-[360px] w-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
             <div className="rounded-3xl border border-border bg-brand-ink p-8 text-brand-cream">
-              <h3 className="font-serif text-2xl">Prefer a call?</h3>
+              <h3 className="font-serif text-2xl">Prefer a call or message?</h3>
               <p className="mt-2 text-sm text-brand-cream/80 leading-relaxed">
-                Our admissions team is available Monday through Friday between
-                9:30 AM and 3:00 PM to walk you through our programs.
+                Our team is available Monday through Friday between
+                9:30 AM and 3:00 PM to answer all your queries.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
@@ -133,12 +133,12 @@ export default function ContactPage() {
                   <Phone className="h-3.5 w-3.5" /> Call Admissions
                 </a>
                 <a
-                  href="https://wa.me/919930530543"
+                  href="https://wa.me/9198850477964"
                   className="inline-flex items-center gap-1.5 rounded-full border border-brand-cream/30 px-4 py-2 text-sm font-medium text-brand-cream hover:bg-brand-cream/10"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  WhatsApp
+                  WhatsApp Us
                 </a>
               </div>
             </div>
