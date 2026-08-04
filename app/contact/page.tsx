@@ -110,12 +110,13 @@ export default function ContactPage() {
           </div>
 
           <div className="space-y-6">
-            <div className="overflow-hidden rounded-3xl border border-border">
+            <div className="overflow-hidden rounded-3xl border border-border shadow-sm">
               <iframe
                 title="Sunshine School location in Vashi, Navi Mumbai"
-                src="https://maps.google.com/maps?q=Sunshine+School+for+Differently-Abled+Children+Vashi+Navi+Mumbai&t=&z=16&ie=UTF8&iwloc=&output=embed"
-                className="h-[360px] w-full border-0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.781846985794!2d72.9953277!3d19.0725982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c14a85e2e851%3A0x48d2cacf7bed75a2!2sSunshine%20School%20For%20Differently%20Abled%20Children!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                className="h-[380px] w-full border-0"
                 loading="lazy"
+                allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
