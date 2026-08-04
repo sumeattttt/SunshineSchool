@@ -1,8 +1,7 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import { PageHeader } from "@/components/site/page-header"
-import { DonateForm } from "@/components/donate/donate-form"
-import { Heart, ShieldCheck, FileBadge, BookOpen, Bus, Utensils } from "lucide-react"
+import { Heart, ShieldCheck, FileBadge, BookOpen, Bus, Utensils, Building2 } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Donate | Sunshine School",
@@ -83,25 +82,58 @@ export default function DonatePage() {
       </section>
 
       <section className="border-t border-border bg-brand-cream/40 py-16 md:py-24">
-        <div className="container-x grid gap-12 lg:grid-cols-[1.1fr_1fr]">
-          <div className="rounded-3xl border border-border bg-card p-8 md:p-10">
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-brand-yellow-soft px-3 py-1 text-xs font-medium text-brand-ink">
-              <Heart className="h-3 w-3" /> Make a donation
+        <div className="container-x grid gap-12 lg:grid-cols-[1.2fr_1fr]">
+          <div className="rounded-3xl border border-border bg-brand-ink p-8 md:p-10 text-white">
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-1 text-xs font-semibold text-brand-yellow">
+              <Building2 className="h-3.5 w-3.5" /> Direct Bank Transfer
             </div>
-            <h2 className="mt-4 font-serif text-3xl text-brand-ink md:text-4xl">
-              Contribute today
+            <h2 className="mt-5 font-serif text-3xl text-white md:text-4xl">
+              Support via Direct Bank Deposit / NEFT / RTGS
             </h2>
-            <p className="mt-3 text-muted-foreground">
-              All donations are eligible for tax exemption under Section 80G of
-              the Income Tax Act.
+            <p className="mt-3 text-white/80 text-sm leading-relaxed">
+              You can transfer your donations directly to our official bank account. All contributions are eligible for 80G Tax Exemption.
             </p>
-            <div className="mt-8">
-              <DonateForm />
-            </div>
+
+            <dl className="mt-8 grid gap-4 sm:grid-cols-2 rounded-2xl border border-white/15 bg-white/5 p-6 text-sm">
+              <div>
+                <dt className="text-xs uppercase tracking-wider text-white/60">Account Name</dt>
+                <dd className="mt-1 font-medium text-white text-base">Sunshine Education Society</dd>
+              </div>
+              <div>
+                <dt className="text-xs uppercase tracking-wider text-white/60">Account Number</dt>
+                <dd className="mt-1 font-mono font-bold text-brand-yellow text-lg">11202011008402</dd>
+              </div>
+              <div>
+                <dt className="text-xs uppercase tracking-wider text-white/60">Account Type</dt>
+                <dd className="mt-1 font-medium text-white">Savings Account</dd>
+              </div>
+              <div>
+                <dt className="text-xs uppercase tracking-wider text-white/60">Bank Name</dt>
+                <dd className="mt-1 font-medium text-white">Punjab National Bank (PNB)</dd>
+              </div>
+              <div>
+                <dt className="text-xs uppercase tracking-wider text-white/60">IFSC Code</dt>
+                <dd className="mt-1 font-mono font-bold text-brand-yellow text-base">PUNB0112010</dd>
+              </div>
+              <div>
+                <dt className="text-xs uppercase tracking-wider text-white/60">Branch</dt>
+                <dd className="mt-1 font-medium text-white">Thane, Vashi Sector 14</dd>
+              </div>
+              <div className="sm:col-span-2 border-t border-white/15 pt-3 mt-1">
+                <dt className="text-xs uppercase tracking-wider text-white/60">Branch Address</dt>
+                <dd className="mt-1 text-xs text-white/80 leading-relaxed">
+                  Shop No 12, 13, 14, Sai Pooja Chs, Plot No-52, Sector-14, Vashi, Navi-mumbai.
+                </dd>
+              </div>
+            </dl>
+
+            <p className="mt-6 text-xs text-white/70">
+              * Note: Please email us your transfer details at <span className="text-brand-yellow font-medium">sunshine.vashi@gmail.com</span> along with your PAN card number so we can issue your 80G tax receipt.
+            </p>
           </div>
 
           <div className="space-y-6">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border">
               <Image
                 src="/images/hero-students.jpg"
                 alt="Students at Sunshine School"
@@ -119,7 +151,7 @@ export default function DonatePage() {
                     80G Tax Exemption
                   </div>
                   <p className="mt-0.5 text-sm text-muted-foreground">
-                    Registered under Section 80G — receipts issued within 7 days.
+                    Registered under Section 80G — tax exemption receipts issued promptly upon receipt.
                   </p>
                 </div>
               </div>
@@ -135,39 +167,6 @@ export default function DonatePage() {
                   </p>
                 </div>
               </div>
-            </div>
-
-            <div className="rounded-3xl border border-border bg-brand-ink p-6 text-brand-cream">
-              <div className="font-serif text-xl">Bank Transfer Details</div>
-              <dl className="mt-4 space-y-2.5 text-sm">
-                <div className="flex justify-between gap-4">
-                  <dt className="text-brand-cream/60">Account Name</dt>
-                  <dd className="text-right font-medium">Sunshine Education Society</dd>
-                </div>
-                <div className="flex justify-between gap-4">
-                  <dt className="text-brand-cream/60">Account No.</dt>
-                  <dd className="text-right font-mono font-semibold text-brand-yellow">11202011008402</dd>
-                </div>
-                <div className="flex justify-between gap-4">
-                  <dt className="text-brand-cream/60">Account Type</dt>
-                  <dd className="text-right font-medium">Savings Account</dd>
-                </div>
-                <div className="flex justify-between gap-4">
-                  <dt className="text-brand-cream/60">Bank Name</dt>
-                  <dd className="text-right font-medium">Punjab National Bank (PNB)</dd>
-                </div>
-                <div className="flex justify-between gap-4">
-                  <dt className="text-brand-cream/60">IFSC Code</dt>
-                  <dd className="text-right font-mono font-semibold text-brand-yellow">PUNB0112010</dd>
-                </div>
-                <div className="flex justify-between gap-4">
-                  <dt className="text-brand-cream/60">Branch</dt>
-                  <dd className="text-right">Thane, Vashi Sector 14</dd>
-                </div>
-                <div className="mt-2 border-t border-brand-cream/10 pt-2 text-xs text-brand-cream/70">
-                  <span className="font-medium text-brand-cream/90">Address:</span> Shop No 12, 13, 14, Sai Pooja Chs, Plot No-52, Sector-14, Vashi, Navi-mumbai.
-                </div>
-              </dl>
             </div>
           </div>
         </div>
