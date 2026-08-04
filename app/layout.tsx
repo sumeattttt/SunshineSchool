@@ -7,6 +7,7 @@ import "./globals.css"
 import { AnnouncementBar } from "@/components/site/announcement-bar"
 import { SiteNavbar } from "@/components/site/navbar"
 import { SiteFooter } from "@/components/site/footer"
+import { SocialBar } from "@/components/site/social-bar"
 
 const geist = Geist({
   subsets: ["latin"],
@@ -109,6 +110,7 @@ export default function RootLayout({
         <main className="min-h-[60vh]">
           <Suspense>{children}</Suspense>
         </main>
+        <SocialBar />
         <SiteFooter />
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
