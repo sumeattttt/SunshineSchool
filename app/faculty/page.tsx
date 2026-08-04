@@ -156,14 +156,6 @@ export default function FacultyPage() {
           </div>
         </div>
       </section>
-
-      <CtaSection
-        eyebrow="Join the team"
-        title="Want to join our team?"
-        description="We welcome passionate educators, therapists, and volunteers. Teaching at Sunshine is more than a job — it is a calling."
-        primary={{ label: "View Openings", href: "/contact" }}
-        secondary={{ label: "Volunteer With Us", href: "/volunteer" }}
-      />
     </>
   )
 }

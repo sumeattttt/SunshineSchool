@@ -7,6 +7,7 @@ const LINKS = {
     { label: "About", href: "/about" },
     { label: "Principal's Message", href: "/principals-message" },
     { label: "Faculty & Staff", href: "/faculty" },
+    { label: "Sunshine Parents", href: "/sunshine-parents" },
     { label: "Academics", href: "/academics" },
     { label: "Facilities", href: "/facilities" },
   ],
@@ -60,7 +61,9 @@ export function SiteFooter() {
         {/* Main footer grid */}
         <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1.2fr]">
           <div>
-            <Logo mono className="text-white" />
+            <div className="inline-block rounded-xl bg-white p-2.5 shadow-sm">
+              <Logo />
+            </div>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/60">
               An initiative of the Sunshine Education Society — a
               non-profit organisation serving children and adults with autism

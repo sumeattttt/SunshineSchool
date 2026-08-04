@@ -36,11 +36,11 @@ const FACILITIES = [
     icon: Brush,
     title: "Art & Craft Studio",
     description:
-      "A bright studio for painting, clay work, paper craft, and creative expression.",
+      "A bright studio for painting, clay work, paper craft, and creative expression. Part of our Sheltered Workshop program.",
   },
   {
     icon: Music,
-    title: "Music & Dance Room",
+    title: "Music Room",
     description:
       "Instruments, mirrors, and soft flooring — where rhythm becomes therapy and joy.",
   },
@@ -105,41 +105,41 @@ export default function FacilitiesPage() {
 
       <section
         id="workshop"
-        className="border-t border-border bg-brand-ink py-16 text-brand-cream md:py-24 scroll-mt-24"
+        className="border-t border-border bg-[#FACC15] py-16 text-black md:py-24 scroll-mt-24"
       >
         <div className="container-x grid items-center gap-12 lg:grid-cols-2">
           <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-brand-cream/20 bg-brand-cream/5 px-3 py-1 text-xs font-medium text-brand-yellow">
-              <span className="h-1.5 w-1.5 rounded-full bg-brand-yellow" />
+            <div className="inline-flex items-center gap-2 rounded-full border border-black/20 bg-black/5 px-3 py-1 text-xs font-semibold text-black">
+              <span className="h-1.5 w-1.5 rounded-full bg-black" />
               Sheltered Workshop
             </div>
-            <h2 className="mt-5 font-serif text-4xl leading-[1.05] tracking-tight md:text-5xl">
+            <h2 className="mt-5 font-serif text-4xl leading-[1.05] tracking-tight md:text-5xl font-bold">
               Where young adults build{" "}
-              <span className="text-brand-yellow italic">skills and dignity</span>
+              <span className="text-[#15803D] italic">skills and dignity</span>
             </h2>
-            <p className="mt-5 text-brand-cream/80 leading-relaxed">
+            <p className="mt-5 text-black/85 leading-relaxed font-medium">
               Our sheltered workshop is a vocational training unit for
               differently-abled young adults above the age of 18. Under trained
               supervisors, trainees craft handmade paper bags, greeting cards,
               candles, diyas, chocolates and seasonal gifting — products sold to
               corporates and the community.
             </p>
-            <p className="mt-4 text-brand-cream/80 leading-relaxed">
+            <p className="mt-4 text-black/85 leading-relaxed font-medium">
               The program combines purposeful work with social skills, routine,
               and a sense of identity — proving every day that ability comes in
               many forms.
             </p>
-            <div className="mt-8 grid grid-cols-3 gap-4 border-t border-brand-cream/10 pt-8">
+            <div className="mt-8 grid grid-cols-3 gap-4 border-t border-black/15 pt-8">
               {[
-                { v: "25+", l: "Trainees" },
+                { v: "30+", l: "Trainees" },
                 { v: "8+", l: "Product lines" },
                 { v: "100+", l: "Corporate orders" },
               ].map((stat) => (
                 <div key={stat.l}>
-                  <div className="font-serif text-3xl text-brand-yellow">
+                  <div className="font-serif text-3xl font-bold text-[#15803D]">
                     {stat.v}
                   </div>
-                  <div className="mt-1 text-xs uppercase tracking-[0.14em] text-brand-cream/60">
+                  <div className="mt-1 text-xs uppercase tracking-[0.14em] text-black/70 font-semibold">
                     {stat.l}
                   </div>
                 </div>
@@ -148,7 +148,7 @@ export default function FacilitiesPage() {
           </div>
 
           <div className="relative">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-black/10 shadow-xl">
               <Image
                 src="/images/workshop.jpg"
                 alt="Young adults working in the Sunshine sheltered workshop"
@@ -157,11 +157,11 @@ export default function FacilitiesPage() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 hidden w-48 rounded-2xl bg-brand-yellow p-5 text-brand-ink shadow-xl md:block">
+            <div className="absolute -bottom-6 -left-6 hidden w-48 rounded-2xl bg-black p-5 text-white shadow-xl md:block">
               <div className="font-serif text-2xl leading-tight">
                 Order handmade gifts
               </div>
-              <p className="mt-1 text-xs">
+              <p className="mt-1 text-xs text-white/80">
                 Every purchase funds the trainee stipend program.
               </p>
             </div>
@@ -170,11 +170,11 @@ export default function FacilitiesPage() {
       </section>
 
       <CtaSection
-        eyebrow="Visit the campus"
-        title="Come see our campus in person"
-        description="We welcome parents, donors and friends to visit us. Schedule a campus tour at a time that works for you."
-        primary={{ label: "Book a Tour", href: "/contact" }}
-        secondary={{ label: "View Gallery", href: "/gallery" }}
+        eyebrow="a personal invitation"
+        title="Come spend a morning with us."
+        description="Schedule a campus visit and experience our classrooms, therapy rooms and workshop firsthand."
+        primary={{ label: "Book a visit", href: "/contact" }}
+        secondary={{ label: "Read about admissions", href: "/admissions" }}
       />
     </>
   )

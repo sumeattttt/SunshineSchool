@@ -93,6 +93,10 @@ const THERAPIES = [
     title: "Behavioural Therapy",
     body: "Structured, evidence-informed strategies to support positive behaviours and self-regulation.",
   },
+  {
+    title: "Music Therapy",
+    body: "Helps in sensory integration, emotional expression, motor coordination, and communication through rhythm and melody.",
+  },
 ]
 
 export default function AcademicsPage() {
@@ -239,7 +243,7 @@ export default function AcademicsPage() {
           </h2>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {THERAPIES.map((t) => (
             <div key={t.title} className="rounded-3xl border border-border bg-card p-7">
               <h3 className="font-display text-2xl text-brand-ink">{t.title}</h3>
@@ -250,14 +254,6 @@ export default function AcademicsPage() {
           ))}
         </div>
       </section>
-
-      <CtaSection
-        eyebrow="A plan for your child"
-        title="Let&rsquo;s build their journey together."
-        description="We design an Individualised Education Programme for every student. Start by telling us a little about your child."
-        primary={{ label: "Apply for Admission", href: "/admissions" }}
-        secondary={{ label: "Contact Us", href: "/contact" }}
-      />
     </>
   )
 }

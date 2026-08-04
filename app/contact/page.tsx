@@ -3,6 +3,7 @@ import Link from "next/link"
 import { MapPin, Phone, Mail, Clock, ArrowUpRight } from "lucide-react"
 import { PageHeader } from "@/components/site/page-header"
 import { ContactForm } from "@/components/contact/contact-form"
+import { CtaSection } from "@/components/site/cta-section"
 
 export const metadata: Metadata = {
   title: "Contact Us | Sunshine School",
@@ -13,13 +14,23 @@ export const metadata: Metadata = {
 const CONTACT_DETAILS = [
   {
     icon: MapPin,
-    title: "Visit Us",
+    title: "Sunshine School",
     lines: [
       "C/O Navi Mumbai Primary School",
       "Sec-2, Opp. Vashi Police Station",
       "Vashi, Navi Mumbai - 400703",
     ],
-    action: { label: "Get Directions", href: "https://maps.google.com/?q=Navi+Mumbai+Primary+School+Sector+2+Vashi" },
+    action: { label: "Get Directions", href: "https://maps.app.goo.gl/aPLDwRjSv25NnzpL7" },
+  },
+  {
+    icon: MapPin,
+    title: "Sheltered Workshop (S.W.)",
+    lines: [
+      "RH-4, M-9, Sector-6",
+      "Vashi, Navi Mumbai",
+      "Maharashtra 400703",
+    ],
+    action: { label: "View Location", href: "https://maps.google.com/?q=Sector+6+Vashi+Navi+Mumbai" },
   },
   {
     icon: Phone,
@@ -29,14 +40,9 @@ const CONTACT_DETAILS = [
   },
   {
     icon: Mail,
-    title: "Email Us",
-    lines: ["sunshine.vashi@gmail.com"],
+    title: "Email & Hours",
+    lines: ["sunshine.vashi@gmail.com", "Mon – Fri: 9:00 AM – 3:30 PM", "Sat: By appointment"],
     action: { label: "Send Email", href: "mailto:sunshine.vashi@gmail.com" },
-  },
-  {
-    icon: Clock,
-    title: "School Hours",
-    lines: ["Monday – Friday", "9:00 AM – 3:30 PM", "Saturday: By appointment"],
   },
 ]
 
@@ -72,6 +78,8 @@ export default function ContactPage() {
                 {detail.action && (
                   <Link
                     href={detail.action.href}
+                    target="_blank"
+                    rel="noreferrer"
                     className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand-red hover:underline"
                   >
                     {detail.action.label}
@@ -105,7 +113,7 @@ export default function ContactPage() {
             <div className="overflow-hidden rounded-3xl border border-border">
               <iframe
                 title="Sunshine School location in Vashi, Navi Mumbai"
-                src="https://www.google.com/maps?q=Sector+9A+Vashi+Navi+Mumbai&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8359287515!2d73.001!3d19.071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA0JzE1LjYiTiA3M8KwMDAnMDMuNiJF!5e0!3m2!1sen!2sin!4v1"
                 className="h-[360px] w-full"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -137,6 +145,14 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <CtaSection
+        eyebrow="a personal invitation"
+        title="Come spend a morning with us."
+        description="Schedule a campus visit and experience our classrooms, therapy rooms and workshop firsthand."
+        primary={{ label: "Book a visit", href: "/contact" }}
+        secondary={{ label: "Read about admissions", href: "/admissions" }}
+      />
     </>
   )
 }

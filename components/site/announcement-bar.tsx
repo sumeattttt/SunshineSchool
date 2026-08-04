@@ -8,7 +8,7 @@ export function AnnouncementBar() {
         <div className="flex items-center gap-2 truncate">
           <span
             aria-hidden
-            className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-yellow text-brand-ink"
+            className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#FACC15] text-black font-bold"
           >
             <Sparkles className="h-3 w-3" />
           </span>

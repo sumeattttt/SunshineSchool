@@ -9,7 +9,7 @@ const CARDS = [
       "Offline Assessment and Admission Forms for Ages 4 and Above.",
     href: "/admissions",
     icon: ClipboardList,
-    accent: "bg-brand-yellow text-brand-ink",
+    accent: "bg-[#2563EB] text-white",
   },
   {
     eyebrow: "Academics",
@@ -18,7 +18,7 @@ const CARDS = [
       "Secondary and Senior Secondary from NIOS and Individualised Education Programmes tailored to every student.",
     href: "/academics",
     icon: GraduationCap,
-    accent: "bg-brand-red text-white",
+    accent: "bg-[#2563EB] text-white",
   },
   {
     eyebrow: "Initiatives",
@@ -27,7 +27,7 @@ const CARDS = [
       "Sensory Support Learning Space.",
     href: "/facilities",
     icon: Building2,
-    accent: "bg-brand-ink text-white",
+    accent: "bg-[#2563EB] text-white",
   },
   {
     eyebrow: "Achievements",
@@ -36,7 +36,7 @@ const CARDS = [
       "Our students have represented District & State level Special Olympics.",
     href: "/events",
     icon: Trophy,
-    accent: "bg-brand-cream text-brand-ink border border-border",
+    accent: "bg-[#2563EB] text-white",
   },
 ]
 

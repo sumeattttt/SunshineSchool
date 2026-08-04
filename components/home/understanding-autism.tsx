@@ -13,7 +13,7 @@ export function UnderstandingAutism() {
               Awareness
             </div>
             <h2 className="mt-5 font-display text-4xl leading-[1.02] text-brand-ink text-balance md:text-5xl lg:text-[3.75rem]">
-              Understanding <span className="italic">autism.</span>
+              Understanding <span className="italic">Autism.</span>
             </h2>
 
             <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">

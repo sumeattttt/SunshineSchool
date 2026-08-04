@@ -1,17 +1,18 @@
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowUpRight, Check } from "lucide-react"
 
 const PILLARS = [
   {
     title: "Sunshine School",
     subtitle: "For differently-abled children · since 2006",
-    body: "Started with just 6 students, today we nurture 80+ children aged 3 to 18+ through personalised learning, therapy and extracurriculars.",
+    body: "Started with just 6 students, today we have nurtured and empowered over 150+ students aged 3 to 18+ above.",
     href: "/about",
   },
   {
     title: "Sheltered Workshop",
     subtitle: "For differently-abled adults · since 2018",
-    body: "A vocational space where 18+ trainees aged 18+ build community living, work skills and independence with dignity.",
+    body: "A vocational space where 25+ trainees aged 18+ build community living, work skills and independence with dignity",
     href: "/facilities#workshop",
   },
 ]
@@ -22,13 +23,13 @@ export function AboutPreview() {
       <div className="container-x py-20 md:py-28">
         <div className="grid gap-14 lg:grid-cols-[1.05fr_1fr] lg:gap-20">
           <div className="relative">
-            <div className="relative aspect-[5/6] overflow-hidden rounded-3xl border border-border bg-black shadow-lg">
-              <iframe
-                src="https://www.youtube.com/embed/QGGO0D6gyhE"
-                title="Sunshine Education Society Video"
-                className="h-full w-full border-0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
+            <div className="relative aspect-[5/6] overflow-hidden rounded-3xl border border-border bg-card shadow-lg">
+              <Image
+                src="/images/staff.jpg"
+                alt="Sunshine School Staff and Students"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
             <div className="absolute -right-4 bottom-6 hidden w-56 rounded-2xl border border-border bg-background p-5 shadow-xl shadow-black/5 md:block z-10 pointer-events-none">
@@ -41,8 +42,8 @@ export function AboutPreview() {
             </div>
 
             <div className="absolute -left-4 -top-4 hidden h-24 w-24 items-center justify-center rounded-full bg-brand-yellow text-center font-display text-brand-ink md:flex z-10 pointer-events-none">
-              <span className="leading-tight">
-                200+
+              <span className="leading-tight font-bold">
+                150+
                 <br />
                 <span className="text-[10px] uppercase tracking-[0.2em] not-italic">
                   students

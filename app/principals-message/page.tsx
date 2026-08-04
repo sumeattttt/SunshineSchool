@@ -14,7 +14,7 @@ export default function PrincipalsMessagePage() {
     <>
       <PageHeader
         eyebrow="A note from our principal"
-        title="The school I always wished existed — for my son, and for yours."
+        title="Principal's Message"
         description="A personal message from Mrs. Paramita Mazumder, Principal & Secretary, Sunshine Education Society."
         crumbs={[
           { label: "Home", href: "/" },
@@ -29,7 +29,7 @@ export default function PrincipalsMessagePage() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border">
               <Image
                 src="/images/principal.jpg"
-                alt="Mrs. Paramita Mazumdar, Principal"
+                alt="Mrs. Paramita Mazumder, Principal"
                 fill
                 sizes="(min-width: 1024px) 35vw, 100vw"
                 className="object-cover"
@@ -56,21 +56,23 @@ export default function PrincipalsMessagePage() {
               strokeWidth={1.5}
             />
             <p className="mt-6 font-display text-3xl leading-[1.2] text-brand-ink md:text-4xl">
-              &ldquo;Every individual has a world inside them. Our job is simply to
-              help it come out — gently, patiently, and on their own terms.&rdquo;
+              &ldquo;Every child, regardless of ability, deserves the opportunity to learn, grow, and live with dignity.&rdquo;
             </p>
 
             <div className="mt-10 space-y-6 text-base leading-relaxed text-muted-foreground md:text-lg">
               <p>
-                At Sunshine School, we believe that every child is unique and has the ability to learn, grow, and shine when provided with the right opportunities and support. Our journey began with a vision to create a safe, caring, and enriching environment where differently-abled children could receive education, therapy, and life skills training tailored to their individual needs.
+                Twenty years ago, Sunshine was born from a simple yet powerful belief—that every child, regardless of ability, deserves the opportunity to learn, grow, and live with dignity. Today, as we proudly celebrate 20 years of Sunshine, my heart is filled with gratitude for every child, parent, teacher, volunteer, and well-wisher who has been part of this extraordinary journey.
               </p>
               <p>
-                We are committed to nurturing confidence, independence, and dignity in every child. Through the dedication of our educators, therapists, staff members, and the continuous partnership of parents, we strive to empower our students to become active and valued members of society.
+                For me, Sunshine is much more than a special school for differentlyabled children; it is a family and a purpose that has shaped my life. Every smile, every small achievement, every challenge overcome by our children reminds me why Sunshine exists—to nurture abilities, build independence, and create an inclusive society where every individual is valued for who they are.
               </p>
               <p>
-                Every small achievement of our children inspires us to continue our mission of creating a more inclusive and compassionate world.
+                Over the past two decades, we have touched countless lives through education, therapy, vocational training, and parent empowerment. Yet, our journey is far from over. We remain committed to empowering every learner with confidence, compassion, and the skills to lead a meaningful life.
               </p>
-              <p>Warm regards,</p>
+              <p>
+                Thank you for believing in our vision and walking this journey with us. Together, let us continue to spread hope, celebrate abilities, and build a world where everyone truly belongs.
+              </p>
+              <p className="pt-4">Warm regards,</p>
               <p className="font-display text-2xl italic text-brand-ink">
                 Mrs. Paramita Mazumder
               </p>
@@ -78,14 +80,6 @@ export default function PrincipalsMessagePage() {
           </article>
         </div>
       </section>
-
-      <CtaSection
-        eyebrow="A personal invitation"
-        title="Come spend a morning with us."
-        description="Schedule a campus visit and experience our classrooms, therapy rooms and workshop firsthand."
-        primary={{ label: "Book a visit", href: "/contact" }}
-        secondary={{ label: "Read about admissions", href: "/admissions" }}
-      />
     </>
   )
 }

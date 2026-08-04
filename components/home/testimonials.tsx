@@ -3,18 +3,18 @@ import { Quote } from "lucide-react"
 const TESTIMONIALS = [
   {
     body: "To see each child's potential and their progress makes me happy! Working at Sunshine has exposed me to a more structured practice which I feel suits my personality. The teachers along with the staff make a great team!",
+    author: "Suchita",
+    role: "Staff Member",
+  },
+  {
+    body: "This is the first time that I've been working at a school for differently-abled children — it has taught me more in return than I could ever give.",
     author: "Madhu",
     role: "Special Educator",
   },
   {
-    body: "This is the first time that I've been working at a school for differently-abled children — it has taught me more in return than I could ever give.",
-    author: "Suchitra",
-    role: "Staff, Sunshine School",
-  },
-  {
     body: "We dreamt of a school where our son could be seen, heard and loved for exactly who he is. Sunshine became that place for our family.",
-    author: "A Sunshine Parent",
-    role: "Vashi, Navi Mumbai",
+    author: "Aarti",
+    role: "Sunshine Parent",
   },
 ]
 
@@ -25,7 +25,7 @@ export function Testimonials() {
         <div className="mx-auto max-w-2xl text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-brand-red">
             <span className="h-1.5 w-1.5 rounded-full bg-brand-red" />
-            Voices from our family
+            Words from our family
           </div>
           <h2 className="mt-5 font-display text-4xl leading-[1.02] text-brand-ink text-balance md:text-5xl lg:text-6xl">
             Words from teachers, parents &{" "}
@@ -37,7 +37,7 @@ export function Testimonials() {
           {TESTIMONIALS.map((t, i) => (
             <figure
               key={i}
-              className="relative flex flex-col justify-between rounded-3xl border border-border bg-background p-8"
+              className="relative flex flex-col justify-between rounded-3xl border border-border bg-background p-8 shadow-sm"
             >
               <Quote
                 className="h-7 w-7 text-brand-yellow"
@@ -47,13 +47,13 @@ export function Testimonials() {
                 &ldquo;{t.body}&rdquo;
               </blockquote>
               <figcaption className="mt-8 flex items-center gap-3 border-t border-border pt-5">
-                <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand-ink text-white">
+                <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand-ink text-white font-bold">
                   <span className="font-display text-sm">
                     {t.author.charAt(0)}
                   </span>
                 </div>
                 <div>
-                  <div className="text-sm font-medium text-brand-ink">
+                  <div className="text-sm font-semibold text-brand-ink">
                     {t.author}
                   </div>
                   <div className="text-xs text-muted-foreground">{t.role}</div>

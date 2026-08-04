@@ -126,10 +126,7 @@ export default function AboutPage() {
                 future, reaching their maximal social and economic potential.
               </p>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                Today the workshop serves{" "}
-                <span className="text-brand-ink">18 trainees</span> — 13
-                graduates from Sunshine School and 5 new trainees — aged 18 to
-                30 years.
+                Today the workshop 20+ traines 18+ graduates from Sunshine school aged 18+ above.
               </p>
             </div>
           </article>
@@ -194,35 +191,6 @@ export default function AboutPage() {
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 Mrs. Paramita Mazumder was felicitated by the Navi Mumbai Municipal Corporation (NMMC) for her significant contribution to the disability sector, acknowledging her commitment to advocacy, inclusion, and community development.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Vision & Mission */}
-      <section className="bg-brand-ink text-white">
-        <div className="container-x py-20 md:py-28">
-          <div className="grid gap-16 lg:grid-cols-2 lg:gap-20">
-            <div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-brand-yellow">
-                <span className="h-1.5 w-1.5 rounded-full bg-brand-yellow" />
-                Vision
-              </div>
-              <h3 className="mt-5 font-display text-4xl leading-[1.05] text-white md:text-5xl">
-                “All Differently Abled Children and Adults meet their{" "}
-                <span className="italic text-brand-yellow">
-                  maximum potential.”
-                </span>
-              </h3>
-            </div>
-            <div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-brand-yellow">
-                <span className="h-1.5 w-1.5 rounded-full bg-brand-yellow" />
-                Mission
-              </div>
-              <h3 className="mt-5 font-display text-3xl leading-[1.15] text-white md:text-4xl">
-                To promote social integration and independence among differently-abled children and adults by providing personalized quality education in a nurturing environment and by guiding and supporting their families.
-              </h3>
             </div>
           </div>
         </div>
@@ -307,22 +275,13 @@ export default function AboutPage() {
           <div className="mt-10">
             <Link
               href="/faculty"
-              className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-5 py-3 text-sm font-medium text-brand-ink hover:border-brand-ink/40"
+              className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-5 py-3 text-sm font-medium text-brand-ink hover:border-border/40"
             >
               Meet our full team <ArrowUpRight className="h-4 w-4" />
             </Link>
           </div>
         </div>
       </section>
-
-      <Stats />
-      <CtaSection
-        eyebrow="Start the conversation"
-        title="Come see Sunshine in person."
-        description="Book a campus visit and meet the team who will be your partners in your child's journey."
-        primary={{ label: "Book a visit", href: "/contact" }}
-        secondary={{ label: "Admissions info", href: "/admissions" }}
-      />
     </>
   )
 }

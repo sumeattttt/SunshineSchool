@@ -27,9 +27,8 @@ export function Hero() {
             </div>
 
             <h1 className="mt-6 font-display text-[2.75rem] leading-[1.02] tracking-tight text-brand-ink text-balance sm:text-6xl lg:text-[5.25rem]">
-              Where every individual <br className="hidden md:block" />
-              <span className="italic">learns to be </span>
-              <span className="underline-squiggle italic">shine.</span>
+              Where everyone individual <br className="hidden md:block" />
+              <span className="underline-squiggle italic">learns to shine.</span>
             </h1>
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
@@ -48,8 +47,8 @@ export function Hero() {
                 href="/about"
                 className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-6 py-3.5 text-sm font-medium text-brand-ink transition-colors hover:border-brand-ink/40"
               >
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-brand-yellow text-brand-ink">
-                  <Play className="h-3 w-3 fill-current" />
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#2563EB] text-white">
+                  <Play className="h-3 w-3 fill-white text-white ml-0.5" />
                 </span>
                 Our story
               </Link>
@@ -81,77 +80,23 @@ export function Hero() {
                   ))}
                 </div>
                 <div className="mt-1 text-sm text-muted-foreground">
-                  <span className="font-medium text-brand-ink">200+ students</span>{" "}
+                  <span className="font-medium text-brand-ink">150+ students</span>{" "}
                   nurtured across early intervention, academics & vocational programmes.
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Visual cluster */}
+          {/* YouTube Video Section */}
           <div className="relative">
-            <div className="relative grid grid-cols-6 grid-rows-6 gap-3 md:gap-4">
-              <div className="relative col-span-4 row-span-4 overflow-hidden rounded-3xl border border-border bg-card shadow-xl shadow-black/5">
-                <Image
-                  src="/images/hero-students.jpg"
-                  alt="Students learning together at Sunshine School"
-                  fill
-                  priority
-                  sizes="(min-width: 1024px) 40vw, 100vw"
-                  className="object-cover"
-                />
-                <div className="absolute bottom-3 left-3 rounded-full bg-background/90 px-3 py-1.5 text-[11px] font-medium text-brand-ink backdrop-blur">
-                  Classroom · Vashi
-                </div>
-              </div>
-
-              <div className="relative col-span-2 row-span-3 overflow-hidden rounded-3xl border border-border bg-card">
-                <Image
-                  src="/images/therapy.jpg"
-                  alt="Occupational therapy at Sunshine"
-                  fill
-                  sizes="(min-width: 1024px) 18vw, 45vw"
-                  className="object-cover"
-                />
-              </div>
-
-              <div className="col-span-2 row-span-3 rounded-3xl border border-border bg-brand-yellow p-4 md:p-5">
-                <div className="flex h-full flex-col justify-between">
-                  <div className="text-[10px] uppercase tracking-[0.2em] text-brand-ink/70">
-                    Programmes
-                  </div>
-                  <div>
-                    <div className="font-display text-3xl leading-none text-brand-ink md:text-4xl">
-                      5
-                    </div>
-                    <div className="mt-1 text-xs text-brand-ink/75">
-                      structured pathways from early intervention to vocational work
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="relative col-span-3 row-span-2 overflow-hidden rounded-3xl border border-border bg-card">
-                <Image
-                  src="/images/workshop.jpg"
-                  alt="Sheltered workshop"
-                  fill
-                  sizes="(min-width: 1024px) 22vw, 60vw"
-                  className="object-cover"
-                />
-              </div>
-
-              <div className="col-span-3 row-span-2 rounded-3xl border border-border bg-brand-ink p-4 text-white md:p-5">
-                <div className="text-[10px] uppercase tracking-[0.2em] text-brand-yellow">
-                  Established
-                </div>
-                <div className="mt-2 font-display text-3xl leading-none md:text-4xl">
-                  2006
-                </div>
-                <div className="mt-1 text-xs text-white/70">
-                  20+ years of personalised care in Navi Mumbai
-                </div>
-              </div>
+            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-3xl border border-border bg-black shadow-2xl md:aspect-[4/3]">
+              <iframe
+                src="https://www.youtube.com/embed/QGGO0D6gyhE"
+                title="Sunshine Education Society Video"
+                className="h-full w-full border-0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>

@@ -138,23 +138,34 @@ export default function DonatePage() {
             </div>
 
             <div className="rounded-3xl border border-border bg-brand-ink p-6 text-brand-cream">
-              <div className="font-serif text-xl">Bank transfer details</div>
-              <dl className="mt-4 space-y-2 text-sm">
+              <div className="font-serif text-xl">Bank Transfer Details</div>
+              <dl className="mt-4 space-y-2.5 text-sm">
                 <div className="flex justify-between gap-4">
                   <dt className="text-brand-cream/60">Account Name</dt>
-                  <dd className="text-right">Sunshine Education Society</dd>
+                  <dd className="text-right font-medium">Sunshine Education Society</dd>
                 </div>
                 <div className="flex justify-between gap-4">
-                  <dt className="text-brand-cream/60">Bank</dt>
-                  <dd className="text-right">State Bank of India, Vashi</dd>
+                  <dt className="text-brand-cream/60">Account No.</dt>
+                  <dd className="text-right font-mono font-semibold text-brand-yellow">11202011008402</dd>
                 </div>
                 <div className="flex justify-between gap-4">
-                  <dt className="text-brand-cream/60">A/C Number</dt>
-                  <dd className="text-right font-mono">1234 5678 9012</dd>
+                  <dt className="text-brand-cream/60">Account Type</dt>
+                  <dd className="text-right font-medium">Savings Account</dd>
                 </div>
                 <div className="flex justify-between gap-4">
-                  <dt className="text-brand-cream/60">IFSC</dt>
-                  <dd className="text-right font-mono">SBIN0001234</dd>
+                  <dt className="text-brand-cream/60">Bank Name</dt>
+                  <dd className="text-right font-medium">Punjab National Bank (PNB)</dd>
+                </div>
+                <div className="flex justify-between gap-4">
+                  <dt className="text-brand-cream/60">IFSC Code</dt>
+                  <dd className="text-right font-mono font-semibold text-brand-yellow">PUNB0112010</dd>
+                </div>
+                <div className="flex justify-between gap-4">
+                  <dt className="text-brand-cream/60">Branch</dt>
+                  <dd className="text-right">Thane, Vashi Sector 14</dd>
+                </div>
+                <div className="mt-2 border-t border-brand-cream/10 pt-2 text-xs text-brand-cream/70">
+                  <span className="font-medium text-brand-cream/90">Address:</span> Shop No 12, 13, 14, Sai Pooja Chs, Plot No-52, Sector-14, Vashi, Navi-mumbai.
                 </div>
               </dl>
             </div>
