@@ -2,11 +2,12 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import { PageHeader } from "@/components/site/page-header"
 import { Quote, Heart } from "lucide-react"
+import { Testimonials } from "@/components/home/testimonials"
 
 export const metadata: Metadata = {
-  title: "Sunshine Parents | Sunshine School",
+  title: "Sunshine Parents & Testimonials | Sunshine School",
   description:
-    "Heartfelt stories and experiences shared by parents of Sunshine School and Sheltered Workshop students.",
+    "Heartfelt stories, testimonials, and experiences shared by parents of Sunshine School and Sheltered Workshop students.",
 }
 
 const PARENT_STORIES = [
@@ -70,6 +71,8 @@ export default function SunshineParentsPage() {
           { label: "Sunshine Parents" },
         ]}
       />
+
+      <Testimonials />
 
       <section className="container-x py-16 md:py-24 space-y-16 md:space-y-24">
         {PARENT_STORIES.map((story, index) => (
