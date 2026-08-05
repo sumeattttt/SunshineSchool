@@ -126,7 +126,7 @@ export default function AboutPage() {
                 future, reaching their maximal social and economic potential.
               </p>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                Today the workshop 20+ traines 18+ graduates from Sunshine school aged 18+ above.
+                Today the workshop supports 25+ trainees and graduates from Sunshine School aged 18 and above.
               </p>
             </div>
           </article>

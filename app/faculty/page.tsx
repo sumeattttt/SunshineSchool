@@ -1,8 +1,7 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import { PageHeader } from "@/components/site/page-header"
-import { CtaSection } from "@/components/site/cta-section"
-import { GraduationCap, Heart, Users, Award } from "lucide-react"
+import { GraduationCap, Heart, Users } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Faculty & Staff | Sunshine School",
@@ -18,16 +17,16 @@ const LEADERSHIP = [
     image: "/images/principal.jpg",
   },
   {
-    name: "Dr. Anjali Deshpande",
-    role: "Head of Therapies",
-    bio: "Clinical psychologist specializing in early intervention and behavioural therapy for children with ASD and ADHD.",
-    image: "/images/therapy.jpg",
+    name: "Ms. Sujata Yande",
+    role: "Coordinator – Sunshine School, Sunshine Education Society",
+    bio: "Coordinates academic operations, curriculum planning, and student development across all school programs.",
+    image: "/images/sujatayande.jpeg",
   },
   {
-    name: "Mr. Rajesh Kulkarni",
-    role: "Vocational Training Head",
-    bio: "Designs and oversees the sheltered workshop, mentoring young adults into confident, capable workers.",
-    image: "/images/workshop.jpg",
+    name: "Ms. Manisha Sonar",
+    role: "Coordinator – Sunshine Sheltered Workshop, Sunshine Education Society",
+    bio: "Oversees vocational skill building, community living, and daily workshop activities for young adult trainees.",
+    image: "/images/mansihasonar.jpg.jpeg",
   },
 ]
 
@@ -49,16 +48,9 @@ const DEPARTMENTS = [
   {
     icon: Users,
     title: "Support Staff",
-    count: "4 members",
+    count: "10 members",
     description:
       "Caretakers, transport aides, and administrative staff ensuring safe and smooth daily operations.",
-  },
-  {
-    icon: Award,
-    title: "Consultants & Advisors",
-    count: "3 specialists",
-    description:
-      "Visiting psychiatrists, paediatricians, and educational consultants who guide our programs.",
   },
 ]
 
@@ -68,7 +60,7 @@ export default function FacultyPage() {
       <PageHeader
         eyebrow="Our people"
         title="The hands and hearts behind Sunshine"
-        description="A team of 21+ educators, therapists and caregivers united by one belief — every child deserves to be seen, heard, and celebrated."
+        description="A team of 27+ educators, therapists and caregivers united by one belief — every child deserves to be seen, heard, and celebrated."
       />
 
       <section className="container-x pb-16 md:pb-24">
@@ -130,7 +122,7 @@ export default function FacultyPage() {
             </p>
           </div>
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-4 sm:grid-cols-3">
             {DEPARTMENTS.map((dept) => {
               const Icon = dept.icon
               return (
@@ -138,8 +130,8 @@ export default function FacultyPage() {
                   key={dept.title}
                   className="flex flex-col rounded-2xl border border-border bg-card p-6"
                 >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-yellow-soft text-brand-ink">
-                    <Icon className="h-5 w-5" />
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-yellow text-brand-ink">
+                    <Icon className="h-5 w-5 stroke-[2.5]" />
                   </div>
                   <h3 className="mt-4 font-serif text-xl text-brand-ink">
                     {dept.title}

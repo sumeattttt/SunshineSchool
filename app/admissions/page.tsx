@@ -49,7 +49,7 @@ export default function AdmissionsPage() {
       <PageHeader
         eyebrow="Admissions · 2026–27"
         title="Admissions are open. Let&rsquo;s start your child&rsquo;s journey."
-        description="Sunshine welcomes children aged 3 to 19 years across our early intervention, academic and pre-vocational programmes, and trainees aged 18+ into our sheltered workshop."
+        description="Sunshine welcomes children and youth aged 4 and above across our early intervention (4–8 yrs), academic (8–12 yrs), and pre-vocational (13–17 yrs) programmes, as well as adults aged 18+ into our vocational training sheltered workshop."
         crumbs={[{ label: "Home", href: "/" }, { label: "Admissions" }]}
       />
 

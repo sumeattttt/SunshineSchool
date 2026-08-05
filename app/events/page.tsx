@@ -1,9 +1,8 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { Calendar, MapPin, ArrowUpRight } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
 import { PageHeader } from "@/components/site/page-header"
-import { CtaSection } from "@/components/site/cta-section"
 
 export const metadata: Metadata = {
   title: "Events & News | Sunshine School",
@@ -12,6 +11,12 @@ export const metadata: Metadata = {
 }
 
 const UPCOMING = [
+  {
+    title: "Parent Empowerment Early Intervention Program (PEEIP)",
+    description: "Empowering Parents, Transforming Children's Futures.",
+    image: "/images/Gallery Additional Images/PEEIP.jpg.jpeg",
+    tag: "Early Intervention",
+  },
   {
     title: "Annual Day",
     description:
@@ -95,9 +100,9 @@ export default function EventsPage() {
               <div className="flex items-center justify-end border-t border-border p-6 md:border-l md:border-t-0 md:p-8">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-1.5 rounded-full border border-border px-4 py-2 text-sm font-medium text-brand-ink transition-colors hover:border-brand-red hover:text-brand-red"
+                  className="inline-flex items-center gap-1.5 rounded-full border border-border bg-brand-yellow/10 px-4 py-2 text-sm font-medium text-brand-ink transition-colors hover:border-brand-red hover:bg-brand-red hover:text-white"
                 >
-                  RSVP <ArrowUpRight className="h-3.5 w-3.5" />
+                  Request an invite <ArrowUpRight className="h-3.5 w-3.5" />
                 </Link>
               </div>
             </article>

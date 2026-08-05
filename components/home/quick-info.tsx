@@ -3,13 +3,22 @@ import { GraduationCap, ClipboardList, Building2, Trophy, ArrowUpRight } from "l
 
 const CARDS = [
   {
+    eyebrow: "Initiatives",
+    title: "School & Shelter Workshop",
+    description:
+      "Sensory space learning space and lifeskill training.",
+    href: "/facilities",
+    icon: Building2,
+    accent: "bg-brand-yellow text-brand-ink",
+  },
+  {
     eyebrow: "Admissions",
     title: "Apply for 2026–27",
     description:
       "Offline Assessment and Admission Forms for Ages 4 and Above.",
     href: "/admissions",
     icon: ClipboardList,
-    accent: "bg-[#2563EB] text-white",
+    accent: "bg-brand-yellow text-brand-ink",
   },
   {
     eyebrow: "Academics",
@@ -18,25 +27,16 @@ const CARDS = [
       "Secondary and Senior Secondary from NIOS and Individualised Education Programmes tailored to every student.",
     href: "/academics",
     icon: GraduationCap,
-    accent: "bg-[#2563EB] text-white",
-  },
-  {
-    eyebrow: "Initiatives",
-    title: "School & Workshop",
-    description:
-      "Sensory Support Learning Space.",
-    href: "/facilities",
-    icon: Building2,
-    accent: "bg-[#2563EB] text-white",
+    accent: "bg-brand-yellow text-brand-ink",
   },
   {
     eyebrow: "Achievements",
-    title: "Olympics & Awards",
+    title: "Awards",
     description:
-      "Our students have represented District & State level Special Olympics.",
-    href: "/events",
+      "Nipman Microsoft Equal Opportunity Award, BOB SaluteHerShakti Award, & NMMC Disability Sector Recognition.",
+    href: "/about#awards",
     icon: Trophy,
-    accent: "bg-[#2563EB] text-white",
+    accent: "bg-brand-yellow text-brand-ink",
   },
 ]
 
@@ -71,9 +71,9 @@ export function QuickInfo() {
             />
             <div className="relative">
               <div
-                className={`inline-flex h-10 w-10 items-center justify-center rounded-xl ${accent}`}
+                className={`inline-flex h-11 w-11 items-center justify-center rounded-xl font-bold ${accent}`}
               >
-                <Icon className="h-5 w-5" />
+                <Icon className="h-5 w-5 stroke-[2.5]" />
               </div>
               <div className="mt-6 text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
                 {eyebrow}

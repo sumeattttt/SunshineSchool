@@ -12,7 +12,7 @@ const BLOCKS = [
   {
     tag: "01",
     title: "Early Intervention Program",
-    subtitle: "Ages 3–8 · 1:00 pm – 3:45 pm",
+    subtitle: "Ages 4–8 · 1:00 pm – 3:45 pm",
     items: [
       "Focused on early learning and foundational abilities",
       "Communication & sensory development",
@@ -23,7 +23,7 @@ const BLOCKS = [
   {
     tag: "02",
     title: "Academic Program",
-    subtitle: "Ages 8–14 · 9:00 am – 1:00 pm",
+    subtitle: "Ages 8–12 · 9:00 am – 1:00 pm",
     items: [
       "Age-appropriate academic learning",
       "Functional academics to promote daily independence",
@@ -34,7 +34,7 @@ const BLOCKS = [
   {
     tag: "03",
     title: "Pre-Vocational Training Program",
-    subtitle: "Ages 14–19 · 9:00 am – 3:30 pm",
+    subtitle: "Ages 13–17 · 9:00 am – 3:30 pm",
     items: [
       "Designed to develop work-related skills",
       "Social skills and motor abilities",
@@ -44,12 +44,12 @@ const BLOCKS = [
   {
     tag: "04",
     title: "Vocational Training Program",
-    subtitle: "Ages 18+ · Sheltered Workshop",
+    subtitle: "Ages 18 and above · Sheltered Workshop",
     items: [
       "Skill-based training for greater independence",
       "Employment opportunities and community participation",
-      "Handicrafts (bags, diyas, torans, soaps, printing)",
-      "Bakery & Office Skills (filing, printing, computer skills)",
+      "Handicrafts (bags, diyas, torans, soaps, candles)",
+      "Bakery & Office Skills (filing, candles making, computer skills)",
     ],
   },
 ]
@@ -123,7 +123,7 @@ export default function AcademicsPage() {
               Curricular Training
             </div>
             <h2 className="mt-5 font-display text-4xl leading-[1.05] text-brand-ink md:text-5xl">
-              Five structured blocks, delivered with care.
+              Four structured blocks, delivered with care.
             </h2>
           </div>
 

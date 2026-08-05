@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import { PageHeader } from "@/components/site/page-header"
 import { VolunteerForm } from "@/components/volunteer/volunteer-form"
-import { CtaSection } from "@/components/site/cta-section"
 import {
   BookOpenCheck,
   Briefcase,
@@ -112,8 +111,8 @@ export default function VolunteerPage() {
           <div className="space-y-6">
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl">
               <Image
-                src="/images/parents.jpg"
-                alt="Volunteer with students"
+                src="/images/Gallery Additional Images/Volunteer.jpeg"
+                alt="Volunteer with Sunshine School students"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -149,14 +148,6 @@ export default function VolunteerPage() {
           </div>
         </div>
       </section>
-
-      <CtaSection
-        eyebrow="Other ways to help"
-        title="Prefer to give in other ways?"
-        description="You can support us through donations, corporate CSR partnerships, or by purchasing products from our sheltered workshop."
-        primary={{ label: "Donate", href: "/donate" }}
-        secondary={{ label: "Contact Us", href: "/contact" }}
-      />
     </>
   )
 }

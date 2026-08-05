@@ -12,27 +12,27 @@ export const metadata: Metadata = {
 const IMPACT = [
   {
     icon: BookOpen,
-    amount: "₹ 2,500",
+    amount: "₹ 5,000",
     title: "Sponsors a month of learning materials",
     description: "Books, sensory tools, craft supplies for one student.",
   },
   {
     icon: Utensils,
     amount: "₹ 5,000",
-    title: "Covers a term of nutritious meals",
-    description: "Healthy breakfast and lunch for one student for 3 months.",
+    title: "Sponsors culinary material for Adults",
+    description: "Culinary materials, baking ingredients, and utensils for Sheltered Workshop trainees.",
   },
   {
     icon: Bus,
-    amount: "₹ 10,000",
-    title: "Safe transport for a year",
-    description: "One year of supervised bus service for a child.",
+    amount: "₹ 12,000",
+    title: "Sponsors safe transport",
+    description: "Supervised bus service and transportation for a child.",
   },
   {
     icon: Heart,
-    amount: "₹ 30,000",
+    amount: "₹ 85,000",
     title: "Sponsors a child annually",
-    description: "Full support — tuition, therapy, meals, transport — for a year.",
+    description: "Full annual support — tuition, therapy, transport, and educational care.",
   },
 ]
 
@@ -133,10 +133,10 @@ export default function DonatePage() {
           </div>
 
           <div className="space-y-6">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border shadow-md">
               <Image
-                src="/images/hero-students.jpg"
-                alt="Students at Sunshine School"
+                src="/images/Gallery Additional Images/donation.jpg.jpeg"
+                alt="Donation & Community Support Drive"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

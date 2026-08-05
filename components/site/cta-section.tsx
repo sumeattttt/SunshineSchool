@@ -2,11 +2,11 @@ import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 
 export function CtaSection({
-  eyebrow = "Join our family",
-  title = "Ready to take the first step?",
-  description = "We'd love to meet you and your child. Book a visit, request a prospectus, or speak to our admissions team today.",
-  primary = { label: "Apply for Admission", href: "/admissions" },
-  secondary = { label: "Contact Us", href: "/contact" },
+  eyebrow = "A PERSONAL INVITATION",
+  title = "Come spend a morning with us.",
+  description = "Schedule a campus visit and experience our classrooms, therapy rooms and workshop firsthand.",
+  primary = { label: "Book a visit", href: "/contact" },
+  secondary = { label: "Read about admissions", href: "/admissions" },
 }: {
   eyebrow?: string
   title?: string

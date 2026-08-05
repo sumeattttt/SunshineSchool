@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     template: "%s · Sunshine School",
   },
   icons: {
-    icon: "/images/logo.png",
-    shortcut: "/images/logo.png",
-    apple: "/images/logo.png",
+    icon: "/images/logo.svg",
+    shortcut: "/images/logo.svg",
+    apple: "/images/logo.svg",
   },
   description:
     "Sunshine School in Vashi, Navi Mumbai provides personalised, quality education and rehabilitation for children and young adults on the Autism Spectrum and with other developmental disabilities. Since 2006.",

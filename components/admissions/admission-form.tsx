@@ -5,10 +5,10 @@ import { Loader2, CheckCircle2, Send, AlertCircle } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const PROGRAMMES = [
-  "Early Intervention (3–8 yrs)",
-  "Academic Programme (8–14 yrs)",
-  "Pre-Vocational (14–19 yrs)",
-  "Sheltered Workshop (18+ yrs)",
+  "Early Intervention (4–8 yrs)",
+  "Academic Program (8–12 yrs)",
+  "Pre-Vocational Training (13–17 yrs)",
+  "Vocational Training (18+ yrs)",
   "Not sure — please guide us",
 ]
 

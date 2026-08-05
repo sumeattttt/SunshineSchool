@@ -5,14 +5,14 @@ import { ArrowUpRight, Check } from "lucide-react"
 const PILLARS = [
   {
     title: "Sunshine School",
-    subtitle: "For differently-abled children · since 2006",
-    body: "Started with just 6 students, today we have nurtured and empowered over 150+ students aged 3 to 18+ above.",
+    subtitle: "For differently-abled children & youth · since 2006",
+    body: "Started with just 6 students, today we have nurtured and empowered over 150+ students aged 4 to 18 and above.",
     href: "/about",
   },
   {
     title: "Sheltered Workshop",
     subtitle: "For differently-abled adults · since 2018",
-    body: "A vocational space where 25+ trainees aged 18+ build community living, work skills and independence with dignity",
+    body: "A vocational space where 25+ trainees aged 18 and above build community living, work skills and independence with dignity.",
     href: "/facilities#workshop",
   },
 ]
@@ -25,8 +25,8 @@ export function AboutPreview() {
           <div className="relative">
             <div className="relative aspect-[5/6] overflow-hidden rounded-3xl border border-border bg-card shadow-lg">
               <Image
-                src="/images/staff.jpg"
-                alt="Sunshine School Staff and Students"
+                src="/images/Gallery Additional Images/Get to know us.JPG.jpeg"
+                alt="Get to Know Sunshine School"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

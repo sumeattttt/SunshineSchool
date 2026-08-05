@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { MapPin, Phone, Mail, Clock, ArrowUpRight } from "lucide-react"
+import { MapPin, Phone, Mail, ArrowUpRight } from "lucide-react"
 import { PageHeader } from "@/components/site/page-header"
 import { ContactForm } from "@/components/contact/contact-form"
 import { CtaSection } from "@/components/site/cta-section"
@@ -8,13 +8,13 @@ import { CtaSection } from "@/components/site/cta-section"
 export const metadata: Metadata = {
   title: "Contact Us | Sunshine School",
   description:
-    "Reach out to Sunshine School in Vashi, Navi Mumbai. We're here to answer your questions about admissions, programs, and how you can support our mission.",
+    "Reach out to Sunshine School and Sheltered Workshop in Vashi, Navi Mumbai. We're here to answer your questions about admissions, programs, and how you can support our mission.",
 }
 
 const CONTACT_DETAILS = [
   {
     icon: MapPin,
-    title: "Sunshine School",
+    title: "Sunshine School Campus",
     lines: [
       "C/O Navi Mumbai Primary School",
       "Sec-2, Opp. Vashi Police Station",
@@ -28,14 +28,14 @@ const CONTACT_DETAILS = [
     lines: [
       "RH-4, M-9, Sector-6",
       "Vashi, Navi Mumbai",
-      "Maharashtra 400703",
+      "Maharashtra - 400703",
     ],
     action: { label: "View Location", href: "https://maps.google.com/?q=Sector+6+Vashi+Navi+Mumbai" },
   },
   {
     icon: Phone,
     title: "Call Us",
-    lines: ["022 27827342", "022 20870982"],
+    lines: ["022 27827342", "+91 88504 77964"],
     action: { label: "Call Now", href: "tel:02227827342" },
   },
   {
@@ -64,8 +64,8 @@ export default function ContactPage() {
                 key={detail.title}
                 className="flex flex-col rounded-2xl border border-border bg-card p-6"
               >
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-yellow-soft text-brand-ink">
-                  <Icon className="h-5 w-5" />
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-yellow text-brand-ink font-bold">
+                  <Icon className="h-5 w-5 stroke-[2.5]" />
                 </div>
                 <h3 className="mt-4 font-serif text-xl text-brand-ink">
                   {detail.title}
@@ -110,21 +110,43 @@ export default function ContactPage() {
           </div>
 
           <div className="space-y-6">
-            <div className="overflow-hidden rounded-3xl border border-border shadow-sm">
-              <iframe
-                title="Sunshine School location in Vashi, Navi Mumbai"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.781846985794!2d72.9953277!3d19.0725982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c14a85e2e851%3A0x48d2cacf7bed75a2!2sSunshine%20School%20For%20Differently%20Abled%20Children!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                className="h-[380px] w-full border-0"
-                loading="lazy"
-                allowFullScreen
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+            <div className="rounded-3xl border border-border bg-card p-6">
+              <div className="mb-3 text-xs uppercase tracking-wider font-semibold text-brand-red">
+                Campus Location 1 — Sunshine School
+              </div>
+              <div className="overflow-hidden rounded-2xl border border-border shadow-sm">
+                <iframe
+                  title="Sunshine School location in Vashi, Navi Mumbai"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.781846985794!2d72.9953277!3d19.0725982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c14a85e2e851%3A0x48d2cacf7bed75a2!2sSunshine%20School%20For%20Differently%20Abled%20Children!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                  className="h-[220px] w-full border-0"
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
             </div>
+
+            <div className="rounded-3xl border border-border bg-card p-6">
+              <div className="mb-3 text-xs uppercase tracking-wider font-semibold text-brand-red">
+                Campus Location 2 — Sheltered Workshop (S.W.)
+              </div>
+              <div className="overflow-hidden rounded-2xl border border-border shadow-sm">
+                <iframe
+                  title="Sunshine Sheltered Workshop location in Sector 6, Vashi"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.923485741829!2d72.9912000!3d19.0664000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c14d85e2e851%3A0x48d2cacf7bed75a3!2sSector%206%2C%20Vashi%2C%20Navi%20Mumbai%2C%20Maharashtra%20400703!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                  className="h-[220px] w-full border-0"
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            </div>
+
             <div className="rounded-3xl border border-border bg-brand-ink p-8 text-brand-cream">
               <h3 className="font-serif text-2xl">Prefer a call or message?</h3>
               <p className="mt-2 text-sm text-brand-cream/80 leading-relaxed">
                 Our team is available Monday through Friday between
-                9:30 AM and 3:00 PM to answer all your queries.
+                9:00 AM and 3:30 PM to answer all your queries.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
@@ -148,7 +170,7 @@ export default function ContactPage() {
       </section>
 
       <CtaSection
-        eyebrow="a personal invitation"
+        eyebrow="A PERSONAL INVITATION"
         title="Come spend a morning with us."
         description="Schedule a campus visit and experience our classrooms, therapy rooms and workshop firsthand."
         primary={{ label: "Book a visit", href: "/contact" }}
