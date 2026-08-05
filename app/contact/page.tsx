@@ -26,11 +26,11 @@ const CONTACT_DETAILS = [
     icon: MapPin,
     title: "Sheltered Workshop (S.W.)",
     lines: [
-      "RH-4, M-9, Sector-6",
-      "Vashi, Navi Mumbai",
-      "Maharashtra - 400703",
+      "C/O Navi Mumbai Primary School",
+      "Sec-2, Opp. Vashi Police Station",
+      "Vashi, Navi Mumbai - 400703",
     ],
-    action: { label: "View Location", href: "https://maps.google.com/?q=Sector+6+Vashi+Navi+Mumbai" },
+    action: { label: "Get Directions", href: "https://maps.app.goo.gl/mL3VxnjEywBiG8Zv8" },
   },
   {
     icon: Phone,

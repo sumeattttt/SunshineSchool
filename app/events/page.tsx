@@ -1,7 +1,5 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import Link from "next/link"
-import { ArrowUpRight } from "lucide-react"
 import { PageHeader } from "@/components/site/page-header"
 
 export const metadata: Metadata = {
@@ -39,9 +37,9 @@ const UPCOMING = [
     tag: "Sports",
   },
   {
-    title: "Parents' Workshop: Behaviour at Home",
+    title: "Parents' Workshop",
     description:
-      "An interactive session with Dr. Anjali Deshpande on managing sensory overload and setting home routines.",
+      "An interactive session on managing sensory overload and setting home routines.",
     image: "/images/parents.jpg",
     tag: "Workshop",
   },
@@ -61,19 +59,13 @@ export default function EventsPage() {
           <h2 className="font-serif text-3xl text-brand-ink md:text-4xl">
             Upcoming events
           </h2>
-          <Link
-            href="/contact"
-            className="hidden items-center gap-1 text-sm font-medium text-brand-red hover:underline sm:inline-flex"
-          >
-            Request an invite <ArrowUpRight className="h-3.5 w-3.5" />
-          </Link>
         </div>
 
         <div className="space-y-4">
           {UPCOMING.map((ev) => (
             <article
               key={ev.title}
-              className="group grid overflow-hidden rounded-3xl border border-border bg-card md:grid-cols-[240px_1fr_auto]"
+              className="group grid overflow-hidden rounded-3xl border border-border bg-card md:grid-cols-[240px_1fr]"
             >
               <div className="relative aspect-[16/10] overflow-hidden bg-brand-yellow-soft md:aspect-auto">
                 <Image
@@ -96,14 +88,6 @@ export default function EventsPage() {
                 <p className="mt-2 max-w-2xl text-sm text-muted-foreground leading-relaxed">
                   {ev.description}
                 </p>
-              </div>
-              <div className="flex items-center justify-end border-t border-border p-6 md:border-l md:border-t-0 md:p-8">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-1.5 rounded-full border border-border bg-brand-yellow/10 px-4 py-2 text-sm font-medium text-brand-ink transition-colors hover:border-brand-red hover:bg-brand-red hover:text-white"
-                >
-                  Request an invite <ArrowUpRight className="h-3.5 w-3.5" />
-                </Link>
               </div>
             </article>
           ))}
