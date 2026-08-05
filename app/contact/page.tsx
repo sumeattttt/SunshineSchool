@@ -110,36 +110,15 @@ export default function ContactPage() {
           </div>
 
           <div className="space-y-6">
-            <div className="rounded-3xl border border-border bg-card p-6">
-              <div className="mb-3 text-xs uppercase tracking-wider font-semibold text-brand-red">
-                Campus Location 1 — Sunshine School
-              </div>
-              <div className="overflow-hidden rounded-2xl border border-border shadow-sm">
-                <iframe
-                  title="Sunshine School location in Vashi, Navi Mumbai"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.781846985794!2d72.9953277!3d19.0725982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c14a85e2e851%3A0x48d2cacf7bed75a2!2sSunshine%20School%20For%20Differently%20Abled%20Children!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                  className="h-[220px] w-full border-0"
-                  loading="lazy"
-                  allowFullScreen
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
-              </div>
-            </div>
-
-            <div className="rounded-3xl border border-border bg-card p-6">
-              <div className="mb-3 text-xs uppercase tracking-wider font-semibold text-brand-red">
-                Campus Location 2 — Sheltered Workshop (S.W.)
-              </div>
-              <div className="overflow-hidden rounded-2xl border border-border shadow-sm">
-                <iframe
-                  title="Sunshine Sheltered Workshop location in Sector 6, Vashi"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.923485741829!2d72.9912000!3d19.0664000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c14d85e2e851%3A0x48d2cacf7bed75a3!2sSector%206%2C%20Vashi%2C%20Navi%20Mumbai%2C%20Maharashtra%20400703!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                  className="h-[220px] w-full border-0"
-                  loading="lazy"
-                  allowFullScreen
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
-              </div>
+            <div className="overflow-hidden rounded-3xl border border-border shadow-sm">
+              <iframe
+                title="Sunshine School location in Vashi, Navi Mumbai"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.781846985794!2d72.9953277!3d19.0725982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c14a85e2e851%3A0x48d2cacf7bed75a2!2sSunshine%20School%20For%20Differently%20Abled%20Children!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                className="h-[380px] w-full border-0"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
 
             <div className="rounded-3xl border border-border bg-brand-ink p-8 text-brand-cream">
