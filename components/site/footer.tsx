@@ -61,9 +61,7 @@ export function SiteFooter() {
         {/* Main footer grid */}
         <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1.2fr]">
           <div>
-            <div className="inline-block rounded-xl bg-white p-2.5 shadow-sm">
-              <Logo />
-            </div>
+            <Logo />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/60">
               An initiative of the Sunshine Education Society — a
               non-profit organisation serving children and adults with autism

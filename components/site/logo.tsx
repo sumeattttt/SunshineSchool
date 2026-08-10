@@ -10,15 +10,15 @@ export function Logo({
   return (
     <Link
       href="/"
-      className={`group inline-flex items-center rounded-2xl bg-white/90 px-3 py-1.5 shadow-sm ring-1 ring-border transition-all hover:bg-white hover:shadow-md hover:ring-brand-ink/20 ${className}`}
+      className={`group inline-flex items-center transition-transform hover:scale-[1.03] ${className}`}
       aria-label="Sunshine School — Home"
     >
       <Image
-        src="/images/logo.svg"
+        src="/images/logo.png"
         alt="Sunshine School Logo"
-        width={180}
-        height={60}
-        className="h-10 md:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+        width={240}
+        height={80}
+        className="h-12 md:h-14 w-auto object-contain"
         priority
       />
     </Link>
