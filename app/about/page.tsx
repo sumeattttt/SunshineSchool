@@ -78,7 +78,7 @@ export default function AboutPage() {
           <article className="relative">
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border">
               <Image
-                src="/images/staff.jpg"
+                src="/images/Final Gallery Sorted Images/About/sunshine school.jpeg"
                 alt="Sunshine School classroom"
                 fill
                 sizes="(min-width: 1024px) 48vw, 100vw"
@@ -104,7 +104,7 @@ export default function AboutPage() {
           <article className="relative">
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border">
               <Image
-                src="/images/workshop.jpg"
+                src="/images/Sunshine Shelter Workshop.jpeg"
                 alt="Sunshine Sheltered Workshop"
                 fill
                 sizes="(min-width: 1024px) 48vw, 100vw"

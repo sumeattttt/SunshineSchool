@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import { PageHeader } from "@/components/site/page-header"
 import { Quote, Heart } from "lucide-react"
-import { Testimonials } from "@/components/home/testimonials"
 
 export const metadata: Metadata = {
   title: "Sunshine Parents & Testimonials | Sunshine School",
@@ -13,11 +12,11 @@ export const metadata: Metadata = {
 const PARENT_STORIES = [
   {
     id: "story-01",
-    tag: "Sunshine Sheltered Workshop Parent",
+    tag: "Vaibhav's Family",
     title:
       "“Every child deserves a place where they are accepted for who they are and encouraged to become all they can be.”",
     image: "/images/test01.jpeg",
-    author: "Parents of Sheltered Workshop Trainee",
+    author: "Parents of Vaibhav (Shelter Workshop Trainee)",
     paragraphs: [
       "As parents of a special child, every day brings new hopes, but also moments of uncertainties, anxiety, especially when our children experience meltdowns or struggle to express themselves.",
       "What makes Sunshine Sheltered Workshop truly special is that the teachers and staff never see these moments as a burden. They respond with endless patience, compassion, and understanding.",
@@ -28,11 +27,11 @@ const PARENT_STORIES = [
   },
   {
     id: "story-02",
-    tag: "Indhira's Family",
+    tag: "Indira's Family",
     title:
       "“When Indhira joined Sunshine School, we never imagined how much she would grow.”",
     image: "/images/test02.jpeg",
-    author: "Parents of Indhira",
+    author: "Parent of Indhira (Sunshine School Student)",
     paragraphs: [
       "When Indhira joined Sunshine School, we never imagined how much she would grow. As parents of an autistic child, we had many worries. But Sunshine School helped us discover her potential in ways we never imagined.",
       "Today, she participates in sports, dance, culinary activities, and every school celebration, despite her sensory challenges.",
@@ -43,11 +42,11 @@ const PARENT_STORIES = [
   },
   {
     id: "story-03",
-    tag: "Shanaya's Family",
+    tag: "Shanaya’s Family",
     title:
       "“Sunshine School for Differently Abled Children has been a true blessing for our family.”",
     image: "/images/test03.jpeg",
-    author: "Aditi Saha (Mother of Shanaya Mukherjee)",
+    author: "Parent of Shanaya (Sunshine School Student)",
     paragraphs: [
       "Hello everyone,",
       "I am Aditi Saha, mother of Shanaya Mukherjee, a 13-year-old girl diagnosed with Microcephaly and Intellectual Disability. Sunshine School for Differently Abled Children has been a true blessing for our family.",
@@ -71,8 +70,6 @@ export default function SunshineParentsPage() {
           { label: "Sunshine Parents" },
         ]}
       />
-
-      <Testimonials />
 
       <section className="container-x py-16 md:py-24 space-y-16 md:space-y-24">
         {PARENT_STORIES.map((story, index) => (

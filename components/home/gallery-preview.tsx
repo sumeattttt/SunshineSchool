@@ -3,12 +3,30 @@ import Image from "next/image"
 import { ArrowUpRight } from "lucide-react"
 
 const IMAGES = [
-  { src: "/images/annual.jpg", alt: "Annual Day" },
-  { src: "/images/christmas.jpg", alt: "Christmas Gifts" },
-  { src: "/images/medical.jpg", alt: "Medical Checkup" },
-  { src: "/images/awarenessrun.jpg", alt: "Autism Awareness Run" },
-  { src: "/images/workshop.jpg", alt: "Sheltered workshop" },
-  { src: "/images/cooking.jpg", alt: "Cooking Competition" },
+  {
+    src: "/images/Final Gallery Sorted Images/Photo Gallery/Annual Day Shankar Mahadevan as Chief Guest.jpg",
+    alt: "Annual Day with Chief Guest Shankar Mahadevan",
+  },
+  {
+    src: "/images/Final Gallery Sorted Images/Photo Gallery/Autism Awareness at Seawoods Mall.jpg",
+    alt: "Autism Awareness at Seawoods Mall",
+  },
+  {
+    src: "/images/Final Gallery Sorted Images/Photo Gallery/International Yoga Dat.jpg",
+    alt: "International Yoga Day",
+  },
+  {
+    src: "/images/Final Gallery Sorted Images/Photo Gallery/School Picnic.jpg",
+    alt: "School Picnic",
+  },
+  {
+    src: "/images/Final Gallery Sorted Images/Photo Gallery/Live Performance.jpg",
+    alt: "Live Performance by Students",
+  },
+  {
+    src: "/images/Final Gallery Sorted Images/Photo Gallery/WAAD.jpg",
+    alt: "World Autism Awareness Day",
+  },
 ]
 
 export function GalleryPreview() {

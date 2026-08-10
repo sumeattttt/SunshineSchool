@@ -12,195 +12,160 @@ export type GalleryImage = {
 }
 
 export const GALLERY_IMAGES: GalleryImage[] = [
-  // Additional Images Folder
+  // Photo Gallery Folder
   {
-    src: "/images/Gallery Additional Images/Annual Day.jpg.jpeg",
-    alt: "Annual Day Celebrations",
-    label: "Annual Day Celebrations",
+    src: "/images/Final Gallery Sorted Images/Photo Gallery/Annual Day Shankar Mahadevan as Chief Guest.jpg",
+    alt: "Annual Day with Chief Guest Shankar Mahadevan",
+    label: "Annual Day with Chief Guest Shankar Mahadevan",
     category: "Events",
   },
   {
-    src: "/images/Gallery Additional Images/Autism Awareness at Seawoods Mall.jpg.jpeg",
+    src: "/images/Final Gallery Sorted Images/Photo Gallery/Autism Awareness at Seawoods Mall.jpg",
     alt: "Autism Awareness at Seawoods Mall",
     label: "Autism Awareness at Seawoods Mall",
     category: "Events",
   },
   {
-    src: "/images/Gallery Additional Images/Autism Awareness.jpg.jpeg",
-    alt: "Autism Awareness Campaign",
-    label: "Autism Awareness Campaign",
+    src: "/images/Final Gallery Sorted Images/Photo Gallery/Autism Awareness.jpeg",
+    alt: "Autism Awareness Activity",
+    label: "Autism Awareness Activity",
     category: "Events",
   },
   {
-    src: "/images/Gallery Additional Images/CL1A5874 (1).JPG.jpeg",
-    alt: "Classroom Learning & Activities",
-    label: "Classroom Learning & Activities",
-    category: "Classrooms",
-  },
-  {
-    src: "/images/Gallery Additional Images/Get to know us.JPG.jpeg",
-    alt: "Get To Know Sunshine",
-    label: "Get To Know Sunshine",
+    src: "/images/Final Gallery Sorted Images/Photo Gallery/Autism Awareness.jpg.jpeg",
+    alt: "Autism Acceptance Campaign",
+    label: "Autism Acceptance Campaign",
     category: "Events",
   },
   {
-    src: "/images/Gallery Additional Images/IMG_2844.JPG.jpeg",
-    alt: "Interactive Student Session",
-    label: "Interactive Student Session",
-    category: "Classrooms",
-  },
-  {
-    src: "/images/Gallery Additional Images/IMG_2896.JPG.jpeg",
-    alt: "Student Group Learning",
-    label: "Student Group Learning",
-    category: "Classrooms",
-  },
-  {
-    src: "/images/Gallery Additional Images/International Yoga Day2.jpg.jpeg",
-    alt: "International Yoga Day",
-    label: "International Yoga Day",
+    src: "/images/Final Gallery Sorted Images/Photo Gallery/International Yoga Dat.jpg",
+    alt: "International Yoga Day Session 1",
+    label: "International Yoga Day Session",
     category: "Events",
   },
   {
-    src: "/images/Gallery Additional Images/PEEIP.jpg.jpeg",
-    alt: "Early Intervention Program (PEEIP)",
-    label: "Early Intervention Program (PEEIP)",
+    src: "/images/Final Gallery Sorted Images/Photo Gallery/International Yoga Day2.jpg",
+    alt: "International Yoga Day Session 2",
+    label: "Yoga & Wellness Activities",
+    category: "Events",
+  },
+  {
+    src: "/images/Final Gallery Sorted Images/Photo Gallery/International Yoga Day3.jpg",
+    alt: "International Yoga Day Session 3",
+    label: "Student Yoga Practice",
+    category: "Events",
+  },
+  {
+    src: "/images/Final Gallery Sorted Images/Photo Gallery/Live Performance.jpg",
+    alt: "Live Performance by Students",
+    label: "Live Stage Performance",
+    category: "Events",
+  },
+  {
+    src: "/images/Final Gallery Sorted Images/Photo Gallery/School Picnic.jpg",
+    alt: "School Picnic Outing",
+    label: "School Picnic Outing",
+    category: "Events",
+  },
+  {
+    src: "/images/Final Gallery Sorted Images/Photo Gallery/WAAD.jpg",
+    alt: "World Autism Awareness Day",
+    label: "World Autism Awareness Day Rally",
+    category: "Events",
+  },
+
+  // Home Page Folder
+  {
+    src: "/images/Final Gallery Sorted Images/Home page/Early Intervention Program.jpeg",
+    alt: "Early Intervention Program",
+    label: "Early Intervention Program",
     category: "Therapy",
   },
   {
-    src: "/images/Gallery Additional Images/S.W Sunshine.jpg.jpeg",
-    alt: "Sheltered Workshop Creations",
-    label: "Sheltered Workshop Creations",
+    src: "/images/Final Gallery Sorted Images/Home page/Academic Program.jpg",
+    alt: "Academic Program Learning",
+    label: "Academic Program Learning",
+    category: "Classrooms",
+  },
+  {
+    src: "/images/Final Gallery Sorted Images/Home page/Pre-Vocational Training Program.jpeg",
+    alt: "Pre-Vocational Training Program",
+    label: "Pre-Vocational Skill Training",
+    category: "Classrooms",
+  },
+  {
+    src: "/images/Final Gallery Sorted Images/Home page/Vocational Training Program.jpeg",
+    alt: "Vocational Training Program",
+    label: "Vocational Training Unit",
     category: "Workshop",
   },
   {
-    src: "/images/Gallery Additional Images/Sports.jpg.jpeg",
+    src: "/images/Final Gallery Sorted Images/Home page/Therapies & Support Services.jpg",
+    alt: "Therapies & Support Services",
+    label: "Therapies & Support Services",
+    category: "Therapy",
+  },
+  {
+    src: "/images/Final Gallery Sorted Images/Home page/Understanding Autism.jpg",
+    alt: "Understanding Autism & Guidance",
+    label: "Understanding Autism & Support",
+    category: "Classrooms",
+  },
+  {
+    src: "/images/Final Gallery Sorted Images/Home page/Extracurricular.jpeg",
+    alt: "Extracurricular Activities",
+    label: "Extracurricular & Sports Activities",
+    category: "Events",
+  },
+
+  // Community_ Folder
+  {
+    src: "/images/Final Gallery Sorted Images/Community_/Annual Day.jpg",
+    alt: "Annual Day Gala",
+    label: "Annual Day Gala Celebration",
+    category: "Events",
+  },
+  {
+    src: "/images/Final Gallery Sorted Images/Community_/Sports.jpg",
     alt: "Annual Sports Meet",
     label: "Annual Sports Meet",
     category: "Events",
   },
   {
-    src: "/images/Gallery Additional Images/Volunteer.jpeg",
+    src: "/images/Final Gallery Sorted Images/Community_/WAAD.jpg",
+    alt: "World Autism Awareness Drive",
+    label: "Autism Awareness Community Drive",
+    category: "Events",
+  },
+  {
+    src: "/images/Final Gallery Sorted Images/Community_/volunter.jpeg",
     alt: "Volunteers with Students",
-    label: "Volunteers with Students",
-    category: "Events",
-  },
-  {
-    src: "/images/Gallery Additional Images/WAAD.jpg.jpeg",
-    alt: "World Autism Awareness Day",
-    label: "World Autism Awareness Day",
-    category: "Events",
-  },
-  {
-    src: "/images/Gallery Additional Images/donation.jpg.jpeg",
-    alt: "Community Support & Donation Drive",
-    label: "Community Support & Donation Drive",
+    label: "Volunteers & Student Support",
     category: "Events",
   },
 
-  // Public Folder Main Images
+  // About Folder
   {
-    src: "/images/hero-students.jpg",
-    alt: "Sunshine School Students",
-    label: "Learning Together",
+    src: "/images/Final Gallery Sorted Images/About/sunshine school.jpeg",
+    alt: "Sunshine School Campus & Students",
+    label: "Sunshine School Campus",
     category: "Classrooms",
   },
   {
-    src: "/images/cooking.jpg",
-    alt: "Culinary Skills Training",
-    label: "Cooking Competition & Skills",
+    src: "/images/Final Gallery Sorted Images/About/Sheltered Workshop — for differently-abled adults.jpg",
+    alt: "Sheltered Workshop — for differently-abled adults",
+    label: "Sheltered Workshop Trainees",
     category: "Workshop",
   },
+
+  // Academic Folder
   {
-    src: "/images/awarenessrun.jpg",
-    alt: "Autism Awareness Run",
-    label: "Autism Awareness Run",
-    category: "Events",
-  },
-  {
-    src: "/images/therapy.jpg",
-    alt: "Occupational Therapy Session",
-    label: "Therapy Sessions",
-    category: "Therapy",
-  },
-  {
-    src: "/images/picnic.jpg",
-    alt: "School Outdoor Picnic",
-    label: "Picnic Day Outing",
-    category: "Events",
-  },
-  {
-    src: "/images/workshop.jpg",
-    alt: "Sheltered Workshop",
-    label: "Vocational Sheltered Workshop",
+    src: "/images/Final Gallery Sorted Images/Academic/skills and dignity.jpeg",
+    alt: "Building Skills & Dignity",
+    label: "Skills & Dignity Training",
     category: "Workshop",
   },
-  {
-    src: "/images/medical.jpg",
-    alt: "Health & Medical Checkup",
-    label: "Medical Checkup",
-    category: "Therapy",
-  },
-  {
-    src: "/images/annual.jpg",
-    alt: "Annual Day Celebrations",
-    label: "Annual Day Gala",
-    category: "Events",
-  },
-  {
-    src: "/images/Annua Day111.JPG",
-    alt: "Annual Day Stage Performance",
-    label: "Annual Day Stage Performances",
-    category: "Events",
-  },
-  {
-    src: "/images/christmas.jpg",
-    alt: "Christmas Gifts & Celebrations",
-    label: "Christmas Gifts & Celebration",
-    category: "Events",
-  },
-  {
-    src: "/images/parents.jpg",
-    alt: "With Parents",
-    label: "Parent Support & Bonds",
-    category: "Events",
-  },
-  {
-    src: "/images/art-class.jpg",
-    alt: "Art & Craft Class",
-    label: "Art & Craft Session",
-    category: "Classrooms",
-  },
-  {
-    src: "/images/autism.jpeg",
-    alt: "Autism Awareness Activity",
-    label: "Autism Acceptance & Awareness",
-    category: "Events",
-  },
-  {
-    src: "/images/award01.jpeg",
-    alt: "Excellence & Recognition Award",
-    label: "Institutional Recognition",
-    category: "Events",
-  },
-  {
-    src: "/images/award02.jpeg",
-    alt: "School Achievement Award",
-    label: "Excellence Award",
-    category: "Events",
-  },
-  {
-    src: "/images/award03.jpeg",
-    alt: "Student Pride Award",
-    label: "Student Pride & Joy",
-    category: "Events",
-  },
-  {
-    src: "/images/staff.jpg",
-    alt: "Dedicated Educators & Staff",
-    label: "Our Caring Educators",
-    category: "Classrooms",
-  },
+
 ]
 
 const CATEGORIES = ["All", "Classrooms", "Events", "Workshop", "Therapy"] as const

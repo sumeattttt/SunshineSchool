@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowUpRight, Check } from "lucide-react"
+import { FadeIn, ScaleIn, StaggerContainer, StaggerItem } from "@/components/ui/animate"
 
 const PILLARS = [
   {
@@ -22,10 +23,10 @@ export function AboutPreview() {
     <section className="bg-brand-cream">
       <div className="container-x py-20 md:py-28">
         <div className="grid gap-14 lg:grid-cols-[1.05fr_1fr] lg:gap-20">
-          <div className="relative">
+          <ScaleIn duration={0.6} className="relative">
             <div className="relative aspect-[5/6] overflow-hidden rounded-3xl border border-border bg-card shadow-lg">
               <Image
-                src="/images/Gallery Additional Images/Get to know us.JPG.jpeg"
+                src="/images/Final Gallery Sorted Images/About/sunshine school.jpeg"
                 alt="Get to Know Sunshine School"
                 fill
                 className="object-cover"
@@ -41,7 +42,7 @@ export function AboutPreview() {
               </p>
             </div>
 
-            <div className="absolute -left-4 -top-4 hidden h-24 w-24 items-center justify-center rounded-full bg-brand-yellow text-center font-display text-brand-ink md:flex z-10 pointer-events-none">
+            <div className="absolute -left-4 -top-4 hidden h-24 w-24 items-center justify-center rounded-full bg-brand-yellow text-center font-display text-brand-ink md:flex z-10 pointer-events-none shadow-md">
               <span className="leading-tight font-bold">
                 150+
                 <br />
@@ -50,64 +51,67 @@ export function AboutPreview() {
                 </span>
               </span>
             </div>
-          </div>
+          </ScaleIn>
 
           <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-brand-red">
-              <span className="h-1.5 w-1.5 rounded-full bg-brand-red" />
-              Get to know us
-            </div>
-            <h2 className="mt-5 font-display text-4xl leading-[1.02] text-brand-ink text-balance md:text-5xl lg:text-6xl">
-              A non-profit organisation for differently-abled children & adults.
-            </h2>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              Sunshine Education Society is a non-profit
-              organisation that aims at providing quality education and
-              rehabilitation through two flagship initiatives.
-            </p>
+            <FadeIn delay={0.1}>
+              <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-brand-red">
+                <span className="h-1.5 w-1.5 rounded-full bg-brand-red" />
+                Get to know us
+              </div>
+              <h2 className="mt-5 font-display text-4xl leading-[1.02] text-brand-ink text-balance md:text-5xl lg:text-6xl">
+                A non-profit organisation for differently-abled children & adults.
+              </h2>
+              <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
+                Sunshine Education Society is a non-profit
+                organisation that aims at providing quality education and
+                rehabilitation through two flagship initiatives.
+              </p>
+            </FadeIn>
 
-            <div className="mt-10 space-y-5">
+            <StaggerContainer staggerDelay={0.12} delay={0.2} className="mt-10 space-y-5">
               {PILLARS.map((p) => (
-                <Link
-                  key={p.title}
-                  href={p.href}
-                  className="group flex items-start gap-4 rounded-2xl border border-border bg-background p-5 transition-all hover:-translate-y-0.5 hover:border-brand-ink/20 hover:shadow-md"
-                >
-                  <div className="mt-1 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-yellow text-brand-ink">
-                    <Check className="h-4 w-4" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center justify-between gap-2">
-                      <h3 className="font-display text-xl text-brand-ink">
-                        {p.title}
-                      </h3>
-                      <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-brand-red" />
+                <StaggerItem key={p.title}>
+                  <Link
+                    href={p.href}
+                    className="group flex items-start gap-4 rounded-2xl border border-border bg-background p-5 transition-all hover:-translate-y-0.5 hover:border-brand-ink/20 hover:shadow-md"
+                  >
+                    <div className="mt-1 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-yellow text-brand-ink">
+                      <Check className="h-4 w-4" />
                     </div>
-                    <div className="mt-0.5 text-[11px] uppercase tracking-[0.18em] text-brand-red/80">
-                      {p.subtitle}
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between gap-2">
+                        <h3 className="font-display text-xl text-brand-ink">
+                          {p.title}
+                        </h3>
+                        <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-brand-red" />
+                      </div>
+                      <div className="mt-0.5 text-[11px] uppercase tracking-[0.18em] text-brand-red/80">
+                        {p.subtitle}
+                      </div>
+                      <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                        {p.body}
+                      </p>
                     </div>
-                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                      {p.body}
-                    </p>
-                  </div>
-                </Link>
+                  </Link>
+                </StaggerItem>
               ))}
-            </div>
+            </StaggerContainer>
 
-            <div className="mt-8 flex items-center gap-3">
+            <FadeIn delay={0.4} className="mt-8 flex items-center gap-3">
               <Link
                 href="/about"
-                className="inline-flex items-center gap-1.5 rounded-full bg-brand-ink px-5 py-3 text-sm font-medium text-white hover:bg-brand-ink/90"
+                className="inline-flex items-center gap-1.5 rounded-full bg-brand-ink px-5 py-3 text-sm font-medium text-white hover:bg-brand-ink/90 hover:-translate-y-0.5 transition-all"
               >
                 Read our full story <ArrowUpRight className="h-4 w-4" />
               </Link>
               <Link
                 href="/principals-message"
-                className="text-sm font-medium text-brand-ink hover:text-brand-red"
+                className="text-sm font-medium text-brand-ink hover:text-brand-red transition-colors"
               >
                 Principal&apos;s message →
               </Link>
-            </div>
+            </FadeIn>
           </div>
         </div>
       </div>

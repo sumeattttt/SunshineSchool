@@ -111,7 +111,7 @@ export default function VolunteerPage() {
           <div className="space-y-6">
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl">
               <Image
-                src="/images/Gallery Additional Images/Volunteer.jpeg"
+                src="/images/Final Gallery Sorted Images/Community_/volunter.jpeg"
                 alt="Volunteer with Sunshine School students"
                 fill
                 className="object-cover"

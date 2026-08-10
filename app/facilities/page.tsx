@@ -111,29 +111,41 @@ export default function FacilitiesPage() {
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-black/20 bg-black/5 px-3 py-1 text-xs font-semibold text-black">
               <span className="h-1.5 w-1.5 rounded-full bg-black" />
-              Sheltered Workshop
+              Sheltered Workshop · First Step Towards Independent Living
             </div>
             <h2 className="mt-5 font-serif text-4xl leading-[1.05] tracking-tight md:text-5xl font-bold">
               Where young adults build{" "}
               <span className="text-[#15803D] italic">skills and dignity</span>
             </h2>
             <p className="mt-5 text-black/85 leading-relaxed font-medium">
-              Our sheltered workshop is a vocational training unit for
-              differently-abled young adults above the age of 18. Under trained
-              supervisors, trainees craft handmade paper bags, greeting cards,
-              candles, diyas, chocolates and seasonal gifting — products sold to
-              corporates and the community.
+              Sunshine Sheltered Workshop is an innovative training center for youth with Autism Spectrum Disorder aged 18 to 30. Managed under skilled professionals including Occupational Therapists, Special Educators, and Sports Trainers, trainees build self-reliance and vocational readiness.
             </p>
             <p className="mt-4 text-black/85 leading-relaxed font-medium">
-              The program combines purposeful work with social skills, routine,
-              and a sense of identity — proving every day that ability comes in
-              many forms.
+              Trainees craft handmade paper bags, greeting cards, candles, diyas, chocolates and corporate gifting while earning stipends for their work.
             </p>
+
+            <div className="mt-6 flex flex-wrap gap-2">
+              {[
+                "Community Living Skills",
+                "Vocational Skills",
+                "Job Work with Stipend",
+                "Sports & Leisure Activities",
+                "Training for Job Work",
+              ].map((skill) => (
+                <span
+                  key={skill}
+                  className="rounded-lg bg-black/10 px-3 py-1 text-xs font-semibold text-black"
+                >
+                  ✓ {skill}
+                </span>
+              ))}
+            </div>
+
             <div className="mt-8 grid grid-cols-3 gap-4 border-t border-black/15 pt-8">
               {[
-                { v: "30+", l: "Trainees" },
-                { v: "8+", l: "Product lines" },
-                { v: "100+", l: "Corporate orders" },
+                { v: "18–30", l: "Age Group" },
+                { v: "8+", l: "Product Lines" },
+                { v: "100+", l: "Stipend Orders" },
               ].map((stat) => (
                 <div key={stat.l}>
                   <div className="font-serif text-3xl font-bold text-[#15803D]">
@@ -150,7 +162,7 @@ export default function FacilitiesPage() {
           <div className="relative">
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-black/10 shadow-xl">
               <Image
-                src="/images/workshop.jpg"
+                src="/images/Sunshine Shelter Workshop.jpeg"
                 alt="Young adults working in the Sunshine sheltered workshop"
                 fill
                 className="object-cover"

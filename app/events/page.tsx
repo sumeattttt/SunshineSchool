@@ -11,36 +11,36 @@ export const metadata: Metadata = {
 const UPCOMING = [
   {
     title: "Parent Empowerment Early Intervention Program (PEEIP)",
-    description: "Empowering Parents, Transforming Children's Futures.",
-    image: "/images/Gallery Additional Images/PEEIP.jpg.jpeg",
+    description: "Empowering Parents, Transforming Children's Futures",
+    image: "/images/Final Gallery Sorted Images/Home page/Early Intervention Program.jpeg",
     tag: "Early Intervention",
   },
   {
     title: "Annual Day",
     description:
       "Our students bring the stage alive with music, dance, and drama — celebrating two decades of progress and achievements at Sunshine.",
-    image: "/images/music.jpg",
+    image: "/images/Final Gallery Sorted Images/Community_/Annual Day.jpg",
     tag: "Celebration",
   },
   {
     title: "World Autism Awareness Day",
     description:
       "A morning of storytelling, art exhibitions and an open community walk to spread awareness and acceptance.",
-    image: "/images/event.jpg",
+    image: "/images/Final Gallery Sorted Images/Community_/WAAD.jpg",
     tag: "Awareness",
   },
   {
     title: "Annual Sports Day",
     description:
       "Adapted sports, parent-child races and inclusion games — an afternoon full of cheer and medals.",
-    image: "/images/sports.jpg",
+    image: "/images/Final Gallery Sorted Images/Community_/Sports.jpg",
     tag: "Sports",
   },
   {
     title: "Parents' Workshop",
     description:
       "An interactive session on managing sensory overload and setting home routines.",
-    image: "/images/parents.jpg",
+    image: "/images/Final Gallery Sorted Images/Photo Gallery/Autism Awareness.jpeg",
     tag: "Workshop",
   },
 ]

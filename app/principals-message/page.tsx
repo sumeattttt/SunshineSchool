@@ -1,7 +1,6 @@
 import Image from "next/image"
 import { PageHeader } from "@/components/site/page-header"
-import { CtaSection } from "@/components/site/cta-section"
-import { Quote } from "lucide-react"
+import { TypewriterMessage } from "@/components/principals-message/typewriter-message"
 
 export const metadata = {
   title: "Principal's Message",
@@ -28,7 +27,7 @@ export default function PrincipalsMessagePage() {
           <div>
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border">
               <Image
-                src="/images/principal.jpg"
+                src="/images/Principal's Message.jpeg"
                 alt="Mrs. Paramita Mazumder, Principal"
                 fill
                 sizes="(min-width: 1024px) 35vw, 100vw"
@@ -50,34 +49,7 @@ export default function PrincipalsMessagePage() {
             </div>
           </div>
 
-          <article className="prose-lg max-w-none">
-            <Quote
-              className="h-10 w-10 text-brand-yellow"
-              strokeWidth={1.5}
-            />
-            <p className="mt-6 font-display text-3xl leading-[1.2] text-brand-ink md:text-4xl">
-              &ldquo;Every child, regardless of ability, deserves the opportunity to learn, grow, and live with dignity.&rdquo;
-            </p>
-
-            <div className="mt-10 space-y-6 text-base leading-relaxed text-muted-foreground md:text-lg">
-              <p>
-                Twenty years ago, Sunshine was born from a simple yet powerful belief—that every child, regardless of ability, deserves the opportunity to learn, grow, and live with dignity. Today, as we proudly celebrate 20 years of Sunshine, my heart is filled with gratitude for every child, parent, teacher, volunteer, and well-wisher who has been part of this extraordinary journey.
-              </p>
-              <p>
-                For me, Sunshine is much more than a special school for differentlyabled children; it is a family and a purpose that has shaped my life. Every smile, every small achievement, every challenge overcome by our children reminds me why Sunshine exists—to nurture abilities, build independence, and create an inclusive society where every individual is valued for who they are.
-              </p>
-              <p>
-                Over the past two decades, we have touched countless lives through education, therapy, vocational training, and parent empowerment. Yet, our journey is far from over. We remain committed to empowering every learner with confidence, compassion, and the skills to lead a meaningful life.
-              </p>
-              <p>
-                Thank you for believing in our vision and walking this journey with us. Together, let us continue to spread hope, celebrate abilities, and build a world where everyone truly belongs.
-              </p>
-              <p className="pt-4">Warm regards,</p>
-              <p className="font-display text-2xl italic text-brand-ink">
-                Mrs. Paramita Mazumder
-              </p>
-            </div>
-          </article>
+          <TypewriterMessage />
         </div>
       </section>
     </>
