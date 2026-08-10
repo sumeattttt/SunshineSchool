@@ -74,7 +74,7 @@ export function SiteNavbar() {
         "sticky top-0 z-50 w-full border-b transition-all duration-300 bg-[#FACC15] text-black border-black/10 shadow-sm"
       )}
     >
-      <div className="container-x flex h-16 items-center justify-between gap-6 md:h-[72px]">
+      <div className="container-x flex h-20 items-center justify-between gap-6 md:h-24">
         <Logo />
 
         {/* Desktop nav */}
