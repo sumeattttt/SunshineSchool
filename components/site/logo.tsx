@@ -10,7 +10,7 @@ export function Logo({
   return (
     <Link
       href="/"
-      className={`group inline-flex items-center transition-transform hover:scale-[1.03] ${className}`}
+      className={`group inline-flex items-center rounded-2xl bg-white/95 px-3 py-1.5 shadow-sm border border-black/10 transition-all hover:bg-white hover:shadow-md ${className}`}
       aria-label="Sunshine School — Home"
     >
       <Image
@@ -18,7 +18,7 @@ export function Logo({
         alt="Sunshine School Logo"
         width={240}
         height={80}
-        className="h-12 md:h-14 w-auto object-contain"
+        className="h-9 md:h-11 w-auto object-contain transition-transform group-hover:scale-[1.02]"
         priority
       />
     </Link>
