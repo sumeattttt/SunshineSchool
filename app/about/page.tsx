@@ -50,16 +50,6 @@ const VISIONARIES = [
     role: "Active Chairman of Sunshine Education Society from 2006 to 2025",
     bio: "Founder and chairman of the Sagarika group of companies; active in social and non-profit causes for the last 20 years.",
   },
-  {
-    name: "Ms. Sagarika Das",
-    role: "Past Treasurer, Sunshine Education Society from 2006 to 2025",
-    bio: "President of Sagarika Music Pvt. Ltd. A young, energetic entrepreneur involved with children's welfare organisations.",
-  },
-  {
-    name: "Mrs. Paramita Mazumder",
-    role: "Principal & Secretary, Sunshine Education Society",
-    bio: "Qualified special educator and counsellor; parent of an autistic young adult. Principal of Sunshine School since its inception.",
-  },
 ]
 
 export default function AboutPage() {
@@ -234,18 +224,18 @@ export default function AboutPage() {
           <div className="mb-14 max-w-2xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-brand-red">
               <span className="h-1.5 w-1.5 rounded-full bg-brand-red" />
-              Our visionaries
+              Our visionary
             </div>
             <h2 className="mt-5 font-display text-4xl leading-[1.05] text-brand-ink md:text-5xl">
-              The people behind Sunshine.
+              Founder & Visionary behind Sunshine.
             </h2>
           </div>
 
-          <div className="grid gap-4 md:grid-cols-3">
+          <div className="max-w-xl">
             {VISIONARIES.map((v) => (
               <div
                 key={v.name}
-                className="flex h-full flex-col justify-between rounded-3xl border border-border bg-background p-7"
+                className="flex h-full flex-col justify-between rounded-3xl border border-border bg-background p-8 shadow-sm"
               >
                 <div>
                   <div className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-brand-yellow font-display text-xl text-brand-ink">
@@ -253,6 +243,7 @@ export default function AboutPage() {
                       .replace("Mr.", "")
                       .replace("Mrs.", "")
                       .replace("Ms.", "")
+                      .replace("Late", "")
                       .trim()
                       .split(" ")
                       .map((w) => w.charAt(0))
