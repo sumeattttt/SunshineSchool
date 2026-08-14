@@ -73,11 +73,11 @@ export default function AboutPage() {
           <article className="relative">
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border">
               <Image
-                src="/images/award01.jpeg"
-                alt="Mrs. Paramita Mazumder and son"
+                src="/images/sunshine-school-about.jpg"
+                alt="Sunshine School students and staff at Karnala Bird Sanctuary"
                 fill
                 sizes="(min-width: 1024px) 48vw, 100vw"
-                className="object-cover object-top"
+                className="object-cover object-center"
               />
             </div>
             <div className="mt-8">
