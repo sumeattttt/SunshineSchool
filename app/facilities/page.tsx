@@ -202,23 +202,30 @@ export default function FacilitiesPage() {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="relative aspect-[16/9] overflow-hidden rounded-3xl border border-black/10 shadow-xl lg:aspect-[16/10]">
+          <div className="space-y-6">
+            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-3xl border border-black/10 shadow-xl bg-black/5">
               <Image
                 src="/images/sheltered-workshop-about.jpg"
-                alt="Young adult trainees in the Sunshine sheltered workshop building skills and dignity"
+                alt="Culinary & life skills training in Sheltered Workshop"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-            </div>
-            <div className="absolute -bottom-6 -left-6 hidden w-48 rounded-2xl bg-black p-5 text-white shadow-xl md:block">
-              <div className="font-serif text-2xl leading-tight">
-                Order handmade gifts
+              <div className="absolute bottom-4 left-4 bg-black/75 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-semibold text-white">
+                🍳 Life Skills & Culinary Training
               </div>
-              <p className="mt-1 text-xs text-white/80">
-                Every purchase funds the trainee stipend program.
-              </p>
+            </div>
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl border border-black/10 shadow-xl bg-black/5">
+              <Image
+                src="/images/sheltered-workshop-crafts.jpg"
+                alt="Exhibition and sale of handmade products created by trainees"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute bottom-4 left-4 bg-black/75 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-semibold text-white">
+                🛍️ Handcrafts & Exhibition Stall
+              </div>
             </div>
           </div>
         </div>
