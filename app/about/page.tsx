@@ -46,9 +46,14 @@ const VALUES = [
 
 const VISIONARIES = [
   {
-    name: "Late Mr. Hirak Das",
-    role: "Active Chairman of Sunshine Education Society from 2006 to 2025",
-    bio: "Founder and chairman of the Sagarika group of companies; active in social and non-profit causes for the last 20 years.",
+    name: "Late Shri Hirak Das",
+    role: "Founding Chairman, Sunshine Education Society (2006 – 2025)",
+    image: "/images/hirak-das.jpg",
+    paragraphs: [
+      "Mr. Hirak Das was the Founder Chairman of the Sunshine Education Society and the visionary who laid the foundation for Sunshine’s journey. With a deep commitment to creating opportunities for children and adults with special needs, he established Sunshine with the belief that every individual deserves dignity, acceptance, education, and the opportunity to lead a meaningful life.",
+      "His vision and leadership shaped Sunshine into a nurturing and inclusive environment where individuals are encouraged to discover their abilities, develop independence, and participate meaningfully in society.",
+      "Although he is no longer with us, his vision continues to live on at the heart of Sunshine. His legacy inspires our ongoing commitment to inclusion, empowerment, and a life of dignity for every individual.",
+    ],
   },
 ]
 
@@ -231,33 +236,37 @@ export default function AboutPage() {
             </h2>
           </div>
 
-          <div className="max-w-xl">
+          <div>
             {VISIONARIES.map((v) => (
               <div
                 key={v.name}
-                className="flex h-full flex-col justify-between rounded-3xl border border-border bg-background p-8 shadow-sm"
+                className="grid gap-10 rounded-3xl border border-border bg-background p-8 shadow-sm lg:grid-cols-[380px_1fr] lg:gap-14 lg:p-10"
               >
                 <div>
-                  <div className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-brand-yellow font-display text-xl text-brand-ink">
-                    {v.name
-                      .replace("Mr.", "")
-                      .replace("Mrs.", "")
-                      .replace("Ms.", "")
-                      .replace("Late", "")
-                      .trim()
-                      .split(" ")
-                      .map((w) => w.charAt(0))
-                      .join("")}
+                  <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl border border-border shadow-md">
+                    <Image
+                      src={v.image}
+                      alt={v.name}
+                      fill
+                      className="object-cover"
+                      sizes="(min-width: 1024px) 380px, 100vw"
+                    />
                   </div>
-                  <h3 className="mt-6 font-display text-2xl text-brand-ink">
+                </div>
+
+                <div className="flex flex-col justify-center">
+                  <h3 className="font-display text-3xl text-brand-ink md:text-4xl">
                     {v.name}
                   </h3>
-                  <div className="mt-1 text-[11px] uppercase tracking-[0.18em] text-brand-red">
+                  <div className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-red">
                     {v.role}
                   </div>
-                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                    {v.bio}
-                  </p>
+
+                  <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
+                    {v.paragraphs.map((p, idx) => (
+                      <p key={idx}>{p}</p>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
