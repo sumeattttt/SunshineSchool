@@ -97,13 +97,13 @@ export default function AboutPage() {
           </article>
 
           <article className="relative">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border">
+            <div className="relative aspect-[16/9] overflow-hidden rounded-3xl border border-border">
               <Image
-                src="/images/Sunshine Shelter Workshop.jpeg"
-                alt="Sunshine Sheltered Workshop"
+                src="/images/sheltered-workshop-about.jpg"
+                alt="Sunshine Sheltered Workshop trainees building skills and dignity"
                 fill
                 sizes="(min-width: 1024px) 48vw, 100vw"
-                className="object-cover object-[center_35%]"
+                className="object-cover object-center"
               />
             </div>
             <div className="mt-8">

@@ -203,12 +203,12 @@ export default function FacilitiesPage() {
           </div>
 
           <div className="relative">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-black/10 shadow-xl">
+            <div className="relative aspect-[16/9] overflow-hidden rounded-3xl border border-black/10 shadow-xl lg:aspect-[16/10]">
               <Image
-                src="/images/Sunshine Shelter Workshop.jpeg"
-                alt="Young adults working in the Sunshine sheltered workshop"
+                src="/images/sheltered-workshop-about.jpg"
+                alt="Young adult trainees in the Sunshine sheltered workshop building skills and dignity"
                 fill
-                className="object-cover"
+                className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
