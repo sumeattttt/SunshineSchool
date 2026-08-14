@@ -7,30 +7,31 @@ const PROGRAMS = [
   {
     no: "01",
     title: "Early Intervention Program",
-    body: "Focused on early learning, communication, sensory development, self-help skills, and foundational abilities.",
+    body: "Focused on early learning, communication, sensory development, motor skills, self-help, and social training.",
     image: "/images/Final Gallery Sorted Images/Home page/Early Intervention Program.jpeg",
-    tag: "Age 4–8 · 1:00pm–3:45pm",
+    tag: "Age 3–10 · 1:00pm–4:00pm",
   },
   {
     no: "02",
     title: "Academic Program",
     body: "Includes age-appropriate academic learning along with functional academics to promote independence in daily life.",
     image: "/images/Final Gallery Sorted Images/Home page/Academic Program.jpg",
-    tag: "Age 8–12 · 9:00am–1:00pm",
+    tag: "Age 8–10 · 9:00am–1:00pm",
+    imageFocus: "object-[center_75%]",
   },
   {
     no: "03",
     title: "Pre-Vocational Training Program",
-    body: "Designed to develop work-related skills, social skills, motor abilities, and readiness for future vocational opportunities.",
+    body: "Designed to develop work-related skills, motor abilities, and social readiness for future vocational opportunities.",
     image: "/images/Final Gallery Sorted Images/Home page/Pre-Vocational Training Program.jpeg",
-    tag: "Age 13–17 · 9:00am–3:30pm",
+    tag: "Age 16–18 · 9:00am–3:30pm",
   },
   {
     no: "04",
     title: "Vocational Training Program",
-    body: "Training for youth with ASD in community living skills, job work with stipend, vocational skills & leisure activities towards independent living.",
+    body: "Training for independent living where trainees earn stipend through community-based job work.",
     image: "/images/Final Gallery Sorted Images/Home page/Vocational Training Program.jpeg",
-    tag: "Age 18–30 · Sheltered Workshop",
+    tag: "Age 18+ · 10:00am–4:00pm",
   },
   {
     no: "05",
@@ -81,7 +82,7 @@ export function Programs() {
                   alt={p.title}
                   fill
                   sizes="(min-width: 1024px) 32vw, (min-width: 768px) 48vw, 100vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className={`object-cover transition-transform duration-700 group-hover:scale-105 ${p.imageFocus || ""}`}
                 />
                 <div className="absolute top-3 left-3 rounded-full bg-background/90 px-3 py-1 text-[11px] font-medium text-brand-ink backdrop-blur">
                   {p.tag}

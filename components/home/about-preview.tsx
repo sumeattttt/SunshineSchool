@@ -26,7 +26,7 @@ export function AboutPreview() {
           <ScaleIn duration={0.6} className="relative">
             <div className="relative aspect-[5/6] overflow-hidden rounded-3xl border border-border bg-card shadow-lg">
               <Image
-                src="/images/Final Gallery Sorted Images/About/sunshine school.jpeg"
+                src="/images/get-to-know-us.jpg"
                 alt="Get to Know Sunshine School"
                 fill
                 className="object-cover"

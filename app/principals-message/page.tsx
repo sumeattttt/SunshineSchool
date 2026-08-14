@@ -27,7 +27,7 @@ export default function PrincipalsMessagePage() {
           <div>
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border">
               <Image
-                src="/images/Principal's Message.jpeg"
+                src="/images/principal-20th-anniversary.jpg"
                 alt="Mrs. Paramita Mazumder, Principal"
                 fill
                 sizes="(min-width: 1024px) 35vw, 100vw"

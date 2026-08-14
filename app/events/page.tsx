@@ -12,7 +12,7 @@ const UPCOMING = [
   {
     title: "Parent Empowerment Early Intervention Program (PEEIP)",
     description: "Empowering Parents, Transforming Children's Futures",
-    image: "/images/Final Gallery Sorted Images/Home page/Early Intervention Program.jpeg",
+    image: "/images/Gallery Additional Images/PEEIP.jpg.jpeg",
     tag: "Early Intervention",
   },
   {
@@ -57,7 +57,7 @@ export default function EventsPage() {
       <section className="container-x pb-16 md:pb-24">
         <div className="mb-8 flex items-end justify-between gap-4">
           <h2 className="font-serif text-3xl text-brand-ink md:text-4xl">
-            Upcoming events
+            Events & News
           </h2>
         </div>
 

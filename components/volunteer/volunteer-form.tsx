@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Loader2, CheckCircle2, Send } from "lucide-react"
+import { Loader2, CheckCircle2, Send, AlertCircle } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const INTERESTS = [
@@ -19,7 +19,8 @@ export function VolunteerForm() {
   const [interests, setInterests] = useState<string[]>([])
   const [availability, setAvailability] =
     useState<(typeof AVAILABILITY)[number]>("Flexible")
-  const [status, setStatus] = useState<"idle" | "loading" | "success">("idle")
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
+  const [errorMessage, setErrorMessage] = useState("")
 
   const toggle = (i: string) =>
     setInterests((prev) =>
@@ -29,11 +30,39 @@ export function VolunteerForm() {
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setStatus("loading")
-    await new Promise((r) => setTimeout(r, 900))
-    setStatus("success")
-    ;(e.target as HTMLFormElement).reset()
-    setInterests([])
-    setTimeout(() => setStatus("idle"), 4500)
+    setErrorMessage("")
+
+    const formEl = e.currentTarget
+    const formData = new FormData(formEl)
+
+    formData.append("access_key", "9c2eb6d4-095a-4330-b0ef-35d2212abdb3")
+    formData.append("from_name", "Sunshine School Volunteer Application")
+    formData.append("subject_line", "[Sunshine Volunteer Application]")
+    formData.append("areas_of_interest", interests.join(", ") || "None selected")
+    formData.append("availability", availability)
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      })
+
+      const data = await response.json()
+
+      if (data.success) {
+        setStatus("success")
+        formEl.reset()
+        setInterests([])
+        setTimeout(() => setStatus("idle"), 6000)
+      } else {
+        setStatus("error")
+        setErrorMessage(data.message || "Failed to submit application. Please try again.")
+      }
+    } catch (err) {
+      console.error("Web3Forms volunteer error:", err)
+      setStatus("error")
+      setErrorMessage("Network error. Please check your connection and try again.")
+    }
   }
 
   return (
@@ -102,20 +131,34 @@ export function VolunteerForm() {
         />
       </div>
 
+      {status === "error" && (
+        <div className="flex items-center gap-2 rounded-xl bg-red-50 p-3 text-xs text-red-600 border border-red-200">
+          <AlertCircle className="h-4 w-4 shrink-0" />
+          <span>{errorMessage}</span>
+        </div>
+      )}
+
+      {status === "success" && (
+        <div className="flex items-center gap-2 rounded-xl bg-green-50 p-3 text-xs text-green-700 border border-green-200 font-medium">
+          <CheckCircle2 className="h-4 w-4 shrink-0 text-green-600" />
+          <span>Application Submitted Successfully! Our team will get in touch with you shortly.</span>
+        </div>
+      )}
+
       <div className="flex items-center justify-between gap-4">
         <p className="text-xs text-muted-foreground">
-          Minimum commitment is one term (3 months). We'll schedule a short chat
+          Minimum commitment is one term (3 months). We&apos;ll schedule a short chat
           before onboarding.
         </p>
         <button
           type="submit"
-          disabled={status !== "idle"}
+          disabled={status === "loading"}
           className="inline-flex items-center gap-2 rounded-full bg-brand-red px-5 py-2.5 text-sm font-medium text-white transition-all hover:bg-brand-red-dark hover:shadow-lg hover:shadow-brand-red/20 disabled:opacity-70"
         >
           {status === "loading" && <Loader2 className="h-4 w-4 animate-spin" />}
           {status === "success" && <CheckCircle2 className="h-4 w-4" />}
           {status === "idle" && <Send className="h-3.5 w-3.5" />}
-          {status === "success" ? "Application Sent" : "Submit Application"}
+          {status === "loading" ? "Submitting..." : status === "success" ? "Application Sent" : "Submit Application"}
         </button>
       </div>
     </form>

@@ -46,13 +46,13 @@ const VALUES = [
 
 const VISIONARIES = [
   {
-    name: "Mr. Hirak Das",
-    role: "Chairman, Sunshine Educational Trust",
+    name: "Late Mr. Hirak Das",
+    role: "Active Chairman of Sunshine Education Society from 2006 to 2025",
     bio: "Founder and chairman of the Sagarika group of companies; active in social and non-profit causes for the last 20 years.",
   },
   {
     name: "Ms. Sagarika Das",
-    role: "Treasurer, Sunshine Education Society",
+    role: "Past Treasurer, Sunshine Education Society from 2006 to 2025",
     bio: "President of Sagarika Music Pvt. Ltd. A young, energetic entrepreneur involved with children's welfare organisations.",
   },
   {
@@ -78,11 +78,11 @@ export default function AboutPage() {
           <article className="relative">
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border">
               <Image
-                src="/images/Final Gallery Sorted Images/About/sunshine school.jpeg"
-                alt="Sunshine School classroom"
+                src="/images/award01.jpeg"
+                alt="Mrs. Paramita Mazumder and son"
                 fill
                 sizes="(min-width: 1024px) 48vw, 100vw"
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
             <div className="mt-8">
@@ -108,7 +108,7 @@ export default function AboutPage() {
                 alt="Sunshine Sheltered Workshop"
                 fill
                 sizes="(min-width: 1024px) 48vw, 100vw"
-                className="object-cover"
+                className="object-cover object-[center_35%]"
               />
             </div>
             <div className="mt-8">

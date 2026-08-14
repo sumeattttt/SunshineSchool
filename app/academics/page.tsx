@@ -114,56 +114,6 @@ export default function AcademicsPage() {
 
       <Programs />
 
-      {/* Curricular blocks */}
-      <section className="bg-brand-cream">
-        <div className="container-x py-20 md:py-28">
-          <div className="mb-14 max-w-2xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-brand-red">
-              <span className="h-1.5 w-1.5 rounded-full bg-brand-red" />
-              Curricular Training
-            </div>
-            <h2 className="mt-5 font-display text-4xl leading-[1.05] text-brand-ink md:text-5xl">
-              Four structured blocks, delivered with care.
-            </h2>
-          </div>
-
-          <div className="grid gap-4 md:grid-cols-2">
-            {BLOCKS.map((b) => (
-              <div
-                key={b.title}
-                className="rounded-3xl border border-border bg-background p-7"
-              >
-                <div className="flex items-center justify-between">
-                  <div className="inline-flex h-10 items-center rounded-full bg-brand-yellow px-3 font-display text-sm text-brand-ink">
-                    {b.tag}
-                  </div>
-                  <div className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
-                    {b.subtitle}
-                  </div>
-                </div>
-                <h3 className="mt-6 font-display text-2xl leading-tight text-brand-ink md:text-[1.75rem]">
-                  {b.title}
-                </h3>
-                <ul className="mt-5 space-y-2.5">
-                  {b.items.map((it) => (
-                    <li
-                      key={it}
-                      className="flex items-start gap-3 text-sm text-brand-ink/85"
-                    >
-                      <span
-                        aria-hidden
-                        className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-brand-red"
-                      />
-                      {it}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Extracurricular */}
       <section className="container-x py-20 md:py-28">
         <div className="mb-14 max-w-2xl">
@@ -231,29 +181,13 @@ export default function AcademicsPage() {
         </div>
       </section>
 
-      {/* Therapies */}
-      <section className="container-x py-20 md:py-28">
-        <div className="mb-14 max-w-2xl">
-          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-brand-red">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand-red" />
-            Therapies during school hours
-          </div>
-          <h2 className="mt-5 font-display text-4xl leading-[1.05] text-brand-ink md:text-5xl">
-            In-house therapy, woven into the school day.
-          </h2>
-        </div>
-
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {THERAPIES.map((t) => (
-            <div key={t.title} className="rounded-3xl border border-border bg-card p-7">
-              <h3 className="font-display text-2xl text-brand-ink">{t.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                {t.body}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <CtaSection
+        eyebrow="Admissions open"
+        title="Give your child the Sunshine advantage."
+        description="Schedule an observation session with our special educators and therapists."
+        primary={{ label: "Apply for admission", href: "/admissions" }}
+        secondary={{ label: "Contact us", href: "/contact" }}
+      />
     </>
   )
 }

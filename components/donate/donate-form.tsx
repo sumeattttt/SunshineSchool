@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Loader2, CheckCircle2, Heart } from "lucide-react"
+import { Loader2, CheckCircle2, Heart, AlertCircle } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const PRESETS = [1000, 2500, 5000, 10000, 25000]
@@ -12,16 +12,46 @@ export function DonateForm() {
   const [custom, setCustom] = useState<string>("")
   const [frequency, setFrequency] =
     useState<(typeof FREQUENCIES)[number]>("One-time")
-  const [status, setStatus] = useState<"idle" | "loading" | "success">("idle")
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
+  const [errorMessage, setErrorMessage] = useState("")
 
   const displayAmount = custom ? Number(custom) || 0 : amount
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setStatus("loading")
-    await new Promise((r) => setTimeout(r, 1000))
-    setStatus("success")
-    setTimeout(() => setStatus("idle"), 4500)
+    setErrorMessage("")
+
+    const formEl = e.currentTarget
+    const formData = new FormData(formEl)
+
+    formData.append("access_key", "9c2eb6d4-095a-4330-b0ef-35d2212abdb3")
+    formData.append("from_name", "Sunshine School Donation Inquiry")
+    formData.append("subject_line", "[Sunshine Donation Inquiry]")
+    formData.append("donation_amount", `₹ ${displayAmount.toLocaleString("en-IN")}`)
+    formData.append("donation_frequency", frequency)
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      })
+
+      const data = await response.json()
+
+      if (data.success) {
+        setStatus("success")
+        formEl.reset()
+        setTimeout(() => setStatus("idle"), 6000)
+      } else {
+        setStatus("error")
+        setErrorMessage(data.message || "Failed to submit donation inquiry. Please try again.")
+      }
+    } catch (err) {
+      console.error("Web3Forms donation error:", err)
+      setStatus("error")
+      setErrorMessage("Network error. Please check your connection and try again.")
+    }
   }
 
   return (
@@ -93,6 +123,20 @@ export function DonateForm() {
         <Field label="PAN (for 80G)" name="pan" />
       </div>
 
+      {status === "error" && (
+        <div className="flex items-center gap-2 rounded-xl bg-red-50 p-3 text-xs text-red-600 border border-red-200">
+          <AlertCircle className="h-4 w-4 shrink-0" />
+          <span>{errorMessage}</span>
+        </div>
+      )}
+
+      {status === "success" && (
+        <div className="flex items-center gap-2 rounded-xl bg-green-50 p-3 text-xs text-green-700 border border-green-200 font-medium">
+          <CheckCircle2 className="h-4 w-4 shrink-0 text-green-600" />
+          <span>Thank you! Your donation details have been submitted successfully. We will reach out with payment/80G receipt details shortly.</span>
+        </div>
+      )}
+
       <div className="flex items-center justify-between gap-4 rounded-2xl border border-border bg-brand-yellow-soft/60 p-4">
         <div>
           <div className="text-xs uppercase tracking-[0.14em] text-muted-foreground">
@@ -107,13 +151,13 @@ export function DonateForm() {
         </div>
         <button
           type="submit"
-          disabled={status !== "idle" || displayAmount < 100}
+          disabled={status === "loading" || displayAmount < 100}
           className="inline-flex items-center gap-2 rounded-full bg-brand-red px-5 py-3 text-sm font-medium text-white transition-all hover:bg-brand-red-dark hover:shadow-lg hover:shadow-brand-red/20 disabled:opacity-60"
         >
           {status === "loading" && <Loader2 className="h-4 w-4 animate-spin" />}
           {status === "success" && <CheckCircle2 className="h-4 w-4" />}
           {status === "idle" && <Heart className="h-4 w-4" />}
-          {status === "success" ? "Thank you!" : "Donate Now"}
+          {status === "loading" ? "Submitting..." : status === "success" ? "Submitted" : "Submit Donation Details"}
         </button>
       </div>
 

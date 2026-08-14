@@ -103,6 +103,49 @@ export default function FacilitiesPage() {
         </div>
       </section>
 
+      {/* Therapies */}
+      <section id="therapy" className="border-t border-border bg-brand-cream/50 py-16 md:py-24 scroll-mt-24">
+        <div className="container-x">
+          <div className="mb-12 max-w-2xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-brand-red">
+              <span className="h-1.5 w-1.5 rounded-full bg-brand-red" />
+              Therapies during school hours
+            </div>
+            <h2 className="mt-5 font-serif text-3xl text-brand-ink md:text-4xl">
+              In-house therapy, woven into the school day.
+            </h2>
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                title: "Occupational Therapy",
+                body: "Improves fine & gross motor skills, sensory integration and daily-living abilities.",
+              },
+              {
+                title: "Speech Therapy",
+                body: "Develops expressive and receptive communication, articulation and alternative communication.",
+              },
+              {
+                title: "Behavioural Therapy",
+                body: "Structured, evidence-informed strategies to support positive behaviours and self-regulation.",
+              },
+              {
+                title: "Music Therapy",
+                body: "Helps in sensory integration, emotional expression, motor coordination, and communication through rhythm and melody.",
+              },
+            ].map((t) => (
+              <div key={t.title} className="rounded-3xl border border-border bg-card p-7 shadow-sm">
+                <h3 className="font-serif text-xl text-brand-ink font-semibold">{t.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  {t.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section
         id="workshop"
         className="border-t border-border bg-[#FACC15] py-16 text-black md:py-24 scroll-mt-24"

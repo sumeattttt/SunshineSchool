@@ -11,7 +11,7 @@ import { SocialBar } from "@/components/site/social-bar"
 
 const geist = Geist({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-geist-sans",
   display: "swap",
 })
 
@@ -19,7 +19,7 @@ const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
   weight: ["400"],
   style: ["normal", "italic"],
-  variable: "--font-serif",
+  variable: "--font-instrument-serif",
   display: "swap",
 })
 

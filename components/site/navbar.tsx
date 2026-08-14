@@ -30,7 +30,7 @@ const NAV_ITEMS: NavItem[] = [
     href: "/academics",
     children: [
       { label: "Curriculum", href: "/academics", description: "Early intervention, academics, vocational" },
-      { label: "Facilities", href: "/facilities", description: "Our learning environment" },
+      { label: "Therapy", href: "/facilities#therapy", description: "Occupational, speech, behavioural & music therapy" },
       { label: "Sheltered Workshop", href: "/facilities#workshop", description: "Training for differently-abled adults" },
     ],
   },
@@ -42,7 +42,6 @@ const NAV_ITEMS: NavItem[] = [
       { label: "Events & News", href: "/events", description: "Updates and announcements" },
       { label: "Photo Gallery", href: "/gallery", description: "Life at Sunshine" },
       { label: "Volunteer", href: "/volunteer", description: "Support our mission" },
-      { label: "Donate", href: "/donate", description: "Help us grow" },
     ],
   },
   { label: "Contact", href: "/contact" },

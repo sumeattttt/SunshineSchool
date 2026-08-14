@@ -211,54 +211,25 @@ export function GalleryGrid() {
 
   return (
     <div>
-      {/* Category Filters and Search Bar */}
-      <section className="container-x mb-8 space-y-4">
-        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-          <div className="flex flex-wrap gap-2">
-            {CATEGORIES.map((cat) => {
-              const isActive = activeCategory === cat
-              return (
-                <button
-                  key={cat}
-                  onClick={() => setActiveCategory(cat)}
-                  className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-semibold transition-all duration-200 ${isActive
-                    ? "bg-brand-ink text-brand-cream shadow-md scale-105"
-                    : "bg-card border border-border text-muted-foreground hover:border-brand-red hover:text-brand-red"
-                    }`}
-                >
-                  <span>{cat}</span>
-                  <span
-                    className={`rounded-full px-2 py-0.5 text-[10px] ${isActive
-                      ? "bg-brand-yellow text-brand-ink font-bold"
-                      : "bg-muted text-muted-foreground"
-                      }`}
-                  >
-                    {categoryCounts[cat] || 0}
-                  </span>
-                </button>
-              )
-            })}
-          </div>
-
-          {/* Search box */}
-          <div className="relative w-full max-w-xs">
-            <Search className="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-            <input
-              type="text"
-              placeholder="Search photos..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full rounded-full border border-border bg-card py-2 pl-9 pr-8 text-xs text-brand-ink placeholder:text-muted-foreground focus:border-brand-red focus:outline-none focus:ring-1 focus:ring-brand-red"
-            />
-            {searchQuery && (
-              <button
-                onClick={() => setSearchQuery("")}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-brand-ink"
-              >
-                <X className="h-3.5 w-3.5" />
-              </button>
-            )}
-          </div>
+      {/* Search Bar */}
+      <section className="container-x mb-8 flex justify-end">
+        <div className="relative w-full max-w-xs">
+          <Search className="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+          <input
+            type="text"
+            placeholder="Search photos..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full rounded-full border border-border bg-card py-2 pl-9 pr-8 text-xs text-brand-ink placeholder:text-muted-foreground focus:border-brand-red focus:outline-none focus:ring-1 focus:ring-brand-red"
+          />
+          {searchQuery && (
+            <button
+              onClick={() => setSearchQuery("")}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-brand-ink"
+            >
+              <X className="h-3.5 w-3.5" />
+            </button>
+          )}
         </div>
       </section>
 
