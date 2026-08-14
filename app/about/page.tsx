@@ -164,7 +164,7 @@ export default function AboutPage() {
                 Bank of Baroda – SaluteHerShakti Award
               </div>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Recognized with the SaluteHerShakti Award by Bank of Baroda for inspiring leadership and dedicated work in empowering women and creating a positive social impact through inclusive initiatives.
+                Mrs. Paramita Mazumder was recognized with the SaluteHerShakti Award by Bank of Baroda for her inspiring leadership and dedicated work in empowering women and creating a positive social impact through inclusive initiatives.
               </p>
             </div>
           </div>
