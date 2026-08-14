@@ -10,6 +10,11 @@ const PROGRAMS = [
     body: "Focused on early learning, communication, sensory development, motor skills, self-help, and social training.",
     image: "/images/Final Gallery Sorted Images/Home page/Early Intervention Program.jpeg",
     tag: "Age 3–10 · 1:00pm–4:00pm",
+    items: [
+      "Communication & sensory development",
+      "Motor skills & visual perceptual skills",
+      "Self-help skills training",
+    ],
   },
   {
     no: "02",
@@ -18,6 +23,11 @@ const PROGRAMS = [
     image: "/images/Final Gallery Sorted Images/Home page/Academic Program.jpg",
     tag: "Age 8–10 · 9:00am–1:00pm",
     imageFocus: "object-[center_75%]",
+    items: [
+      "NIOS and Pratham curriculum pathways",
+      "Individualised Education Programme (IEP)",
+      "Functional literacy & daily independence",
+    ],
   },
   {
     no: "03",
@@ -25,6 +35,11 @@ const PROGRAMS = [
     body: "Designed to develop work-related skills, motor abilities, and social readiness for future vocational opportunities.",
     image: "/images/Final Gallery Sorted Images/Home page/Pre-Vocational Training Program.jpeg",
     tag: "Age 16–18 · 9:00am–3:30pm",
+    items: [
+      "Work-related skills & motor abilities",
+      "Social skills & interpersonal development",
+      "Readiness for vocational training",
+    ],
   },
   {
     no: "04",
@@ -32,6 +47,11 @@ const PROGRAMS = [
     body: "Training for independent living where trainees earn stipend through community-based job work.",
     image: "/images/Final Gallery Sorted Images/Home page/Vocational Training Program.jpeg",
     tag: "Age 18+ · 10:00am–4:00pm",
+    items: [
+      "Handicrafts (bags, diyas, torans, candles, soaps)",
+      "Bakery & office skills (filing, packaging, computers)",
+      "Stipend-earning job work & independence",
+    ],
   },
   {
     no: "05",
@@ -39,6 +59,11 @@ const PROGRAMS = [
     body: "Includes Occupational Therapy, Speech Therapy, Yoga, physical activities, and other developmental support programs integrated with education.",
     image: "/images/Final Gallery Sorted Images/Home page/Therapies & Support Services.jpg",
     tag: "All ages",
+    items: [
+      "Occupational & Speech Therapy",
+      "Behavioural & Music Therapy",
+      "Sensory integration & motor coordination",
+    ],
   },
   {
     no: "06",
@@ -46,6 +71,11 @@ const PROGRAMS = [
     body: "Sports, music, dance, yoga and community living — every child gets to play.",
     image: "/images/Final Gallery Sorted Images/Home page/Extracurricular.jpeg",
     tag: "All ages",
+    items: [
+      "Indoor & Outdoor sports (Carrom, Cricket, Football)",
+      "Leisure skills (Dance, Music, Yoga)",
+      "Basic & Instrumental activities of daily living",
+    ],
   },
 ]
 
@@ -99,6 +129,16 @@ export function Programs() {
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                     {p.body}
                   </p>
+                  {p.items && p.items.length > 0 && (
+                    <ul className="mt-4 space-y-1.5 border-t border-border pt-4 text-xs font-medium text-brand-ink/90">
+                      {p.items.map((it) => (
+                        <li key={it} className="flex items-start gap-2">
+                          <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-red" />
+                          <span>{it}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </div>
             </article>
