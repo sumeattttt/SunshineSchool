@@ -12,6 +12,12 @@ export type GalleryImage = {
 }
 
 export const GALLERY_IMAGES: GalleryImage[] = [
+  {
+    src: "/images/get-to-know-us.jpg",
+    alt: "Sunshine School Students and Activities",
+    label: "Sunshine School Activities & Learning",
+    category: "Classrooms",
+  },
   // Photo Gallery Folder
   {
     src: "/images/Final Gallery Sorted Images/Photo Gallery/Annual Day Shankar Mahadevan as Chief Guest.jpg",

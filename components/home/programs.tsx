@@ -69,7 +69,8 @@ const PROGRAMS = [
     no: "06",
     title: "Extracurricular",
     body: "Sports, music, dance, yoga and community living — every child gets to play.",
-    image: "/images/Final Gallery Sorted Images/Home page/Extracurricular.jpeg",
+    image: "/images/student-shot-put.jpg",
+    imageFocus: "object-[center_25%]",
     tag: "All ages",
     items: [
       "Indoor & Outdoor sports (Carrom, Cricket, Football)",

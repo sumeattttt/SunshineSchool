@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { PageHeader } from "@/components/site/page-header"
 import { CtaSection } from "@/components/site/cta-section"
 import { Programs } from "@/components/home/programs"
@@ -126,22 +127,38 @@ export default function AcademicsPage() {
           </h2>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-3">
-          {EXTRA.map((g) => (
-            <div key={g.title} className="rounded-3xl border border-border bg-card p-7">
-              <h3 className="font-display text-2xl text-brand-ink">{g.title}</h3>
-              <ul className="mt-5 flex flex-wrap gap-2">
-                {g.items.map((it) => (
-                  <li
-                    key={it}
-                    className="rounded-full border border-border bg-background px-3 py-1.5 text-sm text-brand-ink/85"
-                  >
-                    {it}
-                  </li>
-                ))}
-              </ul>
+        <div className="grid gap-8 lg:grid-cols-2 items-center">
+          <div className="grid gap-4">
+            {EXTRA.map((g) => (
+              <div key={g.title} className="rounded-3xl border border-border bg-card p-6">
+                <h3 className="font-display text-xl text-brand-ink">{g.title}</h3>
+                <ul className="mt-3 flex flex-wrap gap-2">
+                  {g.items.map((it) => (
+                    <li
+                      key={it}
+                      className="rounded-full border border-border bg-background px-3 py-1 text-xs text-brand-ink/85 font-medium"
+                    >
+                      {it}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border shadow-lg">
+            <Image
+              src="/images/student-shot-put.jpg"
+              alt="Sunshine student participating in shot put sports training"
+              fill
+              className="object-cover object-[center_25%]"
+              sizes="(min-width: 1024px) 40vw, 100vw"
+            />
+            <div className="absolute bottom-4 left-4 right-4 rounded-2xl bg-black/75 backdrop-blur-md p-4 text-white">
+              <div className="font-semibold text-sm">🏅 Outdoor Athletics & Sports</div>
+              <p className="mt-1 text-xs text-white/80">Building physical confidence, endurance, and team spirit.</p>
             </div>
-          ))}
+          </div>
         </div>
       </section>
 
