@@ -96,7 +96,7 @@ export default function FacultyPage() {
                     <div className="text-xs font-medium uppercase tracking-[0.14em] text-brand-red">
                       {person.role}
                     </div>
-                    <h3 className="mt-1.5 font-serif text-2xl text-brand-ink">
+                    <h3 className="mt-1.5 font-serif text-2xl font-bold text-brand-ink">
                       {person.name}
                     </h3>
                     <p className="mt-3 text-sm text-muted-foreground leading-relaxed">

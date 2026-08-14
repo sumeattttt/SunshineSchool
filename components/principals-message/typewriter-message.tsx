@@ -5,7 +5,7 @@ import { Quote } from "lucide-react"
 
 const PARAGRAPHS = [
   "Twenty years ago, Sunshine was born from a simple yet powerful belief—that every child, regardless of ability, deserves the opportunity to learn, grow, and live with dignity. Today, as we proudly celebrate 20 years of Sunshine, my heart is filled with gratitude for every child, parent, teacher, volunteer, and well-wisher who has been part of this extraordinary journey.",
-  "For me, Sunshine is much more than a special school for differentlyabled children; it is a family and a purpose that has shaped my life. Every smile, every small achievement, every challenge overcome by our children reminds me why Sunshine exists—to nurture abilities, build independence, and create an inclusive society where every individual is valued for who they are.",
+  "For me, Sunshine is much more than a special school for differently-abled children; it is a family and a purpose that has shaped my life. Every smile, every small achievement, every challenge overcome by our children reminds me why Sunshine exists—to nurture abilities, build independence, and create an inclusive society where every individual is valued for who they are.",
   "Over the past two decades, we have touched countless lives through education, therapy, vocational training, and parent empowerment. Yet, our journey is far from over. We remain committed to empowering every learner with confidence, compassion, and the skills to lead a meaningful life.",
   "Thank you for believing in our vision and walking this journey with us. Together, let us continue to spread hope, celebrate abilities, and build a world where everyone truly belongs.",
 ]

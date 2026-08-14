@@ -35,7 +35,7 @@ export default function PrincipalsMessagePage() {
               />
             </div>
             <div className="mt-6 rounded-2xl border border-border bg-card p-5">
-              <div className="font-display text-xl text-brand-ink">
+              <div className="font-display text-xl font-bold text-brand-ink">
                 Mrs. Paramita Mazumder
               </div>
               <div className="mt-1 text-[11px] uppercase tracking-[0.2em] text-brand-red">

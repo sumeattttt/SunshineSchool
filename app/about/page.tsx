@@ -88,7 +88,7 @@ export default function AboutPage() {
                 Sunshine School — for differently-abled children
               </h2>
               <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-                Sunshine School for Differently-Abled Children, an initiative of Sunshine Education Society, is a non-profit organization dedicated to provide quality education, rehabilitation, and holistic development opportunities for children with special needs. Mrs. Paramita Mazumder — Principal & Secretary — has a son with autism, which was the driving factor for starting this initiative.
+                Sunshine School for Differently-Abled Children, an initiative of Sunshine Education Society, is a non-profit organization dedicated to providing quality education, rehabilitation, and holistic development opportunities for children with special needs. <strong className="font-semibold text-brand-ink">Mrs. Paramita Mazumder</strong> — Principal & Secretary — has a son with autism, which was the driving factor for starting this initiative.
               </p>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                 Established with the aim of creating an inclusive and nurturing environment, the school supports children with Autism Spectrum Disorder and other developmental disabilities through individualized education, therapies, skill development, and vocational training. The school focuses on Early Intervention, Academic and Functional Academics, Pre-Vocational and Vocational Training, along with extracurricular activities.
@@ -164,7 +164,7 @@ export default function AboutPage() {
                 Bank of Baroda – SaluteHerShakti Award
               </div>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Mrs. Paramita Mazumder was recognized with the SaluteHerShakti Award by Bank of Baroda for her inspiring leadership and dedicated work in empowering women and creating a positive social impact through inclusive initiatives.
+                <strong className="font-semibold text-brand-ink">Mrs. Paramita Mazumder</strong> was recognized with the SaluteHerShakti Award by Bank of Baroda for her inspiring leadership and dedicated work in empowering women and creating a positive social impact through inclusive initiatives.
               </p>
             </div>
           </div>
@@ -184,7 +184,7 @@ export default function AboutPage() {
                 Navi Mumbai Municipal Corporation (NMMC) – Disability Sector Recognition
               </div>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Mrs. Paramita Mazumder was felicitated by the Navi Mumbai Municipal Corporation (NMMC) for her significant contribution to the disability sector, acknowledging her commitment to advocacy, inclusion, and community development.
+                <strong className="font-semibold text-brand-ink">Mrs. Paramita Mazumder</strong> was felicitated by the Navi Mumbai Municipal Corporation (NMMC) for her significant contribution to the disability sector, acknowledging her commitment to advocacy, inclusion, and community development.
               </p>
             </div>
           </div>
@@ -255,7 +255,7 @@ export default function AboutPage() {
                 </div>
 
                 <div className="flex flex-col justify-center">
-                  <h3 className="font-display text-3xl text-brand-ink md:text-4xl">
+                  <h3 className="font-display text-3xl font-bold text-brand-ink md:text-4xl">
                     {v.name}
                   </h3>
                   <div className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand-red">
