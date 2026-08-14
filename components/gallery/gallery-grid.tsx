@@ -13,6 +13,12 @@ export type GalleryImage = {
 
 export const GALLERY_IMAGES: GalleryImage[] = [
   {
+    src: "/images/autism-awareness-ribbon-cutting.jpg",
+    alt: "Autism Awareness Walk & Ribbon Cutting Campaign",
+    label: "Autism Awareness & Inclusion Drive",
+    category: "Events",
+  },
+  {
     src: "/images/get-to-know-us.jpg",
     alt: "Sunshine School Students and Activities",
     label: "Sunshine School Activities & Learning",
