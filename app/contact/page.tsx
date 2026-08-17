@@ -35,8 +35,8 @@ const CONTACT_DETAILS = [
   {
     icon: Phone,
     title: "Call Us",
-    lines: ["022 27827342", "+91 88504 77964"],
-    action: { label: "Call Now", href: "tel:02227827342" },
+    lines: ["022 20860982", "+91 88504 77964"],
+    action: { label: "Call Now", href: "tel:02220860982" },
   },
   {
     icon: Mail,
@@ -160,7 +160,7 @@ export default function ContactPage() {
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
-                  href="tel:02227827342"
+                  href="tel:02220860982"
                   className="inline-flex items-center gap-1.5 rounded-full bg-brand-yellow px-4 py-2 text-sm font-medium text-brand-ink hover:bg-brand-yellow/90"
                 >
                   <Phone className="h-3.5 w-3.5" /> Call Admissions

@@ -8,6 +8,7 @@ import { AnnouncementBar } from "@/components/site/announcement-bar"
 import { SiteNavbar } from "@/components/site/navbar"
 import { SiteFooter } from "@/components/site/footer"
 import { SocialBar } from "@/components/site/social-bar"
+import { AnniversaryPopup } from "@/components/site/anniversary-popup"
 
 const geist = Geist({
   subsets: ["latin"],
@@ -111,6 +112,7 @@ export default function RootLayout({
           <Suspense>{children}</Suspense>
         </main>
         <SocialBar />
+        <AnniversaryPopup />
         <SiteFooter />
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>

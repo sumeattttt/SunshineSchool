@@ -30,10 +30,16 @@ const LEADERSHIP = [
     image: "/images/mansihasonar.jpg.jpeg",
   },
   {
-    name: "Ms. Rashmi Rangekar",
-    role: "Executive General Administration",
-    bio: "Pediatric Occupational Therapist NDT & SI certified, certified Yoga therapist.",
+    name: "Ms. Suchitra Gaikwad",
+    role: "Executive – General Administration",
+    bio: "Ms. Suchitra Gaikwad is responsible for handling the school’s administrative functions, including admissions, enquiries, parent coordination, and other general administrative responsibilities.",
     image: "/images/Final Gallery Sorted Images/Faculty and staff/Rashmi Rangekar.jpg",
+  },
+  {
+    name: "Ms. Rashmi Rangnekar",
+    role: "Advisor",
+    bio: "Pediatric Occupational Therapist NDT & SI certfied, certified Yoga therapist.",
+    image: "/images/Final Gallery Sorted Images/Faculty and staff/Rashmi Rangnekar.jpg",
   },
 ]
 
@@ -82,7 +88,7 @@ export default function FacultyPage() {
           </div>
         </FadeIn>
 
-        <StaggerContainer staggerDelay={0.12} className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <StaggerContainer staggerDelay={0.12} className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {LEADERSHIP.map((person) => (
             <StaggerItem key={person.name}>
               <article
