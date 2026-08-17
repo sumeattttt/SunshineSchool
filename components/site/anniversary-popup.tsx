@@ -53,11 +53,12 @@ export function AnniversaryPopup() {
 
             {/* Close Button */}
             <button
+              type="button"
               onClick={handleClose}
               aria-label="Close modal"
-              className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white/80 transition-colors hover:bg-white/20 hover:text-white sm:right-6 sm:top-6"
+              className="absolute right-3.5 top-3.5 z-30 flex h-11 w-11 touch-manipulation items-center justify-center rounded-full border border-white/20 bg-white/10 text-white/90 shadow-md transition-all hover:bg-white/25 hover:text-white active:scale-90 sm:right-6 sm:top-6"
             >
-              <X className="h-5 w-5" />
+              <X className="h-6 w-6" />
             </button>
 
             {/* Content Header */}
@@ -74,7 +75,7 @@ export function AnniversaryPopup() {
                 </span>
                 <div className="flex flex-col">
                   <span className="font-display text-2xl font-bold uppercase tracking-wider text-white">
-                    Years Completed
+                    Years
                   </span>
                   <span className="text-xs uppercase tracking-[0.2em] text-brand-cream/70">
                     Of Hope, Growth & Inclusion

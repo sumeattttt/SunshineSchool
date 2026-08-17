@@ -37,7 +37,7 @@ const LEADERSHIP = [
   },
   {
     name: "Ms. Rashmi Rangnekar",
-    role: "Advisor",
+    role: "General Advisor",
     bio: "Pediatric Occupational Therapist NDT & SI certfied, certified Yoga therapist.",
     image: "/images/Final Gallery Sorted Images/Faculty and staff/Rashmi Rangnekar.jpg",
   },

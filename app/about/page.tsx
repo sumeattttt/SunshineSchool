@@ -50,7 +50,7 @@ const VISIONARIES = [
     role: "Founding Chairman, Sunshine Education Society (2006 – 2025)",
     image: "/images/hirak-das.jpg",
     paragraphs: [
-      "Mr. Hirak Das was the Founder Chairman of the Sunshine Education Society and the visionary who laid the foundation for Sunshine’s journey. With a deep commitment to creating opportunities for children and adults with special needs, he established Sunshine with the belief that every individual deserves dignity, acceptance, education, and the opportunity to lead a meaningful life.",
+      "Shri Hirak Das was the Founder Chairman of the Sunshine Education Society and the visionary who laid the foundation for Sunshine’s journey. With a deep commitment to creating opportunities for children and adults with special needs, he established Sunshine with the belief that every individual deserves dignity, acceptance, education, and the opportunity to lead a meaningful life.",
       "His vision and leadership shaped Sunshine into a nurturing and inclusive environment where individuals are encouraged to discover their abilities, develop independence, and participate meaningfully in society.",
       "Although he is no longer with us, his vision continues to live on at the heart of Sunshine. His legacy inspires our ongoing commitment to inclusion, empowerment, and a life of dignity for every individual.",
     ],
