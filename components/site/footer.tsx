@@ -148,8 +148,8 @@ export function SiteFooter() {
               <li className="flex gap-3">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-yellow" />
                 <div className="flex flex-col text-white/75">
-                  <a href="tel:02220860982" className="hover:text-white">
-                    022 2086 0982
+                  <a href="tel:02220870982" className="hover:text-white">
+                    022 2087 0982
                   </a>
                   <a href="tel:+918850477964" className="hover:text-white">
                     +91 88504 77964
@@ -174,8 +174,8 @@ export function SiteFooter() {
               <p className="mt-2 text-xs leading-relaxed text-white/70">
                 RH-4, M-9, Sector-6, Vashi, Navi Mumbai 400703
                 <br />
-                <a href="tel:02220860982" className="hover:text-white">
-                  022 2086 0982
+                <a href="tel:02220870982" className="hover:text-white">
+                  022 2087 0982
                 </a>
               </p>
             </div>
