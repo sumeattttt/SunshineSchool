@@ -31,7 +31,7 @@ export default function PrincipalsMessagePage() {
                 alt="Mrs. Paramita Mazumder, Principal"
                 fill
                 sizes="(min-width: 1024px) 35vw, 100vw"
-                className="object-cover object-[center_35%]"
+                className="object-cover object-top"
               />
             </div>
             <div className="mt-6 rounded-2xl border border-border bg-card p-5">
