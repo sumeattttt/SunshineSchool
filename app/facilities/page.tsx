@@ -116,30 +116,51 @@ export default function FacilitiesPage() {
             </h2>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
               {
                 title: "Occupational Therapy",
                 body: "Improves fine & gross motor skills, sensory integration and daily-living abilities.",
+                image: "/images/therapy/occupational-therapy.jpg",
+                imageFocus: "object-[center_15%]",
               },
               {
                 title: "Speech Therapy",
                 body: "Develops expressive and receptive communication, articulation and alternative communication.",
+                image: "/images/therapy/speech-therapy.jpg",
+                imageFocus: "object-[center_15%]",
               },
               {
                 title: "Behavioural Therapy",
                 body: "Structured, evidence-informed strategies to support positive behaviours and self-regulation.",
+                image: "/images/therapy/behavioural-therapy.jpg",
+                imageFocus: "object-[center_10%]",
               },
               {
                 title: "Music Therapy",
                 body: "Helps in sensory integration, emotional expression, motor coordination, and communication through rhythm and melody.",
+                image: "/images/therapy/music-therapy.jpg",
+                imageFocus: "object-center",
               },
             ].map((t) => (
-              <div key={t.title} className="rounded-3xl border border-border bg-card p-7 shadow-sm">
-                <h3 className="font-serif text-xl text-brand-ink font-semibold">{t.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  {t.body}
-                </p>
+              <div key={t.title} className="group overflow-hidden rounded-3xl border border-border bg-card shadow-sm h-full flex flex-col justify-between">
+                <div className="relative aspect-[3/4] overflow-hidden bg-brand-yellow-soft">
+                  <Image
+                    src={t.image}
+                    alt={t.title}
+                    fill
+                    className={`object-cover transition-transform duration-500 group-hover:scale-105 ${t.imageFocus}`}
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                </div>
+                <div className="p-6 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h3 className="font-serif text-xl text-brand-ink font-semibold">{t.title}</h3>
+                    <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">
+                      {t.body}
+                    </p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

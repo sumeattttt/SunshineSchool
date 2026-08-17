@@ -40,7 +40,7 @@ const VALUES = [
   {
     icon: Sparkles,
     title: "Innovative",
-    body: "New tools, creative curricula and an openness to whatever helps each child thrive.",
+    body: "New tools, creative curriculum and an openness to whatever helps each child thrive.",
   },
 ]
 

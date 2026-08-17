@@ -29,6 +29,12 @@ const LEADERSHIP = [
     bio: "Oversees vocational skill building, community living, and daily workshop activities for young adult trainees.",
     image: "/images/mansihasonar.jpg.jpeg",
   },
+  {
+    name: "Ms. Rashmi Rangekar",
+    role: "Executive General Administration",
+    bio: "Pediatric Occupational Therapist NDT & SI certified, certified Yoga therapist.",
+    image: "/images/Final Gallery Sorted Images/Faculty and staff/Rashmi Rangekar.jpg",
+  },
 ]
 
 const DEPARTMENTS = [
@@ -61,7 +67,7 @@ export default function FacultyPage() {
       <PageHeader
         eyebrow="Our people"
         title="The hands and hearts behind Sunshine"
-        description="A team of 27+ educators, therapists and caregivers united by one belief — every child deserves to be seen, heard, and celebrated."
+        description="A team of 30+ educators, therapists and caregivers united by one belief — every child deserves to be seen, heard, and celebrated."
       />
 
       <section className="container-x pb-16 md:pb-24">
@@ -76,7 +82,7 @@ export default function FacultyPage() {
           </div>
         </FadeIn>
 
-        <StaggerContainer staggerDelay={0.12} className="grid gap-6 md:grid-cols-3">
+        <StaggerContainer staggerDelay={0.12} className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {LEADERSHIP.map((person) => (
             <StaggerItem key={person.name}>
               <article
@@ -88,7 +94,7 @@ export default function FacultyPage() {
                     alt={person.name}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                 </div>
                 <div className="p-6 flex-1 flex flex-col justify-between">

@@ -85,18 +85,26 @@ const THERAPIES = [
   {
     title: "Occupational Therapy",
     body: "Improves fine & gross motor skills, sensory integration and daily-living abilities.",
+    image: "/images/therapy/occupational-therapy.jpg",
+    imageFocus: "object-[center_15%]",
   },
   {
     title: "Speech Therapy",
     body: "Develops expressive and receptive communication, articulation and alternative communication.",
+    image: "/images/therapy/speech-therapy.jpg",
+    imageFocus: "object-[center_15%]",
   },
   {
     title: "Behavioural Therapy",
     body: "Structured, evidence-informed strategies to support positive behaviours and self-regulation.",
+    image: "/images/therapy/behavioural-therapy.jpg",
+    imageFocus: "object-[center_10%]",
   },
   {
     title: "Music Therapy",
     body: "Helps in sensory integration, emotional expression, motor coordination, and communication through rhythm and melody.",
+    image: "/images/therapy/music-therapy.jpg",
+    imageFocus: "object-center",
   },
 ]
 
@@ -146,17 +154,22 @@ export default function AcademicsPage() {
             ))}
           </div>
 
-          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border shadow-lg">
-            <Image
-              src="/images/student-shot-put.jpg"
-              alt="Sunshine student participating in shot put sports training"
-              fill
-              className="object-cover object-[center_25%]"
-              sizes="(min-width: 1024px) 40vw, 100vw"
-            />
-            <div className="absolute bottom-4 left-4 right-4 rounded-2xl bg-black/75 backdrop-blur-md p-4 text-white">
-              <div className="font-semibold text-sm">🏅 Outdoor Athletics & Sports</div>
-              <p className="mt-1 text-xs text-white/80">Building physical confidence, endurance, and team spirit.</p>
+          <div className="flex flex-col gap-3">
+            <div className="relative aspect-[16/9.5] w-full overflow-hidden rounded-3xl border border-border shadow-lg bg-card">
+              <Image
+                src="/images/extracurricular-table-tennis.jpg"
+                alt="Sunshine students playing table tennis in extracurricular indoor games"
+                fill
+                className="object-cover object-center"
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                priority
+              />
+              <div className="absolute top-4 left-4 rounded-full bg-black/80 backdrop-blur-md px-3.5 py-1.5 text-xs font-semibold text-white shadow-md">
+                🏓 Indoor Sports & Table Tennis
+              </div>
+            </div>
+            <div className="rounded-2xl border border-border bg-card p-4 text-xs md:text-sm text-muted-foreground leading-relaxed">
+              <span className="font-semibold text-brand-ink">Indoor & Outdoor Sports:</span> Building motor skills, hand-eye coordination, focus, endurance, and team spirit.
             </div>
           </div>
         </div>
@@ -192,6 +205,45 @@ export default function AcademicsPage() {
                     </li>
                   ))}
                 </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Therapies */}
+      <section className="border-t border-border bg-brand-cream/40 py-20 md:py-28">
+        <div className="container-x">
+          <div className="mb-14 max-w-2xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-brand-red">
+              <span className="h-1.5 w-1.5 rounded-full bg-brand-red" />
+              In-House Therapies
+            </div>
+            <h2 className="mt-5 font-display text-4xl leading-[1.05] text-brand-ink md:text-5xl">
+              Individualised therapy, integrated with learning.
+            </h2>
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {THERAPIES.map((t) => (
+              <div key={t.title} className="group overflow-hidden rounded-3xl border border-border bg-card shadow-sm h-full flex flex-col justify-between">
+                <div className="relative aspect-[3/4] overflow-hidden bg-brand-yellow-soft">
+                  <Image
+                    src={t.image}
+                    alt={t.title}
+                    fill
+                    className={`object-cover transition-transform duration-500 group-hover:scale-105 ${t.imageFocus || ""}`}
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                </div>
+                <div className="p-6 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h3 className="font-serif text-xl text-brand-ink font-semibold">{t.title}</h3>
+                    <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">
+                      {t.body}
+                    </p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

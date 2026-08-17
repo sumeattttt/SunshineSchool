@@ -24,7 +24,7 @@ export function AboutPreview() {
       <div className="container-x py-20 md:py-28">
         <div className="grid gap-14 lg:grid-cols-[1.05fr_1fr] lg:gap-20">
           <ScaleIn duration={0.6} className="relative">
-            <div className="relative aspect-[16/10] sm:aspect-[4/3] overflow-hidden rounded-3xl border border-border bg-card shadow-lg">
+            <div className="relative aspect-[16/9] overflow-hidden rounded-3xl border border-border bg-card shadow-lg">
               <Image
                 src="/images/staff-group-stage.jpg"
                 alt="Sunshine Education Society Team & Educators"
