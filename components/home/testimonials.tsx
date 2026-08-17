@@ -2,7 +2,7 @@ import { Quote } from "lucide-react"
 
 const TESTIMONIALS = [
   {
-    body: "What makes Sunshine Sheltered Workshop truly special is that the teachers and staff never see these moments as a burden. They respond with endless patience, compassion, and understanding. Sunshine Sheltered Workshop equips our children with essential life-skills that help them become more independent and confident. Whether it is learning daily life skills, participating in competitions, going on picnics, enjoying treks, or taking part in cultural and social activities, every opportunity is thoughtfully planned to help them grow, explore, and experience the world. The smiles on our children's faces after reassure us that they are in the safest and most nurturing environment. As parents, the greatest comfort is knowing that you are giving them love, confidence and dignity.",
+    body: "What makes Sunshine Sheltered Workshop truly special is that the teachers and staff never see these moments as a burden. They respond with endless patience, compassion, and understanding. Sunshine Sheltered Workshop equips our children with essential life-skills that help them become more independent and confident.",
     author: "Vaibhav's Family",
     role: "Parent of Vaibhav (Shelter Workshop Trainee)",
   },
@@ -14,7 +14,12 @@ const TESTIMONIALS = [
   {
     body: "Sunshine is not just a school; it is a second home where Shanaya feels genuinely loved and valued. The teachers dedicate themselves to understanding each child's unique needs, giving us complete peace of mind and immense hope for the future.",
     author: "Shanaya's Family",
-    role: "Aditi Saha (Mother of Shanaya Mukherjee — Sunshine School Student)",
+    role: "Aditi Saha (Mother of Shanaya — Student)",
+  },
+  {
+    body: "Watching Parth's confidence and overall performance improve day by day has been heartwarming. Seeing him confidently anchor on stage alongside his teacher is a proud moment for our family. Thank you for seeing his potential and giving him the confidence to shine.",
+    author: "Parth Patkar's Family",
+    role: "Parent of Parth (Pre-Vocational Batch)",
   },
 ]
 
@@ -33,7 +38,7 @@ export function Testimonials() {
           </h2>
         </div>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-3">
+        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {TESTIMONIALS.map((t, i) => (
             <figure
               key={i}

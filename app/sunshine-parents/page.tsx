@@ -55,6 +55,25 @@ const PARENT_STORIES = [
       "Thank you for believing in our daughter and making such a positive difference in her life. Sunshine School will always hold a special place in our hearts.",
     ],
   },
+  {
+    id: "story-04",
+    tag: "Parth's Family",
+    title:
+      "“Seeing him confidently stand on stage as an anchor is a very special and proud moment for our family.”",
+    image: "/images/test04.jpeg",
+    author: "Parent of Parth (Pre-Vocational Batch)",
+    paragraphs: [
+      "Dear Principal, Teachers, and the Entire School Team SUNSHINE,",
+      "I would like to express my heartfelt gratitude to the school and all the teachers for the incredible support, encouragement, and opportunities given to my son over the past three years.",
+      "As a child with Autism, his journey has been unique, and watching his confidence, abilities, and overall performance improve day by day has been truly heartwarming for us as parents. We are immensely proud of the progress he has made, and we sincerely appreciate the patience, understanding, and constant encouragement shown by the school.",
+      "Apart from showing excellent progress in academics, he has also been doing wonderfully in sports, music, and various co-curricular activities. These opportunities have helped him discover his talents, build confidence, and express himself more freely.",
+      "We are especially thankful to the school for giving him the wonderful opportunity to be an Anchor on stage alongside his teacher, as well as encouraging him to participate in stage performances. Seeing him confidently stand on stage is a very special and proud moment for our family.",
+      "These achievements would not have been possible without the school's inclusive environment and the continuous support of his teachers. Your belief in his abilities has made a meaningful difference in his life.",
+      "Thank you for seeing his potential, nurturing his talents, and giving him the confidence to shine. We are truly grateful to the entire school family for being an important part of his journey.",
+      "With heartfelt gratitude and warm regards,",
+      "Proud Parents",
+    ],
+  },
 ]
 
 export default function SunshineParentsPage() {
