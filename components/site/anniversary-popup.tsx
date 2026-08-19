@@ -77,15 +77,15 @@ export function AnniversaryPopup() {
                   <span className="font-display text-2xl font-bold uppercase tracking-wider text-white">
                     Years
                   </span>
-                  <span className="text-xs uppercase tracking-[0.2em] text-brand-cream/70">
-                    Of Hope, Growth & Inclusion
+                  <span className="text-xs uppercase tracking-[0.15em] text-brand-cream/70">
+                    Of Creating Possibilities
                   </span>
                 </div>
               </div>
 
               {/* Title & Description */}
               <h2 className="mt-4 font-display text-2xl font-bold leading-snug text-white sm:text-3xl">
-                Celebrating Two Decades of Sunshine School!
+                20 Years of Creating Possibilities — From Education to Independence
               </h2>
 
               <p className="mt-3 text-sm leading-relaxed text-white/80 sm:text-base">

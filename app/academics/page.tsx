@@ -85,8 +85,8 @@ const THERAPIES = [
   {
     title: "Occupational Therapy",
     body: "Improves fine & gross motor skills, sensory integration and daily-living abilities.",
-    image: "/images/therapy/occupational-therapy.jpg",
-    imageFocus: "object-[center_15%]",
+    image: "/images/sensory-climbing-wall.jpg",
+    imageFocus: "object-[center_20%]",
   },
   {
     title: "Speech Therapy",

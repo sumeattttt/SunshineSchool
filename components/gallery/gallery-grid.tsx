@@ -13,6 +13,36 @@ export type GalleryImage = {
 
 export const GALLERY_IMAGES: GalleryImage[] = [
   {
+    src: "/images/sensory-climbing-wall.jpg",
+    alt: "Student practicing on sensory climbing wall with instructor",
+    label: "Sensory Wall Climbing & Motor Skills",
+    category: "Therapy",
+  },
+  {
+    src: "/images/sensory-swing-therapy.jpg",
+    alt: "Student balancing on sensory bolster swing guided by teacher",
+    label: "Sensory Integration & Balance Therapy",
+    category: "Therapy",
+  },
+  {
+    src: "/images/assisted-yoga-therapy.jpg",
+    alt: "Guided yoga stretching session with physical therapist",
+    label: "Guided Yoga & Physical Stretching Therapy",
+    category: "Therapy",
+  },
+  {
+    src: "/images/outdoor-gym-exercise.jpg",
+    alt: "Student exercising on outdoor gym equipment",
+    label: "Outdoor Fitness & Physical Exercise",
+    category: "Events",
+  },
+  {
+    src: "/images/outdoor-fitness-wheel.jpg",
+    alt: "Students engaged in outdoor shoulder wheel exercise",
+    label: "Outdoor Fitness & Upper Body Mobility",
+    category: "Events",
+  },
+  {
     src: "/images/autism-awareness-ribbon-cutting.jpg",
     alt: "Autism Awareness Walk & Ribbon Cutting Campaign",
     label: "Autism Awareness & Inclusion Drive",
@@ -118,12 +148,6 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     category: "Therapy",
   },
   {
-    src: "/images/Final Gallery Sorted Images/Home page/Understanding Autism.jpg",
-    alt: "Understanding Autism & Guidance",
-    label: "Understanding Autism & Support",
-    category: "Classrooms",
-  },
-  {
     src: "/images/Final Gallery Sorted Images/Home page/Extracurricular.jpeg",
     alt: "Extracurricular Activities",
     label: "Extracurricular & Sports Activities",
@@ -223,9 +247,38 @@ export function GalleryGrid() {
 
   return (
     <div>
-      {/* Search Bar */}
-      <section className="container-x mb-8 flex justify-end">
-        <div className="relative w-full max-w-xs">
+      {/* Category Filters & Search Bar */}
+      <section className="container-x mb-8 flex flex-col-reverse gap-4 sm:flex-row sm:items-center sm:justify-between">
+        {/* Category Pills */}
+        <div className="flex flex-wrap items-center gap-2">
+          {CATEGORIES.map((cat) => {
+            const count = categoryCounts[cat] || 0
+            const isActive = activeCategory === cat
+            return (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-medium transition-all ${
+                  isActive
+                    ? "bg-brand-ink text-white shadow-sm"
+                    : "bg-card text-muted-foreground hover:bg-accent hover:text-brand-ink border border-border"
+                }`}
+              >
+                <span>{cat}</span>
+                <span
+                  className={`rounded-full px-1.5 py-0.5 text-[10px] ${
+                    isActive ? "bg-white/20 text-white" : "bg-muted text-muted-foreground"
+                  }`}
+                >
+                  {count}
+                </span>
+              </button>
+            )
+          })}
+        </div>
+
+        {/* Search Bar */}
+        <div className="relative w-full max-w-xs shrink-0">
           <Search className="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <input
             type="text"
