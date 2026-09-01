@@ -41,8 +41,8 @@ const CONTACT_DETAILS = [
   {
     icon: Mail,
     title: "Email & Hours",
-    lines: ["sunshine.vashi@gmail.com", "Mon – Fri: 9:00 AM – 3:30 PM", "Sat: By appointment"],
-    action: { label: "Send Email", href: "mailto:sunshine.vashi@gmail.com" },
+    lines: ["info@sunshineschool.org.in", "Mon – Fri: 9:00 AM – 3:30 PM", "Sat: By appointment"],
+    action: { label: "Send Email", href: "mailto:info@sunshineschool.org.in" },
   },
 ]
 

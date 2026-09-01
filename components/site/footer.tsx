@@ -159,10 +159,10 @@ export function SiteFooter() {
               <li className="flex gap-3">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand-yellow" />
                 <a
-                  href="mailto:sunshine.vashi@gmail.com"
+                  href="mailto:info@sunshineschool.org.in"
                   className="text-white/75 hover:text-white"
                 >
-                  sunshine.vashi@gmail.com
+                  info@sunshineschool.org.in
                 </a>
               </li>
             </ul>

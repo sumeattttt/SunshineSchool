@@ -128,7 +128,7 @@ export default function DonatePage() {
             </dl>
 
             <p className="mt-6 text-xs text-white/70">
-              * Note: Please email us your transfer details at <span className="text-brand-yellow font-medium">sunshine.vashi@gmail.com</span> along with your PAN card number so we can issue your 80G tax receipt.
+              * Note: Please email us your transfer details at <span className="text-brand-yellow font-medium">info@sunshineschool.org.in</span> along with your PAN card number so we can issue your 80G tax receipt.
             </p>
           </div>
 
